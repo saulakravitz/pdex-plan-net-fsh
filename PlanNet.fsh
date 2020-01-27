@@ -5,18 +5,233 @@ Parent:         Endpoint
 Id:             plannet-endpoint
 Title:          "Plan-net Endpoint"
 Description:    "An endpoint..."
+* identifier.extension contains 
+    endpoint-usecase  0..* MS 
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.type MS
+* identifier.value MS
+* identifier.period MS
+* identifier.assigner MS
+* status MS
+* connectionType MS
+* name MS
+* managingOrganization only Reference(Plannet-Organization)
+* managingOrganization MS
+* contact MS
+*  contact.extension contains
+       contactpoint-availabletime 0..* MS and
+       via-intermediary 0..* MS
+* contact.value MS
+* contact.system MS
+* contact.use MS
+* contact.rank MS
+* contact.period MS
+* period MS
+* payloadType MS
+* payloadMimeType MS
+* address MS
+* header MS
+
+   
+
 
 Profile:        Plannet-HealthcareService
 Parent:         HealthcareService
 Id:             plannet-healthcareService
 Title:          "Plan-net HealthcareService"
 Description:    "A healthcareService..."
+* extension contains
+    newpatients 1..1 MS
+* identifier.extension contains identifier-status  1..* MS
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.type MS
+* identifier.value MS
+* identifier.period MS
+* identifier.assigner MS
+* active MS
+* providedBy only Reference(Plannet-Organization)
+* providedBy MS
+* category MS
+* type MS
+* specialty MS
+* location only Reference(Plannet-Location)
+* location MS
+* name MS
+* comment MS
+* extraDetails MS
+* photo MS
+* telecom MS
+* telecom.extension contains
+       contactpoint-availabletime 0..* MS and
+       via-intermediary 0..* MS
+* telecom.system MS
+* telecom.value MS
+* telecom.rank MS
+* telecom.use MS
+* telecom.period MS
+* coverageArea only Reference(Plannet-Location)
+* coverageArea MS
+* serviceProvisionCode MS
+* eligibility MS
+* program MS
+* characteristic MS
+* referralMethod MS
+* appointmentRequired MS
+* availableTime MS
+* availableTime.daysOfWeek MS
+* availableTime.allDay MS
+* availableTime.availableStartTime MS
+* availableTime.availableEndTime MS
+* notAvailable MS
+* notAvailable.description MS
+* notAvailable.during MS
+* availabilityExceptions MS
+* endpoint only Reference(Plannet-Endpoint)
+* endpoint MS
+
+
+
+
+Profile:        Plannet-InsurancePlan
+Parent:         InsurancePlan
+Id:             plannet-insuranceplan
+Title:          "Plan-net InsurancePlan"
+Description:    "An InsurancePlan..."
+* identifier.extension contains identifier-status  1..* MS
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.type MS
+* identifier.value MS
+* identifier.period MS
+* identifier.assigner MS
+* status 1..1 MS
+* type 0..1 MS
+* name MS
+* alias MS
+* ownedBy 1..1 MS
+* ownedBy only Reference(Plannet-Organization)
+* administeredBy 1..1 MS
+* administeredBy only Reference(Plannet-Organization)
+* coverageArea only Reference(Plannet-Location)
+* coverageArea MS
+* contact MS
+* contact.name MS
+* contact.name.use MS
+* contact.name.text MS
+* contact.name.family MS
+* contact.name.given MS
+* contact.name.prefix MS
+* contact.name.suffix MS
+* contact.name.period MS
+* contact.telecom MS
+* contact.telecom.extension contains
+       contactpoint-availabletime 0..* MS and
+       via-intermediary 0..* MS
+* contact.telecom.value MS
+* contact.telecom.system MS
+* contact.telecom.use MS
+* contact.telecom.period MS
+* endpoint only Reference(Plannet-Endpoint)
+* network only Reference(Plannet-Network)
+
 
 Profile:        Plannet-Location
-Parent:         Location
+Parent:         USCoreLocation
 Id:             plannet-location
 Title:          "Plan-net Location"
 Description:    "A Location... "
+* extension contains
+    newpatients 0..* MS and
+    accessibility 0..* MS and 
+    newpatientprofile 0..* MS
+* identifier.extension contains identifier-status  1..* MS
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.type MS
+* identifier.value MS
+* identifier.period MS
+* identifier.assigner MS
+* status 1..1 MS
+* alias MS
+* description MS
+* mode 0..0
+* type MS
+* telecom MS
+* telecom.extension contains
+       contactpoint-availabletime 0..* MS and
+       via-intermediary 0..* MS
+* telecom.system MS
+* telecom.value MS
+* telecom.rank MS
+* telecom.use MS
+* telecom.period MS
+* physicalType MS
+* position MS
+* managingOrganization 1..1 MS
+* managingOrganization only Reference(Plannet-Organization)
+* partOf 1..1 MS
+* partOf only Reference(Plannet-Location)
+* hoursOfOperation MS
+* hoursOfOperation.daysOfWeek MS
+* hoursOfOperation.allDay MS
+* hoursOfOperation.openingTime MS
+* hoursOfOperation.closingTime MS
+* availabilityExceptions MS
+* endpoint MS
+* endpoint only Reference(Plannet-Endpoint)
+
+
+Profile:        Plannet-Network
+Parent:         Organization 
+Id:             plannet-network
+Title:          "Plan-net Network"
+Description:    "A hnetwork..."
+* extension contains
+    location-reference 0..* MS
+* identifier.extension contains identifier-status  1..* MS
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.type MS
+* identifier.value MS
+* identifier.period MS
+* identifier.assigner MS
+* active 1..1 MS
+* type MS
+* type = ORGTYPE#pay "payer"
+* name MS
+* alias MS
+* telecom 0..0
+* address 0..1 MS
+* partOf 1..1 MS
+* partOf only Reference(Plannet-Organization)
+* contact MS
+* contact.name MS
+* contact.name.use MS
+* contact.name.text MS
+* contact.name.family MS
+* contact.name.given MS
+* contact.name.prefix MS
+* contact.name.suffix MS
+* contact.name.period MS
+* contact.telecom MS
+* contact.telecom.extension contains
+       contactpoint-availabletime 0..* MS and
+       via-intermediary 0..* MS
+* contact.telecom.value 1..1 MS
+* contact.telecom.system 1..1 MS
+* contact.telecom.use MS
+* contact.telecom.period MS
+* endpoint only Reference(Plannet-Endpoint)
+* endpoint MS 
+
+
 
 Profile:        Plannet-Organization
 Parent:         USCoreOrganization
@@ -69,6 +284,39 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * telecom.use MS
 * telecom.period MS
 * endpoint MS
+
+Profile:        Plannet-OrganizationAffiliation
+Parent:         OrganizationAffiliation
+Id:             plannet-organizationAffiliation
+Title:          "Plan-net OrganizationAffiliation"
+Description:    "An OrganizationAffiliation..."
+* identifier.extension contains identifier-status  1..* MS
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.type MS
+* identifier.value MS
+* identifier.period MS
+* identifier.assigner MS
+* active MS
+* period MS
+* organization only Reference (Plannet-Organization)
+* participatingOrganization only Reference (Plannet-Organization)
+* network only Reference (Plannet-Network)
+* code MS
+* specialty MS
+* location only Reference (Plannet-Location)
+* healthcareService only Reference (Plannet-HealthcareService)
+* telecom MS
+* telecom.system MS
+* telecom.value MS
+* telecom.rank MS
+* telecom.use MS
+* telecom.period MS
+* endpoint MS
+
+
+
 
 Profile:        Plannet-Practitioner
 Parent:         USCorePractitioner
@@ -137,8 +385,8 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 
 Profile:        Plannet-PractitionerRole
 Parent:         USCorePractitionerRole
-Id:             plannet-practitioner
-Title:          "Plan-net Practitioner"
+Id:             plannet-practitionerRole
+Title:          "Plan-net PractitionerRole USCore"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * extension contains
    newpatients 0..* MS and
@@ -185,8 +433,8 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 
 Profile:        Plannet-PractitionerRole-R4
 Parent:         PractitionerRole
-Id:             plannet-practitioner
-Title:          "Plan-net Practitioner"
+Id:             plannet-practitionerRole-R4
+Title:          "Plan-net PractitionerRole R4"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * extension contains
    newpatients 0..* MS and
@@ -241,6 +489,13 @@ Title: "Via Intermediary"
 Description: "Via Intermediary"
 * value[x] only Reference
 * valueReference MS
-* valueReference only Reference(Plannet-Organization) // , Plannet-PractitionerRole, Plannet-OrganizationAffiliation, Plannet-Location)
+* valueReference only Reference(Plannet-Organization | Plannet-PractitionerRole | Plannet-OrganizationAffiliation | Plannet-Location) 
 
 
+Extension: LocationReference
+Id: location-reference
+Title: "Location Reference"
+Description: "Location Reference"
+* value[x] only Reference
+* valueReference MS
+* valueReference only Reference(Plannet-Location) 
