@@ -15,7 +15,7 @@ Alias:   practitioner-qualification = http://hl7.org/fhir/uv/vhdir/StructureDefi
 Alias:   VhDirVSUseCaseType = http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-usecasetype
 Alias:   identifier-status = http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status
 // Other Aliases
-Alias:   ORGTYPE = http://hl7.org/fhir/ValueSet/organization-type
+Alias:   ORGTYPE = http://terminology.hl7.org/CodeSystem/organization-type
 Alias:   geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
 Alias:   us-core-provider-role-vs = http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role
 Alias:   us-core-provider-specialty-vs = http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty
