@@ -1,4 +1,13 @@
-Alias: SCT = http://snomed.info/sct
+Alias: $SCT = http://snomed.info/sct
+Alias: $ContactPointAvailableTimeExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime
+Alias: $IdentifierStatusExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status
+Alias: $AccessibilityExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility
+Alias: $NewPatientProfileExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile
+Alias: $OrgDescriptionExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description
+Alias: $CommunicationProficiencyExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency
+Alias: $GeolocationExtension = http://hl7.org/fhir/StructureDefinition/geolocation
+Alias: $PractitionerQualificationExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification
+Alias: $QualificationExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification
 
 Profile:        PlannetEndpoint
 Parent:         Endpoint
@@ -6,7 +15,7 @@ Id:             plannet-endpoint
 Title:          "Plan-net Endpoint"
 Description:    "An endpoint..."
 * identifier.extension contains 
-    endpoint-usecase  0..* MS 
+    EndpointUsecase named endpoint-usecase 0..*
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -21,8 +30,8 @@ Description:    "An endpoint..."
 * managingOrganization MS
 * contact MS
 *  contact.extension contains
-       contactpoint-availabletime 0..* MS and
-       via-intermediary 0..* MS
+       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ViaIntermediary named via-intermediary 0..* MS
 * contact.value MS
 * contact.system MS
 * contact.use MS
@@ -43,8 +52,8 @@ Id:             plannet-healthcareService
 Title:          "Plan-net HealthcareService"
 Description:    "A healthcareService..."
 * extension contains
-    newpatients 1..1 MS
-* identifier.extension contains identifier-status  1..* MS
+    NewPatients named newpatients 1..1 MS
+* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -66,8 +75,8 @@ Description:    "A healthcareService..."
 * photo MS
 * telecom MS
 * telecom.extension contains
-       contactpoint-availabletime 0..* MS and
-       via-intermediary 0..* MS
+       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ViaIntermediary named via-intermediary 0..* MS
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
@@ -101,7 +110,7 @@ Parent:         InsurancePlan
 Id:             plannet-insuranceplan
 Title:          "Plan-net InsurancePlan"
 Description:    "An InsurancePlan..."
-* identifier.extension contains identifier-status  1..* MS
+* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -130,8 +139,8 @@ Description:    "An InsurancePlan..."
 * contact.name.period MS
 * contact.telecom MS
 * contact.telecom.extension contains
-       contactpoint-availabletime 0..* MS and
-       via-intermediary 0..* MS
+       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ViaIntermediary named via-intermediary 0..* MS
 * contact.telecom.value MS
 * contact.telecom.system MS
 * contact.telecom.use MS
@@ -146,10 +155,10 @@ Id:             plannet-location
 Title:          "Plan-net Location"
 Description:    "A Location... "
 * extension contains
-    newpatients 0..* MS and
-    accessibility 0..* MS and 
-    newpatientprofile 0..* MS
-* identifier.extension contains identifier-status  1..* MS
+    NewPatients named newpatients 0..* MS and
+    $AccessibilityExtension named accessibility 0..* MS and 
+    $NewPatientProfileExtension named newpatientprofile 0..* MS
+* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -164,8 +173,8 @@ Description:    "A Location... "
 * type MS
 * telecom MS
 * telecom.extension contains
-       contactpoint-availabletime 0..* MS and
-       via-intermediary 0..* MS
+       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ViaIntermediary named via-intermediary 0..* MS
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
@@ -193,8 +202,8 @@ Id:             plannet-network
 Title:          "Plan-net Network"
 Description:    "A hnetwork..."
 * extension contains
-    location-reference 0..* MS
-* identifier.extension contains identifier-status  1..* MS
+    LocationReference named location-reference 0..* MS
+* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -222,8 +231,8 @@ Description:    "A hnetwork..."
 * contact.name.period MS
 * contact.telecom MS
 * contact.telecom.extension contains
-       contactpoint-availabletime 0..* MS and
-       via-intermediary 0..* MS
+       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ViaIntermediary named via-intermediary 0..* MS
 * contact.telecom.value 1..1 MS
 * contact.telecom.system 1..1 MS
 * contact.telecom.use MS
@@ -240,9 +249,9 @@ Title:          "Plan-net Organization"
 Description:    "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
 Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.nae.text"
 * extension contains
-   qualification 0..* MS and
-   org-description 0..1 MS
-* identifier.extension contains identifier-status  1..* MS
+   $QualificationExtension named qualification 0..* MS and
+   $OrgDescriptionExtension named org-description 0..1 MS
+* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -256,7 +265,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * partOf MS  
 * partOf only Reference(PlannetOrganization)
 * address MS
-* address.extension contains geolocation 0..* MS
+* address.extension contains $GeolocationExtension named geolocation 0..* MS
 * address.use MS
 * address.type MS
 * address.text MS
@@ -269,15 +278,15 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * contact MS
 * contact.telecom MS
 * contact.telecom.extension contains
-       contactpoint-availabletime 0..* MS and
-       via-intermediary 0..* MS
+       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ViaIntermediary named via-intermediary 0..* MS
 * contact.telecom.value MS
 * contact.telecom.system MS
 * contact.telecom.use MS
 * telecom MS
 * telecom.extension contains
-       contactpoint-availabletime 0..* MS and
-       via-intermediary 0..* MS
+       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ViaIntermediary named via-intermediary 0..* MS
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
@@ -290,7 +299,7 @@ Parent:         OrganizationAffiliation
 Id:             plannet-organizationAffiliation
 Title:          "Plan-net OrganizationAffiliation"
 Description:    "An OrganizationAffiliation..."
-* identifier.extension contains identifier-status  1..* MS
+* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -324,9 +333,9 @@ Id:             plannet-practitioner
 Title:          "Plan-net Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * extension contains
-   accessibility 0..1 MS and
-   communication-proficiency 0..1 MS
-* identifier.extension contains identifier-status  1..* MS
+   $AccessibilityExtension named accessibility 0..1 MS and
+   $CommunicationProficiencyExtension named communication-proficiency 0..1 MS
+* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -344,7 +353,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * name.suffix MS
 * name.period MS
 * address MS
-* address.extension contains geolocation 0..* MS
+* address.extension contains $GeolocationExtension named geolocation 0..* MS
 * address.use MS
 * address.type MS
 * address.text MS
@@ -356,8 +365,8 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * address.period MS
 * telecom MS
 * telecom.extension contains
-    contactpoint-availabletime 0..* MS and
-    via-intermediary 0..* MS
+    $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+    ViaIntermediary named via-intermediary 0..* MS
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
@@ -368,7 +377,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * photo MS
 * qualification MS
 * qualification.extension contains 
-    practitioner-qualification 0..1 MS
+    $PractitionerQualificationExtension named practitioner-qualification 0..1 MS
 * qualification.identifier MS
 * qualification.identifier.use MS
 * qualification.identifier.type MS
@@ -389,11 +398,11 @@ Id:             plannet-practitionerRole
 Title:          "Plan-net PractitionerRole USCore"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * extension contains
-   newpatients 0..* MS and
-   newpatientprofile 0..* MS and
-   network-reference 0..* MS and
-   qualification 0..* MS
-* identifier.extension contains identifier-status  1..* MS
+   NewPatients named newpatients 0..* MS and
+   $NewPatientProfileExtension named newpatientprofile 0..* MS and
+   NetworkReference named network-reference 0..* MS and
+   $QualificationExtension named qualification 0..* MS
+* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -413,8 +422,8 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * healthcareService only Reference(PlannetHealthcareService)
 * telecom MS
 * telecom.extension contains
-    contactpoint-availabletime 0..* MS and
-    via-intermediary 0..* MS
+    $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+    ViaIntermediary named via-intermediary 0..* MS
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
@@ -437,11 +446,11 @@ Id:             plannet-practitionerRole-r4
 Title:          "Plan-net PractitionerRole R4"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * extension contains
-   newpatients 0..* MS and
-   newpatientprofile 0..* MS and
-   network-reference 0..* MS and
-   qualification 0..* MS
-* identifier.extension contains identifier-status  1..* MS
+   NewPatients named newpatients 0..* MS and
+   $NewPatientProfileExtension named newpatientprofile 0..* MS and
+   NetworkReference named network-reference 0..* MS and
+   $QualificationExtension named qualification 0..* MS
+* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -464,8 +473,8 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * healthcareService only Reference(PlannetHealthcareService)
 * telecom MS
 * telecom.extension contains
-    contactpoint-availabletime 0..* MS and
-    via-intermediary 0..* MS
+    $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+    ViaIntermediary named via-intermediary 0..* MS
 * telecom.system 1..1 MS
 * telecom.value 1..1 MS
 * telecom.rank MS
@@ -488,8 +497,8 @@ Title: "Endpoint Usecase"
 Description: "Endpoint Usecase"
 * value[x] 0..0
 * extension contains
-   Type 1..1 MS and
-   Standard 0..1 MS 
+   Type named Type 1..1 MS and
+   Standard named Standard 0..1 MS 
 
 Extension: Type
 Id: type
@@ -539,8 +548,8 @@ Title: "New Patients"
 Description: "NewPatients"
 * value[x] 0..0
 * extension contains
-   AcceptingPatients 1..1 MS and
-   FromNetwork 0..1 MS 
+   AcceptingPatients named AcceptingPatients 1..1 MS and
+   FromNetwork named FromNetwork 0..1 MS 
 
 Extension: AcceptingPatients
 Id:  acceptingPatients
