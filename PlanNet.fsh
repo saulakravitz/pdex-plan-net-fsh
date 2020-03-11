@@ -480,7 +480,6 @@ Extension: ViaIntermediary
 Id: via-intermediary
 Title: "Via Intermediary"
 Description: "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization"
-Value: PractitionerRole or Organization or OrganizationAffiliation or Location
 * value[x] only Reference
 * valueReference MS
 * valueReference only Reference(PlannetOrganization | PlannetPractitionerRole | PlannetOrganizationAffiliation | PlannetLocation) 
