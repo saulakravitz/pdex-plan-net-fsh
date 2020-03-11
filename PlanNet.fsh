@@ -32,6 +32,7 @@ Description:    "The technical details of an endpoint that can be used for elect
 *  contact.extension contains
        $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
+* contact.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.value MS
 * contact.system MS
 * contact.use MS
@@ -53,6 +54,7 @@ Title:          "Plan-net HealthcareService"
 Description:    "The HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
 * extension contains
     NewPatients named newpatients 1..1 MS
+* extension[newpatients] ^short = "New Patients"
 * identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
@@ -77,6 +79,7 @@ Description:    "The HealthCareService  resource typically describes services of
 * telecom.extension contains
        $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
+* telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
@@ -143,6 +146,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * contact.telecom.extension contains
        $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
+* contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.value MS
 * contact.telecom.system MS
 * contact.telecom.use MS
@@ -160,6 +164,7 @@ Description:    "A Location is the physical place where healthcare services are 
     NewPatients named newpatients 0..* MS and
     $AccessibilityExtension named accessibility 0..* MS and 
     $NewPatientProfileExtension named newpatientprofile 0..* MS
+* extension[newpatients] ^short = "New Patients"
 * identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
@@ -177,6 +182,7 @@ Description:    "A Location is the physical place where healthcare services are 
 * telecom.extension contains
        $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
+* telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
@@ -210,6 +216,7 @@ In the PlanNet IG, individuals and organizations are represented as participants
 Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.nae.text"
 * extension contains
     LocationReference named location-reference 0..* MS
+* extension[location-reference] ^short = "Location Reference"
 * identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
@@ -240,6 +247,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * contact.telecom.extension contains
        $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
+* contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.value 1..1 MS
 * contact.telecom.system 1..1 MS
 * contact.telecom.use MS
@@ -287,6 +295,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * contact.telecom.extension contains
        $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
+* contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.value MS
 * contact.telecom.system MS
 * contact.telecom.use MS
@@ -294,6 +303,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * telecom.extension contains
        $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
+* telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
@@ -374,6 +384,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * telecom.extension contains
     $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
     ViaIntermediary named via-intermediary 0..* MS
+* telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
@@ -409,6 +420,8 @@ Description:    "PractitionerRole describes the role a practitioner plays at an 
    $NewPatientProfileExtension named newpatientprofile 0..* MS and
    NetworkReference named network-reference 0..* MS and
    $QualificationExtension named qualification 0..* MS
+* extension[newpatients] ^short = "New Patients"
+* extension[network-reference] ^short = "NetworkReference"
 * identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
@@ -434,6 +447,7 @@ Description:    "PractitionerRole describes the role a practitioner plays at an 
 * telecom.extension contains
     $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
     ViaIntermediary named via-intermediary 0..* MS
+* telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system 1..1 MS
 * telecom.value 1..1 MS
 * telecom.rank MS
