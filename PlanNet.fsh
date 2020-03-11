@@ -13,7 +13,7 @@ Profile:        PlannetEndpoint
 Parent:         Endpoint
 Id:             plannet-endpoint 
 Title:          "Plan-net Endpoint"
-Description:    "An endpoint..."
+Description:    "The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information."
 * identifier.extension contains 
     EndpointUsecase named endpoint-usecase 0..*
 * identifier.id MS
@@ -50,7 +50,7 @@ Profile:        PlannetHealthcareService
 Parent:         HealthcareService
 Id:             plannet-healthcareService
 Title:          "Plan-net HealthcareService"
-Description:    "A healthcareService..."
+Description:    "The HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
 * extension contains
     NewPatients named newpatients 1..1 MS
 * identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
@@ -109,7 +109,9 @@ Profile:        PlannetInsurancePlan
 Parent:         InsurancePlan
 Id:             plannet-insuranceplan
 Title:          "Plan-net InsurancePlan"
-Description:    "An InsurancePlan..."
+Description:    "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).
+
+InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."
 * identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
@@ -153,7 +155,7 @@ Profile:        PlannetLocation
 Parent:         USCoreLocation
 Id:             plannet-location
 Title:          "Plan-net Location"
-Description:    "A Location... "
+Description:    "A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."
 * extension contains
     NewPatients named newpatients 0..* MS and
     $AccessibilityExtension named accessibility 0..* MS and 
@@ -200,7 +202,12 @@ Profile:        PlannetNetwork
 Parent:         Organization 
 Id:             plannet-network
 Title:          "Plan-net Network"
-Description:    "A hnetwork..."
+Description:    "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
+
+In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.
+
+
+Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.nae.text"
 * extension contains
     LocationReference named location-reference 0..* MS
 * identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
@@ -247,7 +254,7 @@ Parent:         USCoreOrganization
 Id:             plannet-organization
 Title:          "Plan-net Organization"
 Description:    "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
-Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.nae.text"
+Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
 * extension contains
    $QualificationExtension named qualification 0..* MS and
    $OrgDescriptionExtension named org-description 0..1 MS
@@ -298,7 +305,7 @@ Profile:        PlannetOrganizationAffiliation
 Parent:         OrganizationAffiliation
 Id:             plannet-organizationAffiliation
 Title:          "Plan-net OrganizationAffiliation"
-Description:    "An OrganizationAffiliation..."
+Description:    "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
 * identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
@@ -393,58 +400,10 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 
 
 Profile:        PlannetPractitionerRole
-Parent:         USCorePractitionerRole
-Id:             plannet-practitionerRole
-Title:          "Plan-net PractitionerRole USCore"
-Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
-* extension contains
-   NewPatients named newpatients 0..* MS and
-   $NewPatientProfileExtension named newpatientprofile 0..* MS and
-   NetworkReference named network-reference 0..* MS and
-   $QualificationExtension named qualification 0..* MS
-* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.type MS
-* identifier.value MS
-* identifier.period MS
-* identifier.assigner MS
-* active 1..1 MS
-* period MS 
-* practitioner only Reference(PlannetPractitioner)
-* organization only Reference(PlannetOrganization) 
-* practitioner 1..1  MS
-* organization 1..1  MS 
-* code 1..1 MS
-* location only Reference(PlannetLocation) 
-* location MS 
-* healthcareService only Reference(PlannetHealthcareService)
-* telecom MS
-* telecom.extension contains
-    $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
-    ViaIntermediary named via-intermediary 0..* MS
-* telecom.system MS
-* telecom.value MS
-* telecom.rank MS
-* telecom.use MS
-* telecom.period MS
-* availableTime MS
-* availableTime.daysOfWeek MS
-* availableTime.allDay MS
-* availableTime.availableStartTime MS
-* availableTime.availableEndTime MS
-* notAvailable MS
-* notAvailable.description MS
-* notAvailable.during MS
-* endpoint only Reference(PlannetEndpoint) 
-* endpoint 0..* MS 
-
-Profile:        PlannetPractitionerRoleR4
 Parent:         PractitionerRole
-Id:             plannet-practitionerRole-r4
-Title:          "Plan-net PractitionerRole R4"
-Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
+Id:             plannet-practitionerRole
+Title:          "Plan-net PractitionerRole"
+Description:    "PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information."
 * extension contains
    NewPatients named newpatients 0..* MS and
    $NewPatientProfileExtension named newpatientprofile 0..* MS and
@@ -494,7 +453,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 Extension: EndpointUsecase
 Id: endpoint-usecase
 Title: "Endpoint Usecase"
-Description: "Endpoint Usecase"
+Description: "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"
 * value[x] 0..0
 * extension contains
    Type named Type 1..1 MS and
@@ -503,7 +462,7 @@ Description: "Endpoint Usecase"
 Extension: Type
 Id: type
 Title: "Endpoint Usecase Type"
-Description: "Endpoint Usecase Type"
+Description: "An indication of the type of services supported by the endpoint"
 * value[x] only  CodeableConcept 
 * valueCodeableConcept MS
 * valueCodeableConcept from http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase (extensible)
@@ -511,7 +470,7 @@ Description: "Endpoint Usecase Type"
 
 Extension: Standard
 Id: standard
-Title: "standard"
+Title: "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
 Description: "standard"
 * value[x] only uri 
 * valueUri MS
@@ -520,7 +479,8 @@ Description: "standard"
 Extension: ViaIntermediary
 Id: via-intermediary
 Title: "Via Intermediary"
-Description: "Via Intermediary"
+Description: "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization"
+Value: PractitionerRole or Organization or OrganizationAffiliation or Location
 * value[x] only Reference
 * valueReference MS
 * valueReference only Reference(PlannetOrganization | PlannetPractitionerRole | PlannetOrganizationAffiliation | PlannetLocation) 
@@ -529,7 +489,7 @@ Description: "Via Intermediary"
 Extension: LocationReference
 Id: location-reference
 Title: "Location Reference"
-Description: "Location Reference"
+Description: "A reference to a Location resource (plannet-Location) defining the coverage area of a health insurance provider network"
 * value[x] only Reference
 * valueReference MS
 * valueReference only Reference(PlannetLocation) 
@@ -537,7 +497,7 @@ Description: "Location Reference"
 Extension: NetworkReference
 Id: network-reference
 Title: "Network Reference"
-Description: "Network Reference"
+Description: "A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role"
 * value[x] only Reference
 * valueReference MS
 * valueReference only Reference(PlannetNetwork) 
@@ -545,7 +505,7 @@ Description: "Network Reference"
 Extension: NewPatients
 Id: newpatients
 Title: "New Patients"
-Description: "NewPatients"
+Description: "New Patients indicates whether the practitioner is accepting new patients in their role"
 * value[x] 0..0
 * extension contains
    AcceptingPatients named AcceptingPatients 1..1 MS and
@@ -554,14 +514,14 @@ Description: "NewPatients"
 Extension: AcceptingPatients
 Id:  acceptingPatients
 Title: "Accepting Patients"
-Description: "Boolean whether accepting patients in associated network"
+Description: "Boolean indicating whether accepting patients in associated network"
 * value[x] only boolean
 * valueBoolean MS 
 
 Extension: FromNetwork
 Id: fromNetwork
-Title: "Network Reference"
-Description: "Network Reference"
+Title: "From Network"
+Description: "A reference to a healthcare provider insurance networks (plannet-Network) associated with a new patient"
 * value[x] only Reference
 * valueReference MS
 * valueReference only Reference(PlannetNetwork) 
