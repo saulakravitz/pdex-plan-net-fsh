@@ -197,9 +197,14 @@ Any actor acting as a Health Plan API actor in this IG **SHALL**:
 This IG was developed by the MITRE Corporation under the direction of the authors using the [Clinical Information Modeling and Profiling Language (CIMPL)](http://standardhealthrecord.org/cimpl-doc/), a free, open source toolchain from the MITRE Corporation.
 
 # Authors
+|----------------------+----------------------------------------|
 |   Name               |   E-mail                               |
 |:--------------------:|:--------------------------------------:|
 | Dan Chaput           | daniel.chaput@hhs.gov                  |
+|----------------------+----------------------------------------|
 | Alex Kontur          | alex.kontur@hhs.gov                    |
+|----------------------+----------------------------------------|
 | Brian Postlethwaite  | brian.postlethwaite@health.telstra.com |
+|----------------------+----------------------------------------|
 | Bob Dieterle         | rdieterle@enablecare.us                |
+|======================|========================================|

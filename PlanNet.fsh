@@ -1,21 +1,13 @@
-Alias: $SCT = http://snomed.info/sct
-Alias: $ContactPointAvailableTimeExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime
-Alias: $IdentifierStatusExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status
-Alias: $AccessibilityExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility
-Alias: $NewPatientProfileExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile
-Alias: $OrgDescriptionExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description
-Alias: $CommunicationProficiencyExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency
-Alias: $GeolocationExtension = http://hl7.org/fhir/StructureDefinition/geolocation
-Alias: $PractitionerQualificationExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification
-Alias: $QualificationExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification
+
 
 Profile:        PlannetEndpoint
 Parent:         Endpoint
-Id:             plannet-endpoint 
+Id:             plannet-Endpoint 
 Title:          "Plan-net Endpoint"
 Description:    "The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information."
 * identifier.extension contains 
     EndpointUsecase named endpoint-usecase 0..*
+* identifier.extension[endpoint-usecase] ^short = "Endpoint Usecase"
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -49,7 +41,7 @@ Description:    "The technical details of an endpoint that can be used for elect
 
 Profile:        PlannetHealthcareService
 Parent:         HealthcareService
-Id:             plannet-healthcareService
+Id:             plannet-HealthcareService
 Title:          "Plan-net HealthcareService"
 Description:    "The HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
 * extension contains
@@ -110,7 +102,7 @@ Description:    "The HealthCareService  resource typically describes services of
 
 Profile:        PlannetInsurancePlan
 Parent:         InsurancePlan
-Id:             plannet-insuranceplan
+Id:             plannet-Insuranceplan
 Title:          "Plan-net InsurancePlan"
 Description:    "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).
 
@@ -156,8 +148,8 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 
 
 Profile:        PlannetLocation
-Parent:         USCoreLocation
-Id:             plannet-location
+Parent:         $USCoreLocation
+Id:             plannet-Location
 Title:          "Plan-net Location"
 Description:    "A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."
 * extension contains
@@ -206,7 +198,7 @@ Description:    "A Location is the physical place where healthcare services are 
 
 Profile:        PlannetNetwork
 Parent:         Organization 
-Id:             plannet-network
+Id:             plannet-Network
 Title:          "Plan-net Network"
 Description:    "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
 
@@ -227,7 +219,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * identifier.assigner MS
 * active 1..1 MS
 * type MS
-* type = ORGTYPE#pay "payer"
+* type = $ORGTYPE#pay "payer"
 * name MS
 * alias MS
 * telecom 0..0
@@ -258,8 +250,8 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 
 
 Profile:        PlannetOrganization
-Parent:         USCoreOrganization
-Id:             plannet-organization
+Parent:         $USCoreOrganization
+Id:             plannet-Organization
 Title:          "Plan-net Organization"
 Description:    "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
 Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
@@ -313,7 +305,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 
 Profile:        PlannetOrganizationAffiliation
 Parent:         OrganizationAffiliation
-Id:             plannet-organizationAffiliation
+Id:             plannet-OrganizationAffiliation
 Title:          "Plan-net OrganizationAffiliation"
 Description:    "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
 * identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
@@ -345,8 +337,8 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 
 
 Profile:        PlannetPractitioner
-Parent:         USCorePractitioner
-Id:             plannet-practitioner
+Parent:         $USCorePractitioner
+Id:             plannet-Practitioner
 Title:          "Plan-net Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * extension contains
@@ -412,7 +404,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 
 Profile:        PlannetPractitionerRole
 Parent:         PractitionerRole
-Id:             plannet-practitionerRole
+Id:             plannet-PractitionerRole
 Title:          "Plan-net PractitionerRole"
 Description:    "PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information."
 * extension contains
@@ -436,9 +428,9 @@ Description:    "PractitionerRole describes the role a practitioner plays at an 
 * organization only Reference(PlannetOrganization)         // 1..1 from USCore
 * practitioner 0..1  MS   // 1..1 from USCore
 * organization 1..1   MS        // 1..1 from USCore
-* code  from  us-core-provider-role-vs (required) 
+* code  from  $us-core-provider-role-vs (required) 
 * code 1..1  MS
-* specialty from  us-core-provider-specialty-vs (required)
+* specialty from  $us-core-provider-specialty-vs (required)
 * specialty 0..1 MS
 * location only Reference(PlannetLocation)
 * location MS
