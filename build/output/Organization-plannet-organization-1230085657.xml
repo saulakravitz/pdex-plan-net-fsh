@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="plannet-organization-1230085657"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: plannet-organization-1230085657</p><p><b>meta</b>: </p><p><b>identifier</b>: NPI = 1230085657 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: BAYSIDE ENDOSCOPY, LLC</p><p><b>telecom</b>: ph: 735-380-1096 x267(WORK), fax: 1-265-938-5709 x280(WORK)</p><p><b>address</b>: 33 STANIFORD ST, PROVIDENCE, RI 029053105(WORK)</p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Purpose</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td>Administrative <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/contactentity-type code 'ADMIN' = 'Administrative', given as 'Administrative'})</span></td><td>Shane Goyette(OFFICIAL)</td><td>ph: 735-380-1096 x267(WORK)</td><td>33 STANIFORD ST, PROVIDENCE, RI 029053105(WORK)</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="NPI"/>
+        <display value="Provider number"/>
+        <userSelected value="true"/>
+      </coding>
+      <text value="NPI"/>
+    </type>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="1230085657"/>
+    <assigner>
+      <display value="Centers for Medicare and Medicaid Services"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+    </coding>
+    <text value="Healthcare Provider"/>
+  </type>
+  <name value="BAYSIDE ENDOSCOPY, LLC"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="735-380-1096 x267"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="1-265-938-5709 x280"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+      <extension url="latitude">
+        <valueDecimal value="41.809006"/>
+      </extension>
+      <extension url="longitude">
+        <valueDecimal value="-71.41177"/>
+      </extension>
+    </extension>
+    <use value="work"/>
+    <type value="both"/>
+    <text value="33 STANIFORD ST, PROVIDENCE, RI 029053105"/>
+    <line value="33 STANIFORD ST"/>
+    <city value="PROVIDENCE"/>
+    <state value="RI"/>
+    <postalCode value="029053105"/>
+    <country value="USA"/>
+  </address>
+  <contact>
+    <purpose>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+        <code value="ADMIN"/>
+        <display value="Administrative"/>
+      </coding>
+    </purpose>
+    <name>
+      <use value="official"/>
+      <text value="Shane Goyette"/>
+      <family value="Goyette"/>
+      <given value="Shane"/>
+    </name>
+    <telecom>
+      <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+        <extension url="daysOfWeek">
+          <valueCode value="mon"/>
+        </extension>
+        <extension url="daysOfWeek">
+          <valueCode value="tue"/>
+        </extension>
+        <extension url="daysOfWeek">
+          <valueCode value="wed"/>
+        </extension>
+        <extension url="daysOfWeek">
+          <valueCode value="thu"/>
+        </extension>
+        <extension url="daysOfWeek">
+          <valueCode value="fri"/>
+        </extension>
+        <extension url="availableStartTime">
+          <valueTime value="07:00:00"/>
+        </extension>
+        <extension url="availableEndTime">
+          <valueTime value="18:00:00"/>
+        </extension>
+      </extension>
+      <system value="phone"/>
+      <value value="735-380-1096 x267"/>
+      <use value="work"/>
+    </telecom>
+    <address>
+      <use value="work"/>
+      <type value="both"/>
+      <text value="33 STANIFORD ST, PROVIDENCE, RI 029053105"/>
+      <line value="33 STANIFORD ST"/>
+      <city value="PROVIDENCE"/>
+      <state value="RI"/>
+      <postalCode value="029053105"/>
+      <country value="USA"/>
+    </address>
+  </contact>
+</Organization>

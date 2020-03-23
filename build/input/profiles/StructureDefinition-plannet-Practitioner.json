@@ -1,0 +1,373 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "plannet-Practitioner",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner",
+  "version": "0.1.0",
+  "name": "PlannetPractitioner",
+  "title": "Plan-net Practitioner",
+  "status": "active",
+  "description": "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.extension",
+        "path": "Practitioner.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Practitioner.extension:accessibility",
+        "path": "Practitioner.extension",
+        "sliceName": "accessibility",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.extension:communication-proficiency",
+        "path": "Practitioner.extension",
+        "sliceName": "communication-proficiency",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.id",
+        "path": "Practitioner.identifier.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.use",
+        "path": "Practitioner.identifier.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.type",
+        "path": "Practitioner.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.period",
+        "path": "Practitioner.identifier.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.assigner",
+        "path": "Practitioner.identifier.assigner",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.use",
+        "path": "Practitioner.name.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.text",
+        "path": "Practitioner.name.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.given",
+        "path": "Practitioner.name.given",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.prefix",
+        "path": "Practitioner.name.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.suffix",
+        "path": "Practitioner.name.suffix",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.period",
+        "path": "Practitioner.name.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.extension:contactpoint-availabletime",
+        "path": "Practitioner.telecom.extension",
+        "sliceName": "contactpoint-availabletime",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.extension:via-intermediary",
+        "path": "Practitioner.telecom.extension",
+        "sliceName": "via-intermediary",
+        "short": "Via Intermediary",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/via-intermediary"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.system",
+        "path": "Practitioner.telecom.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.value",
+        "path": "Practitioner.telecom.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.use",
+        "path": "Practitioner.telecom.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.rank",
+        "path": "Practitioner.telecom.rank",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.period",
+        "path": "Practitioner.telecom.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.extension:geolocation",
+        "path": "Practitioner.address.extension",
+        "sliceName": "geolocation",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/geolocation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.use",
+        "path": "Practitioner.address.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.type",
+        "path": "Practitioner.address.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.text",
+        "path": "Practitioner.address.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.line",
+        "path": "Practitioner.address.line",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.city",
+        "path": "Practitioner.address.city",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.state",
+        "path": "Practitioner.address.state",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.postalCode",
+        "path": "Practitioner.address.postalCode",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.country",
+        "path": "Practitioner.address.country",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.period",
+        "path": "Practitioner.address.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.gender",
+        "path": "Practitioner.gender",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.birthDate",
+        "path": "Practitioner.birthDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.photo",
+        "path": "Practitioner.photo",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.extension",
+        "path": "Practitioner.qualification.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Practitioner.qualification.extension:practitioner-qualification",
+        "path": "Practitioner.qualification.extension",
+        "sliceName": "practitioner-qualification",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier",
+        "path": "Practitioner.qualification.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.use",
+        "path": "Practitioner.qualification.identifier.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.type",
+        "path": "Practitioner.qualification.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.system",
+        "path": "Practitioner.qualification.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.value",
+        "path": "Practitioner.qualification.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.period",
+        "path": "Practitioner.qualification.identifier.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.assigner",
+        "path": "Practitioner.qualification.identifier.assigner",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.code",
+        "path": "Practitioner.qualification.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.period",
+        "path": "Practitioner.qualification.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.issuer",
+        "path": "Practitioner.qualification.issuer",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.communication",
+        "path": "Practitioner.communication",
+        "mustSupport": true
+      }
+    ]
+  }
+}

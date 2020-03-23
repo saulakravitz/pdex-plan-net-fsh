@@ -1,0 +1,63 @@
+{% raw %}<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation">resourceType</a>" : "OrganizationAffiliation",
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.id">id</a>" : "orgrole2",
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: orgrole2&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: member hospital = hosp32 (SECONDARY)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;organization&lt;/b&gt;: &lt;a href=\&quot;Organization-monumentHIE.html\&quot;&gt;Monument Health Information Exchange. Generated Summary: id: monumentHIE; active; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/organization-type other}\&quot;&gt;Health information exchange organization&lt;/span&gt;; name: Monument Health Information Exchange&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;participatingOrganization&lt;/b&gt;: &lt;a href=\&quot;Organization-foundingfathers.html\&quot;&gt;Founding Fathers Memorial Hospital. Generated Summary: id: foundingfathers; NPI = 1345678910 (OFFICIAL); active; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\&quot;&gt;Hospital&lt;/span&gt;; name: Founding Fathers Memorial Hospital; alias: DC Memorial Hospital; ph: 202-101-0123&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Hospital member &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://hl7.org/fhir/organization-role code 'member' = 'Member', given as 'Member'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;endpoint&lt;/b&gt;: Founding Fathers Memorial Hospital HIE endpoint&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a>" : "secondary",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "NIIP",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "National Insurance Payor Identifier (Payor)",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a>" : true
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "member hospital"
+      },
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://example.org/www.monumentHIE.com",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "hosp32",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/monumentHIE",
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Monument Health Information Exchange"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.active">active</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.organization">organization</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/monumentHIE",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Monument Health Information Exchange"
+  },
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.participatingOrganization">participatingOrganization</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/foundingfathers",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Founding Fathers Memorial Hospital"
+  },
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.code">code</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/organization-role",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "member",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Member"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Hospital member"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/organizationaffiliation.html#OrganizationAffiliation.endpoint">endpoint</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Founding Fathers Memorial Hospital HIE endpoint"
+    }
+  ]
+}</pre>
+{% endraw %}

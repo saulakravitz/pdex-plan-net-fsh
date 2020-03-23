@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "location-contains",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: location-contains</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-contains\">http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-contains</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: Plannet_sp_location_contains</p><p><b>status</b>: active</p><p><b>date</b>: Aug 18, 2018 8:00:00 PM</p><p><b>publisher</b>: Saul Kravitz</p><p><b>contact</b>: </p><p><b>description</b>: Select locations that contain the specified co-ordinates</p><p><b>code</b>: contains</p><p><b>base</b>: Location</p><p><b>type</b>: special</p><p><b>expression</b>: Location.extension.where(url='http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div>"
+  },
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-contains",
+  "version": "0.1.0",
+  "name": "Plannet_sp_location_contains",
+  "status": "active",
+  "date": "2018-08-18T20:00:00-04:00",
+  "publisher": "Saul Kravitz",
+  "contact": [
+    {
+      "name": "Saul Kravitz",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "saul@mitre.org"
+        }
+      ]
+    }
+  ],
+  "description": "Select locations that contain the specified co-ordinates",
+  "code": "contains",
+  "base": [
+    "Location"
+  ],
+  "type": "special",
+  "expression": "Location.extension.where(url='http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')",
+  "multipleOr": true,
+  "multipleAnd": true
+}

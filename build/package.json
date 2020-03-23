@@ -1,0 +1,29 @@
+{
+  "name": "hl7.fhir.us.davinci-pdex-plan-net",
+  "version": "0.1.0",
+  "canonical": "http://hl7.org/fhir/us/davinci-pdex-plan-net",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net",
+  "title": "DaVinci PDEX Plan Net",
+  "description": "Davinci PDEX Plan Net -- FSH version",
+  "releaselabel": "CI build",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.us.core": "3.1.0",
+    "hl7.fhir.uv.vhdir": "current"
+  },
+  "keywords": [
+    "Plan-Net",
+    "Provider Directory",
+    "DaVinci",
+    "PDEX"
+  ],
+  "language": "en",
+  "author": "Saul Kravitz",
+  "maintainers": [
+    {
+      "name": "Saul Kravitz",
+      "email": "saul@mitre.org"
+    }
+  ],
+  "license": "CC0-1.0"
+}

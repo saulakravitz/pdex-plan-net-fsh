@@ -1,0 +1,154 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Location/plannet-location-1230188327> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "plannet-location-1230188327"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: plannet-location-1230188327</p><p><b>meta</b>: </p><p><b>identifier</b>: main campus (SECONDARY)</p><p><b>status</b>: active</p><p><b>name</b>: SOUNDVIEW ORTHOPAEDIC ASSOC. LLP</p><p><b>description</b>: Main campus of SOUNDVIEW ORTHOPAEDIC ASSOC. LLP</p><p><b>telecom</b>: ph: 743.125.4429 x2376(WORK), fax: 779-475-4330 x580(WORK)</p><p><b>address</b>: 101 AIRPORT RD, WESTERLY, RI 028913432(WORK)</p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-71.81142</td><td>41.349716</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization/plannet-organization-1230188327\">SOUNDVIEW ORTHOPAEDIC ASSOC. LLP</a></p><h3>HoursOfOperations</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>mon</td><td>true</td></tr></table><p><b>availabilityExceptions</b>: visiting hours from 6:00 am - 10:00 pm</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility" ];
+         fhir:Coding.code [ fhir:value "handiaccess" ];
+         fhir:Coding.display [ fhir:value "handicap accessible" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Offers a variety of services and programs for persons with disabilities" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "acceptingPatients" ];
+       fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients" ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile" ];
+     fhir:Extension.valueString [ fhir:value "This location accepts all types of patients" ]
+  ];
+  fhir:Location.identifier [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status" ];
+       fhir:Extension.valueCode [ fhir:value "active" ]
+     ];
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.system [ fhir:value "https://soundview-orthopaedic-assoc-llp.com" ];
+     fhir:Identifier.value [ fhir:value "main campus" ];
+     fhir:Identifier.assigner [
+       fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/plannet-organization-1230188327>;
+       fhir:Reference.reference [ fhir:value "Organization/plannet-organization-1230188327" ];
+       fhir:Reference.display [ fhir:value "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP" ]
+     ]
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.name [ fhir:value "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"];
+  fhir:Location.description [ fhir:value "Main campus of SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"];
+  fhir:Location.telecom [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "allDay" ];
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime" ]
+     ];
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "743.125.4429 x2376" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "allDay" ];
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime" ]
+     ];
+     fhir:ContactPoint.system [ fhir:value "fax" ];
+     fhir:ContactPoint.value [ fhir:value "779-475-4330 x580" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Location.address [
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.text [ fhir:value "101 AIRPORT RD, WESTERLY, RI 028913432" ];
+     fhir:Address.line [
+       fhir:value "101 AIRPORT RD";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "WESTERLY" ];
+     fhir:Address.state [ fhir:value "RI" ];
+     fhir:Address.postalCode [ fhir:value "028913432" ];
+     fhir:Address.country [ fhir:value "USA" ]
+  ];
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "-71.81142"^^xsd:decimal ];
+     fhir:Location.position.latitude [ fhir:value "41.349716"^^xsd:decimal ]
+  ];
+  fhir:Location.managingOrganization [
+     fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/plannet-organization-1230188327>;
+     fhir:Reference.reference [ fhir:value "Organization/plannet-organization-1230188327" ];
+     fhir:Reference.display [ fhir:value "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP" ]
+  ];
+  fhir:Location.hoursOfOperation [
+     fhir:index 0;
+     fhir:Location.hoursOfOperation.daysOfWeek [
+       fhir:value "mon";
+       fhir:index 0
+     ], [
+       fhir:value "tue";
+       fhir:index 1
+     ], [
+       fhir:value "wed";
+       fhir:index 2
+     ], [
+       fhir:value "thu";
+       fhir:index 3
+     ], [
+       fhir:value "fri";
+       fhir:index 4
+     ], [
+       fhir:value "sat";
+       fhir:index 5
+     ], [
+       fhir:value "sun";
+       fhir:index 6
+     ];
+     fhir:Location.hoursOfOperation.allDay [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:Location.availabilityExceptions [ fhir:value "visiting hours from 6:00 am - 10:00 pm"] .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/plannet-organization-1230188327> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Location/plannet-location-1230188327.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/davinci-pdex-plan-net/Location/plannet-location-1230188327.ttl> .
+
+# -------------------------------------------------------------------------------------
+

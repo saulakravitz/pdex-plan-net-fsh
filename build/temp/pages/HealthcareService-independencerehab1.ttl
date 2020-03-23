@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/HealthcareService/independencerehab1> a fhir:HealthcareService;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "independencerehab1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: independencerehab1</p><p><b>meta</b>: </p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-independencerehab.html\">Independence Rehabilitation Services, Inc.. Generated Summary: id: independencerehab; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Rehabilitation services provider</span>; name: Independence Rehabilitation Services, Inc.</a></p><p><b>category</b>: Specialist Medical <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/service-category code '27' = 'Specialist Medical', given as 'Specialist Medical'})</span></p><p><b>type</b>: Rehabilitation <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/service-type code '576' = 'Rehabilitation', given as 'Rehabilitation'})</span></p><p><b>specialty</b>: Rehabilitation <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '394602003' = 'Rehabilitation - specialty (qualifier value)', given as 'Rehabilitation'})</span></p><p><b>location</b>: <a href=\"Location-loc-ffmh.html\">Founding Fathers Memorial Hospital. Generated Summary: id: loc-ffmh; main campus (SECONDARY); status: active; name: Founding Fathers Memorial Hospital; description: Main campus of Founding Fathers Memorial Hospital; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; ph: 202-101-0123(WORK); <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type si}\">Site</span>; availabilityExceptions: visiting hours from 6:00 am - 10:00 pm</a></p><p><b>name</b>: Independence Rehab - Inpatient rehabilitation services</p><p><b>comment</b>: Provides inpatient medical and vocational rehabilitation services to improve independence and employability of clients</p><p><b>referralMethod</b>: phone <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/service-referral-method code 'phone' = 'Phone', given as 'phone'})</span></p><p><b>appointmentRequired</b>: true</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "acceptingPatients" ];
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "fromNetwork" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/patriotppo>;
+         fhir:Reference.reference [ fhir:value "Organization/patriotppo" ];
+         fhir:Reference.display [ fhir:value "Patriot Preferred Provider Network" ]
+       ]
+     ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients" ]
+  ];
+  fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean];
+  fhir:HealthcareService.providedBy [
+     fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/independencerehab>;
+     fhir:Reference.reference [ fhir:value "Organization/independencerehab" ];
+     fhir:Reference.display [ fhir:value "Independence Rehabilitation Services, Inc." ]
+  ];
+  fhir:HealthcareService.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/service-category" ];
+       fhir:Coding.code [ fhir:value "27" ];
+       fhir:Coding.display [ fhir:value "Specialist Medical" ]
+     ]
+  ];
+  fhir:HealthcareService.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/service-type" ];
+       fhir:Coding.code [ fhir:value "576" ];
+       fhir:Coding.display [ fhir:value "Rehabilitation" ]
+     ]
+  ];
+  fhir:HealthcareService.specialty [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:394602003;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "394602003" ];
+       fhir:Coding.display [ fhir:value "Rehabilitation" ]
+     ]
+  ];
+  fhir:HealthcareService.location [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/Location/loc-ffmh>;
+     fhir:Reference.reference [ fhir:value "Location/loc-ffmh" ];
+     fhir:Reference.display [ fhir:value "Founding Fathers Memorial Hospital" ]
+  ];
+  fhir:HealthcareService.name [ fhir:value "Independence Rehab - Inpatient rehabilitation services"];
+  fhir:HealthcareService.comment [ fhir:value "Provides inpatient medical and vocational rehabilitation services to improve independence and employability of clients"];
+  fhir:HealthcareService.referralMethod [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/service-referral-method" ];
+       fhir:Coding.code [ fhir:value "phone" ];
+       fhir:Coding.display [ fhir:value "phone" ]
+     ]
+  ];
+  fhir:HealthcareService.appointmentRequired [ fhir:value "true"^^xsd:boolean] .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/patriotppo> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/independencerehab> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Location/loc-ffmh> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/HealthcareService/independencerehab1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/davinci-pdex-plan-net/HealthcareService/independencerehab1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,182 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "plannet-OrganizationAffiliation",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation",
+  "version": "0.1.0",
+  "name": "PlannetOrganizationAffiliation",
+  "title": "Plan-net OrganizationAffiliation",
+  "status": "active",
+  "description": "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "OrganizationAffiliation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "OrganizationAffiliation.identifier.id",
+        "path": "OrganizationAffiliation.identifier.id",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.identifier.use",
+        "path": "OrganizationAffiliation.identifier.use",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.identifier.type",
+        "path": "OrganizationAffiliation.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.identifier.system",
+        "path": "OrganizationAffiliation.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.identifier.value",
+        "path": "OrganizationAffiliation.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.identifier.period",
+        "path": "OrganizationAffiliation.identifier.period",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.identifier.assigner",
+        "path": "OrganizationAffiliation.identifier.assigner",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.active",
+        "path": "OrganizationAffiliation.active",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.period",
+        "path": "OrganizationAffiliation.period",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.organization",
+        "path": "OrganizationAffiliation.organization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OrganizationAffiliation.participatingOrganization",
+        "path": "OrganizationAffiliation.participatingOrganization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OrganizationAffiliation.network",
+        "path": "OrganizationAffiliation.network",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OrganizationAffiliation.code",
+        "path": "OrganizationAffiliation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.specialty",
+        "path": "OrganizationAffiliation.specialty",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.location",
+        "path": "OrganizationAffiliation.location",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OrganizationAffiliation.healthcareService",
+        "path": "OrganizationAffiliation.healthcareService",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OrganizationAffiliation.telecom",
+        "path": "OrganizationAffiliation.telecom",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.telecom.system",
+        "path": "OrganizationAffiliation.telecom.system",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.telecom.value",
+        "path": "OrganizationAffiliation.telecom.value",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.telecom.use",
+        "path": "OrganizationAffiliation.telecom.use",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.telecom.rank",
+        "path": "OrganizationAffiliation.telecom.rank",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.telecom.period",
+        "path": "OrganizationAffiliation.telecom.period",
+        "mustSupport": true
+      },
+      {
+        "id": "OrganizationAffiliation.endpoint",
+        "path": "OrganizationAffiliation.endpoint",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="nutrition-healthcareservice-1238863986"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: nutrition-healthcareservice-1238863986</p><p><b>meta</b>: </p><p><b>identifier</b>: Healthcare Service Number = 1238863986-nutrition (SECONDARY)</p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href="Organization/plannet-organization-1238863986">CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN</a></p><p><b>type</b>: Nutrition <span style="background: LightGoldenRodYellow">(Details : {http://cambridge-health-alliance-elder-service-plan/service-types code 'nutrition' = 'nutrition', given as 'Nutrition'})</span></p><p><b>specialty</b>: Nutrition Support <span style="background: LightGoldenRodYellow">(Details : {http://nucc.org/provider-taxonomy code '163WN1003X' = 'Nutrition Support', given as 'Nutrition Support'})</span></p><p><b>location</b>: <a href="Location/plannet-location-1238863986">CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN</a></p><p><b>name</b>: CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN</p><p><b>comment</b>: Nutrition Support</p><p><b>telecom</b>: ph: (667) 904-6777(WORK), fax: 993.825.9905(WORK)</p><p><b>serviceProvisionCode</b>: Fees apply <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/service-provision-conditions code 'cost' = 'Fees apply', given as 'Fees apply'})</span></p><p><b>referralMethod</b>: phone <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/service-referral-method code 'phone' = 'Phone', given as 'phone'})</span>, fax <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/service-referral-method code 'fax' = 'Fax', given as 'fax'})</span></p><p><b>appointmentRequired</b>: true</p><h3>AvailableTimes</h3><table class="grid"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td><td><b>AvailableStartTime</b></td><td><b>AvailableEndTime</b></td></tr><tr><td>*</td><td>mon</td><td>false</td><td/><td/></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients">
+    <extension url="acceptingPatients">
+      <valueBoolean value="false"/>
+    </extension>
+  </extension>
+  <identifier>
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+      <valueCode value="active"/>
+    </extension>
+    <use value="secondary"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PRN"/>
+        <display value="Provider number"/>
+      </coding>
+      <text value="Healthcare Service Number"/>
+    </type>
+    <system value="http://cambridge-health-alliance-elder-service-plan"/>
+    <value value="1238863986-nutrition"/>
+    <assigner>
+      <reference value="Organization/plannet-organization-1238863986"/>
+      <display value="CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <providedBy>
+    <reference value="Organization/plannet-organization-1238863986"/>
+    <display value="CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN"/>
+  </providedBy>
+  <type>
+    <coding>
+      <system value="http://cambridge-health-alliance-elder-service-plan/service-types"/>
+      <code value="nutrition"/>
+      <display value="Nutrition"/>
+    </coding>
+    <text value="Nutrition"/>
+  </type>
+  <specialty>
+    <coding>
+      <system value="http://nucc.org/provider-taxonomy"/>
+      <code value="163WN1003X"/>
+      <display value="Nutrition Support"/>
+    </coding>
+    <text value="Nutrition Support"/>
+  </specialty>
+  <location>
+    <reference value="Location/plannet-location-1238863986"/>
+    <display value="CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN"/>
+  </location>
+  <name value="CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN"/>
+  <comment value="Nutrition Support"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="(667) 904-6777"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="993.825.9905"/>
+    <use value="work"/>
+  </telecom>
+  <serviceProvisionCode>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-provision-conditions"/>
+      <code value="cost"/>
+      <display value="Fees apply"/>
+    </coding>
+  </serviceProvisionCode>
+  <referralMethod>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-referral-method"/>
+      <code value="phone"/>
+      <display value="phone"/>
+    </coding>
+  </referralMethod>
+  <referralMethod>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-referral-method"/>
+      <code value="fax"/>
+      <display value="fax"/>
+    </coding>
+  </referralMethod>
+  <appointmentRequired value="true"/>
+  <availableTime>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+    <allDay value="false"/>
+    <availableStartTime value="08:00:00"/>
+    <availableEndTime value="18:00:00"/>
+  </availableTime>
+</HealthcareService>

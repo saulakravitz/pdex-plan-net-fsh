@@ -1,0 +1,138 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Location/plannet-location-PCY-0002302> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "plannet-location-PCY-0002302"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: plannet-location-PCY-0002302</p><p><b>meta</b>: </p><p><b>identifier</b>: main campus (SECONDARY)</p><p><b>status</b>: active</p><p><b>name</b>: BRASSCITY PHARMACY INC</p><p><b>description</b>: Main campus of BRASSCITY PHARMACY INC</p><p><b>type</b>: Outpatient pharmacy <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-RoleCode code 'OUTPHARM' = 'outpatient pharmacy)</span></p><p><b>telecom</b>: ph: 1-409-961-4425 x9021(WORK), fax: 1-599-198-8841 x779(WORK)</p><p><b>address</b>: 558 CHASE AVE STE 2B, WATERBURY, CT 06704-1947(WORK)</p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-73.040245</td><td>41.584408</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization/plannet-organization-72e977cb09c1ce74879379507\">BRASSCITY</a></p><h3>HoursOfOperations</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>mon</td><td>true</td></tr></table><p><b>availabilityExceptions</b>: visiting hours from 6:00 am - 10:00 pm</p></div>"
+  ];
+  fhir:Location.identifier [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status" ];
+       fhir:Extension.valueCode [ fhir:value "active" ]
+     ];
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.system [ fhir:value "https://brasscity-pharmacy-inc.com" ];
+     fhir:Identifier.value [ fhir:value "main campus" ];
+     fhir:Identifier.assigner [
+       fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/plannet-organization-72e977cb09c1ce74879379507>;
+       fhir:Reference.reference [ fhir:value "Organization/plannet-organization-72e977cb09c1ce74879379507" ];
+       fhir:Reference.display [ fhir:value "BRASSCITY" ]
+     ]
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.name [ fhir:value "BRASSCITY PHARMACY INC"];
+  fhir:Location.description [ fhir:value "Main campus of BRASSCITY PHARMACY INC"];
+  fhir:Location.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "OUTPHARM" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Outpatient pharmacy" ]
+  ];
+  fhir:Location.telecom [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "allDay" ];
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime" ]
+     ];
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "1-409-961-4425 x9021" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "allDay" ];
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime" ]
+     ];
+     fhir:ContactPoint.system [ fhir:value "fax" ];
+     fhir:ContactPoint.value [ fhir:value "1-599-198-8841 x779" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Location.address [
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.text [ fhir:value "558 CHASE AVE STE 2B, WATERBURY, CT 06704-1947" ];
+     fhir:Address.line [
+       fhir:value "558 CHASE AVE STE 2B";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "WATERBURY" ];
+     fhir:Address.state [ fhir:value "CT" ];
+     fhir:Address.postalCode [ fhir:value "06704-1947" ];
+     fhir:Address.country [ fhir:value "USA" ]
+  ];
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "-73.040245"^^xsd:decimal ];
+     fhir:Location.position.latitude [ fhir:value "41.584408"^^xsd:decimal ]
+  ];
+  fhir:Location.managingOrganization [
+     fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/plannet-organization-72e977cb09c1ce74879379507>;
+     fhir:Reference.reference [ fhir:value "Organization/plannet-organization-72e977cb09c1ce74879379507" ];
+     fhir:Reference.display [ fhir:value "BRASSCITY" ]
+  ];
+  fhir:Location.hoursOfOperation [
+     fhir:index 0;
+     fhir:Location.hoursOfOperation.daysOfWeek [
+       fhir:value "mon";
+       fhir:index 0
+     ], [
+       fhir:value "tue";
+       fhir:index 1
+     ], [
+       fhir:value "wed";
+       fhir:index 2
+     ], [
+       fhir:value "thu";
+       fhir:index 3
+     ], [
+       fhir:value "fri";
+       fhir:index 4
+     ], [
+       fhir:value "sat";
+       fhir:index 5
+     ], [
+       fhir:value "sun";
+       fhir:index 6
+     ];
+     fhir:Location.hoursOfOperation.allDay [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:Location.availabilityExceptions [ fhir:value "visiting hours from 6:00 am - 10:00 pm"] .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/plannet-organization-72e977cb09c1ce74879379507> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Location/plannet-location-PCY-0002302.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/davinci-pdex-plan-net/Location/plannet-location-PCY-0002302.ttl> .
+
+# -------------------------------------------------------------------------------------
+

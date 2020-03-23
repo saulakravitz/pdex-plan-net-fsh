@@ -1,0 +1,237 @@
+{
+  "plannet-Endpoint": {
+    "index": 0,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint",
+    "name": "PlannetEndpoint",
+    "path": "StructureDefinition-plannet-Endpoint.html",
+    "kind": "resource",
+    "type": "Endpoint",
+    "base": "http://hl7.org/fhir/StructureDefinition/Endpoint",
+    "basename": "Endpoint",
+    "basepath": "http://hl7.org/fhir/R4/endpoint.html",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information."
+  },
+  "plannet-HealthcareService": {
+    "index": 1,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService",
+    "name": "PlannetHealthcareService",
+    "path": "StructureDefinition-plannet-HealthcareService.html",
+    "kind": "resource",
+    "type": "HealthcareService",
+    "base": "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+    "basename": "HealthcareService",
+    "basepath": "http://hl7.org/fhir/R4/healthcareservice.html",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "The HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
+  },
+  "plannet-InsurancePlan": {
+    "index": 2,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan",
+    "name": "PlannetInsurancePlan",
+    "path": "StructureDefinition-plannet-InsurancePlan.html",
+    "kind": "resource",
+    "type": "InsurancePlan",
+    "base": "http://hl7.org/fhir/StructureDefinition/InsurancePlan",
+    "basename": "InsurancePlan",
+    "basepath": "http://hl7.org/fhir/R4/insuranceplan.html",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."
+  },
+  "plannet-Location": {
+    "index": 3,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location",
+    "name": "PlannetLocation",
+    "path": "StructureDefinition-plannet-Location.html",
+    "kind": "resource",
+    "type": "Location",
+    "base": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
+    "basename": "USCoreLocation",
+    "basepath": "http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-location.html",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."
+  },
+  "plannet-Network": {
+    "index": 4,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network",
+    "name": "PlannetNetwork",
+    "path": "StructureDefinition-plannet-Network.html",
+    "kind": "resource",
+    "type": "Organization",
+    "base": "http://hl7.org/fhir/StructureDefinition/Organization",
+    "basename": "Organization",
+    "basepath": "http://hl7.org/fhir/R4/organization.html",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.\n\n\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.nae.text"
+  },
+  "plannet-Organization": {
+    "index": 5,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization",
+    "name": "PlannetOrganization",
+    "path": "StructureDefinition-plannet-Organization.html",
+    "kind": "resource",
+    "type": "Organization",
+    "base": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
+    "basename": "USCoreOrganizationProfile",
+    "basepath": "http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-organization.html",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
+  },
+  "plannet-OrganizationAffiliation": {
+    "index": 6,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation",
+    "name": "PlannetOrganizationAffiliation",
+    "path": "StructureDefinition-plannet-OrganizationAffiliation.html",
+    "kind": "resource",
+    "type": "OrganizationAffiliation",
+    "base": "http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation",
+    "basename": "OrganizationAffiliation",
+    "basepath": "http://hl7.org/fhir/R4/organizationaffiliation.html",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
+  },
+  "plannet-Practitioner": {
+    "index": 7,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner",
+    "name": "PlannetPractitioner",
+    "path": "StructureDefinition-plannet-Practitioner.html",
+    "kind": "resource",
+    "type": "Practitioner",
+    "base": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
+    "basename": "USCorePractitionerProfile",
+    "basepath": "http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-practitioner.html",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
+  },
+  "plannet-PractitionerRole": {
+    "index": 8,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole",
+    "name": "PlannetPractitionerRole",
+    "path": "StructureDefinition-plannet-PractitionerRole.html",
+    "kind": "resource",
+    "type": "PractitionerRole",
+    "base": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+    "basename": "PractitionerRole",
+    "basepath": "http://hl7.org/fhir/R4/practitionerrole.html",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also be a relationship to an organization. \nPractitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.   Plannet-PractitionerRole could not be based on USCore because USCore-PractitionerRole Profile \nrequires an associated practitioner and an associated organization which does not take into account that not all providers are people, i.e. the provider could be a \ngroup of people or a facility, nor does it take into account that not all practitioners are affiliated with an organization, i.e. they have a solo practice."
+  },
+  "endpoint-usecase": {
+    "index": 9,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/endpoint-usecase",
+    "name": "EndpointUsecase",
+    "path": "StructureDefinition-endpoint-usecase.html",
+    "kind": "complex-type",
+    "type": "Extension",
+    "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename": "Extension",
+    "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
+    "contexts": [
+      {
+        "type": "Element"
+      }
+    ]
+  },
+  "location-reference": {
+    "index": 10,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/location-reference",
+    "name": "LocationReference",
+    "path": "StructureDefinition-location-reference.html",
+    "kind": "complex-type",
+    "type": "Extension",
+    "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename": "Extension",
+    "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "A reference to a Location resource (plannet-Location) defining the coverage area of a health insurance provider network",
+    "contexts": [
+      {
+        "type": "Element"
+      }
+    ]
+  },
+  "network-reference": {
+    "index": 11,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+    "name": "NetworkReference",
+    "path": "StructureDefinition-network-reference.html",
+    "kind": "complex-type",
+    "type": "Extension",
+    "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename": "Extension",
+    "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role",
+    "contexts": [
+      {
+        "type": "Element"
+      }
+    ]
+  },
+  "newpatients": {
+    "index": 12,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients",
+    "name": "NewPatients",
+    "path": "StructureDefinition-newpatients.html",
+    "kind": "complex-type",
+    "type": "Extension",
+    "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename": "Extension",
+    "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "New Patients indicates whether the practitioner is accepting new patients in their role",
+    "contexts": [
+      {
+        "type": "Element"
+      }
+    ]
+  },
+  "via-intermediary": {
+    "index": 13,
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/via-intermediary",
+    "name": "ViaIntermediary",
+    "path": "StructureDefinition-via-intermediary.html",
+    "kind": "complex-type",
+    "type": "Extension",
+    "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename": "Extension",
+    "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "status": "active",
+    "date": "Mon Mar 23 19:24:37 EDT 2020",
+    "publisher": "Saul Kravitz",
+    "description": "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization",
+    "contexts": [
+      {
+        "type": "Element"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net",
+  "name": "DaVinciPDEXPlanNet",
+  "package-id": "hl7.fhir.us.davinci-pdex-plan-net",
+  "ig-ver": "0.1.0",
+  "date": "Mon, 23 Mar, 2020 19:24:37 -0400",
+  "errs": 44,
+  "warnings": 6,
+  "hints": 12,
+  "version": "4.0.1",
+  "tool": "4.2.0 (3)"
+}

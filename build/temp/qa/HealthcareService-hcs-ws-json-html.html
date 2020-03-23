@@ -1,0 +1,60 @@
+﻿<html>
+<head>
+  <title>HealthcareService-hcs-ws-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService">resourceType</a>" : "HealthcareService",
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.id">id</a>" : "hcs-ws",
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: hcs-ws&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;contained&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Women's shelter &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details )&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=\&quot;Location-loc-ws.html\&quot;&gt;The W Womens Shelter. Generated Summary: id: loc-ws; status: active; name: The W Womens Shelter; https://exmaple.org/The-W-shelter, ph: 555 administration&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Womens shelter&lt;/p&gt;&lt;p&gt;&lt;b&gt;comment&lt;/b&gt;: This is an example of a Women's shelter to demonstrate how to restrict multiple contents&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: https://exmaple.org/The-W-shelter, ph: 555 wshelter&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "acceptingPatients",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : true
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "fromNetwork",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/patriotppo",
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Patriot Preferred Provider Network"
+          }
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.active">active</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.type">type</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Women's shelter"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.location">location</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/loc-ws",
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "The W Womens Shelter"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.name">name</a>" : "Womens shelter",
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.comment">comment</a>" : "This is an example of a Women's shelter to demonstrate how to restrict multiple contents",
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.telecom">telecom</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://exmaple.org/The-W-shelter"
+    }
+  ]
+}</pre>
+</body>
+</html>

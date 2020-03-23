@@ -1,0 +1,3155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+   <id value="hl7.fhir.us.davinci-pdex-plan-net"/>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>DaVinciPDEXPlanNet</h2>
+         <p>The official URL for this implementation guide is: </p>
+         <pre>http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net</pre>
+         <div>
+            <p>Davinci PDEX Plan Net -- FSH version</p>
+         </div>
+      </div>
+   </text>
+   <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net"/>
+   <version value="0.1.0"/>
+   <name value="DaVinciPDEXPlanNet"/>
+   <title value="DaVinci PDEX Plan Net"/>
+   <status value="active"/>
+   <date value="2020-03-23T19:24:37-04:00"/>
+   <publisher value="Saul Kravitz"/>
+   <contact>
+      <name value="Saul Kravitz"/>
+      <telecom>
+         <system value="email"/>
+         <value value="saul@mitre.org"/>
+      </telecom>
+   </contact>
+   <description value="Davinci PDEX Plan Net -- FSH version"/>
+   <packageId value="hl7.fhir.us.davinci-pdex-plan-net"/>
+   <license value="CC0-1.0"/>
+   <fhirVersion value="4.0.1"/>
+   <dependsOn>
+      <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+      <packageId value="hl7.fhir.us.core"/>
+      <version value="3.1.0"/>
+   </dependsOn>
+   <dependsOn>
+      <uri value="http://hl7.org/fhir/uv/vhdir/ImplementationGuide/hl7.core.uv.vhdir"/>
+      <packageId value="hl7.fhir.uv.vhdir"/>
+      <version value="current"/>
+   </dependsOn>
+   <definition>
+      <grouping id="_dyn_capabilitystatement">
+         <name value="Behavior: Capability Statements"/>
+         <description value="The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems complying with the implementation guide are expected to declare conformance to one or more of the following capability statements."/>
+      </grouping>
+
+
+
+
+
+
+      <grouping id="_str_profile">
+         <name value="Structures: Resource Profiles"/>
+         <description value="These define constraints on FHIR resources that need to be complied with by conformant implementations"/>
+      </grouping>
+
+      <grouping id="_str_extension">
+         <name value="Structures: Extension Definitions"/>
+         <description value="These define constraints on FHIR data types that need to be complied with by conformant implementations"/>
+      </grouping>
+
+
+
+
+
+
+      <grouping id="_ex_example">
+         <name value="Example: Example Instances"/>
+         <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like"/>
+      </grouping>
+      <grouping id="_other">
+         <name value="Other"/>
+         <description value="These are resources that are used within this implementation guide that don't fit into one of the other categories"/>
+      </grouping>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-plannet-Endpoint.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/plannet-Endpoint"/>
+         </reference>
+         <name value="Plan-net Endpoint"/>
+         <description value="The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-plannet-HealthcareService.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/plannet-HealthcareService"/>
+         </reference>
+         <name value="Plan-net HealthcareService"/>
+         <description value="The HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-plannet-InsurancePlan.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/plannet-InsurancePlan"/>
+         </reference>
+         <name value="Plan-net InsurancePlan"/>
+         <description value="An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).&#xA;&#xA;InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-plannet-Location.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/plannet-Location"/>
+         </reference>
+         <name value="Plan-net Location"/>
+         <description value="A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-plannet-Network.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/plannet-Network"/>
+         </reference>
+         <name value="Plan-net Network"/>
+         <description value="A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.&#xA;&#xA;In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.&#xA;&#xA;&#xA;Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.nae.text"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-plannet-Organization.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/plannet-Organization"/>
+         </reference>
+         <name value="Plan-net Organization"/>
+         <description value="An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.&#xA;Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-plannet-OrganizationAffiliation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/plannet-OrganizationAffiliation"/>
+         </reference>
+         <name value="Plan-net OrganizationAffiliation"/>
+         <description value="The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-plannet-Practitioner.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/plannet-Practitioner"/>
+         </reference>
+         <name value="Plan-net Practitioner"/>
+         <description value="Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-plannet-PractitionerRole.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/plannet-PractitionerRole"/>
+         </reference>
+         <name value="Plan-net PractitionerRole"/>
+         <description value="PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also be a relationship to an organization. &#xA;Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.   Plannet-PractitionerRole could not be based on USCore because USCore-PractitionerRole Profile &#xA;requires an associated practitioner and an associated organization which does not take into account that not all providers are people, i.e. the provider could be a &#xA;group of people or a facility, nor does it take into account that not all practitioners are affiliated with an organization, i.e. they have a solo practice."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-endpoint-usecase.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/endpoint-usecase"/>
+         </reference>
+         <name value="Endpoint Usecase"/>
+         <description value="EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-location-reference.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/location-reference"/>
+         </reference>
+         <name value="Location Reference"/>
+         <description value="A reference to a Location resource (plannet-Location) defining the coverage area of a health insurance provider network"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-network-reference.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/network-reference"/>
+         </reference>
+         <name value="Network Reference"/>
+         <description value="A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-newpatients.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/newpatients"/>
+         </reference>
+         <name value="New Patients"/>
+         <description value="New Patients indicates whether the practitioner is accepting new patients in their role"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-via-intermediary.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/via-intermediary"/>
+         </reference>
+         <name value="Via Intermediary"/>
+         <description value="A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CapabilityStatement"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CapabilityStatement-plannet-server.html"/>
+         </extension>
+         <reference>
+            <reference value="CapabilityStatement/plannet-server"/>
+         </reference>
+         <name value="PDEX Payer Network Server Capability Statement"/>
+         <description value="This Capability Statement defines the expected capabilities of a PDEX Payer Network FHIR server conforming to the PDEX Payer Network Implementation Guide."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_dyn_capabilitystatement"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-plannet-available-days.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/plannet-available-days"/>
+         </reference>
+         <name value="Plannet_sp_available_days"/>
+         <description value="Days available"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-plannet-available-end-time.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/plannet-available-end-time"/>
+         </reference>
+         <name value="Plannet_sp_available_end_time"/>
+         <description value="Available end time"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-plannet-available-start-time.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/plannet-available-start-time"/>
+         </reference>
+         <name value="Plannet_sp_available_days"/>
+         <description value="Available start time"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-endpoint-connection-type.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/endpoint-connection-type"/>
+         </reference>
+         <name value="Plannet_sp_endpoint_connection_type"/>
+         <description value="Select Endpoints that support the specified protocol/profile/standard"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-endpoint-identifier-assigner.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/endpoint-identifier-assigner"/>
+         </reference>
+         <name value="Plannet_sp_endpoint_identifier_assigner"/>
+         <description value="Select Endpoints with an identifier issued by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-endpoint-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/endpoint-identifier"/>
+         </reference>
+         <name value="Plannet_sp_endpoint_identifier"/>
+         <description value="Select Endpoints with the specified identifier"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-endpoint-mime-type.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/endpoint-mime-type"/>
+         </reference>
+         <name value="Plannet_sp_endpoint_mime_type"/>
+         <description value="Select endpoints that support the specified media type"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-endpoint-organization.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/endpoint-organization"/>
+         </reference>
+         <name value="Plannet_sp_endpoint_organization"/>
+         <description value="Select Endpoints managed by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-endpoint-payload-type.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/endpoint-payload-type"/>
+         </reference>
+         <name value="Plannet_sp_endpoint_payload_type"/>
+         <description value="Select Endpoints that support the specified type of content"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-endpoint-usecase-standard.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/endpoint-usecase-standard"/>
+         </reference>
+         <name value="Plannet_sp_endpoint_usecase_standard"/>
+         <description value="Select endpoints that support the specified standard"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-endpoint-usecase-type.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/endpoint-usecase-type"/>
+         </reference>
+         <name value="Plannet_sp_endpoint_usecase_type"/>
+         <description value="Select endpoints that support the type of services indicated by the specified code"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-characteristic.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-characteristic"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_characteristic"/>
+         <description value="Select HealthcareServices with the specified characteristic"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-coverage-area.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-coverage-area"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_coverage_area"/>
+         <description value="Select services available in a region described by the specified location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-endpoint.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-endpoint"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_endpoint"/>
+         <description value="Select HealthcareServices with the specified endpoint"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-identifier-assigner.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-identifier-assigner"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_identifier_assigner"/>
+         <description value="Select HealthcareServices with an identifier issued by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-identifier"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_identifier"/>
+         <description value="Select HealthcareServices with the specified identifier"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-location.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-location"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_location"/>
+         <description value="Select HealthcareServices available at the specified location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-name.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-name"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_name"/>
+         <description value="Select HealthcareServices with the specified name"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-new-patient-network.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-new-patient-network"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_new_patient_network"/>
+         <description value="Select HealthcareServices that are part of the specified network and are/are not accepting new patients"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-new-patient.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-new-patient"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_new_patient"/>
+         <description value="Select HealthcareServices that are/are not accepting new patients"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-organization.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-organization"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_organization"/>
+         <description value="Select HealthcareServices provided by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-service-category.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-service-category"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_category"/>
+         <description value="Select HealthcareServices providing the specified category of services"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-service-type.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-service-type"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_type"/>
+         <description value="Select HealthcareServices of the specified type"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-healthcareservice-specialty.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/healthcareservice-specialty"/>
+         </reference>
+         <name value="Plannet_sp_healthcareservice_specialty"/>
+         <description value="Select services associated with the specified specialty"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-administered-by.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-administered-by"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_administered_by"/>
+         <description value="Select products that are administered by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-coverage-area.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-coverage-area"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_coverage_area"/>
+         <description value="Select products that are offered in the specified location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-coverage-benefit-type.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-coverage-benefit-type"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_coverage_benefit_type"/>
+         <description value="Select health insurance products offering covered benefits of the specified type"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-coverage-network.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-coverage-network"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_coverage_network"/>
+         <description value="Select products offering covered benefits through the specified health insurance provider network"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-coverage-type.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-coverage-type"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_coverage_type"/>
+         <description value="Select products offering the specified type of coverage"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-identifier"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_identifier"/>
+         <description value="Select products with the specified identifier"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-name.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-name"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_name"/>
+         <description value="Select products with the specified name"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-network.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-network"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_network"/>
+         <description value="Select products associated with the specified health insurance provider network"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-owned-by.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-owned-by"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_owned_by"/>
+         <description value="Select products that are owned by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-plan-coverage-area.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-plan-coverage-area"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_plan_coverage_area"/>
+         <description value="Select plans that are available in the specified location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-plan-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-plan-identifier"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_plan_identifier"/>
+         <description value="Select plans with the specified identifier"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-plan-network.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-plan-network"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_plan_network"/>
+         <description value="Select plans associated with the specified health insurance provider network"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-plan-type.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-plan-type"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_plan_type"/>
+         <description value="Select plans of the specified type"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-insuranceplan-type.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/insuranceplan-type"/>
+         </reference>
+         <name value="Plannet_sp_insuranceplan_type"/>
+         <description value="Select insurance plans of the specified type"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-location-accessibility.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/location-accessibility"/>
+         </reference>
+         <name value="Plannet_sp_location_accessibility"/>
+         <description value="Select locations that offer the specified accessibility options"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-location-address.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/location-address"/>
+         </reference>
+         <name value="Plannet_sp_location_address"/>
+         <description value="Select Locations with the specified address"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-location-contains.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/location-contains"/>
+         </reference>
+         <name value="Plannet_sp_location_contains"/>
+         <description value="Select locations that contain the specified co-ordinates"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-location-identifier-assigner.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/location-identifier-assigner"/>
+         </reference>
+         <name value="Plannet_sp_location_identifier_assigner"/>
+         <description value="Select Locations with an identifier issued by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-location-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/location-identifier"/>
+         </reference>
+         <name value="Plannet_sp_location_identifier"/>
+         <description value="Select Locations with the specified identifier"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-location-new-patient-network.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/location-new-patient-network"/>
+         </reference>
+         <name value="Plannet_sp_location_new_patient_network"/>
+         <description value="Select locations that are part of the specified network and are/are not accepting new patients"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-location-new-patient.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/location-new-patient"/>
+         </reference>
+         <name value="Plannet_sp_location_new_patient"/>
+         <description value="Select locations that are/are not accepting new patients"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-location-organization.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/location-organization"/>
+         </reference>
+         <name value="Plannet_sp_location_organization"/>
+         <description value="Select Locations managed by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-location-partof.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/location-partof"/>
+         </reference>
+         <name value="Plannet_sp_location_partof"/>
+         <description value="Select Locations that are part of the specified location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-location-type.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/location-type"/>
+         </reference>
+         <name value="Plannet_sp_location_type"/>
+         <description value="Select Locations of the specified type"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-address-city.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-address-city"/>
+         </reference>
+         <name value="Plannet_sp_organization_address_city"/>
+         <description value="Select organizations with an address in the specified city"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-address-country.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-address-country"/>
+         </reference>
+         <name value="Plannet_sp_organization_address_country"/>
+         <description value="Select organizations with an address in the specified country"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-address-postalcode.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-address-postalcode"/>
+         </reference>
+         <name value="Plannet_sp_organization_address_postalcode"/>
+         <description value="Select organizations with an address with the specified postal code"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-address-state.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-address-state"/>
+         </reference>
+         <name value="Plannet_sp_organization_address_state"/>
+         <description value="Select organizations with an address in the specified state"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-address.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-address"/>
+         </reference>
+         <name value="Plannet_sp_organization_address"/>
+         <description value="Select organizations with the specified address (matches any of the string elements of an address)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-coverage-area.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-coverage-area"/>
+         </reference>
+         <name value="Plannet_sp_network_coverage_area"/>
+         <description value="Select health insurance provider networks available in a region described by the specified location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-endpoint.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-endpoint"/>
+         </reference>
+         <name value="Plannet_sp_organization_endpoint"/>
+         <description value="Select Organizations with the specified endpoint"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-identifier-assigner.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-identifier-assigner"/>
+         </reference>
+         <name value="Plannet_sp_organization_identifier_assigner"/>
+         <description value="Select Organizations with an identifier issued by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-identifier"/>
+         </reference>
+         <name value="Plannet_sp_organization_identifier"/>
+         <description value="Select Organizations with the specified identifier"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-name.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-name"/>
+         </reference>
+         <name value="Plannet_sp_organization_name"/>
+         <description value="Select Organizations with the specified name"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-partof.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-partof"/>
+         </reference>
+         <name value="Plannet_sp_organization_partof"/>
+         <description value="Select Organizations that are part of the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-qualification-code.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-qualification-code"/>
+         </reference>
+         <name value="Plannet_sp_organization_qualification_code"/>
+         <description value="Select Organizations with a type of qualification matching the specified code"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-qualification-issuer.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-qualification-issuer"/>
+         </reference>
+         <name value="Plannet_sp_organization_qualification_issuer"/>
+         <description value="Select Organizations with a qualification issued by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-qualification-wherevalid-code.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-qualification-wherevalid-code"/>
+         </reference>
+         <name value="Plannet_sp_organization_qualification_wherevalid_code"/>
+         <description value="Select Organizations with a qualification that is valid at the location indicated by the specified code"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-qualification-wherevalid-location.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-qualification-wherevalid-location"/>
+         </reference>
+         <name value="Plannet_sp_organization_qualification_wherevalid_location"/>
+         <description value="Select Organizations with a qualification that is valid at the specified location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organization-type.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organization-type"/>
+         </reference>
+         <name value="Plannet_sp_organization_type"/>
+         <description value="Select Organizations of the specified type"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organizationaffiliation-identifier-assigner.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organizationaffiliation-identifier-assigner"/>
+         </reference>
+         <name value="Plannet_sp_organizationaffiliation_identifier_assigner"/>
+         <description value="Select OrganizationAffiliations with an identifier issued by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organizationaffiliation-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organizationaffiliation-identifier"/>
+         </reference>
+         <name value="Plannet_sp_organizationaffiliation_identifier"/>
+         <description value="Select OrganizationAffiliations with the specified identifier"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organizationaffiliation-location.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organizationaffiliation-location"/>
+         </reference>
+         <name value="Plannet_sp_organizationaffiliation_location"/>
+         <description value="Select OrganizationAffiliations available at the specified location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organizationaffiliation-network.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organizationaffiliation-network"/>
+         </reference>
+         <name value="Plannet_sp_organizationaffiliation_network"/>
+         <description value="Select roles where the organization is a member of the specified health insurance provider network"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organizationaffiliation-participating-organization.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organizationaffiliation-participating-organization"/>
+         </reference>
+         <name value="Plannet_sp_organizationaffiliation_participating_organization"/>
+         <description value="Select roles filled by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organizationaffiliation-primary-organization.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organizationaffiliation-primary-organization"/>
+         </reference>
+         <name value="Plannet_sp_organizationaffiliation_primary_organization"/>
+         <description value="Select roles offered by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organizationaffiliation-role.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organizationaffiliation-role"/>
+         </reference>
+         <name value="Plannet_sp_organizationaffiliation_role"/>
+         <description value="Select OrganizationAffiliations with the specified role"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organizationaffiliation-service.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organizationaffiliation-service"/>
+         </reference>
+         <name value="Plannet_sp_organizationaffiliation_service"/>
+         <description value="Select OrganizationAffiliations providing the specified service"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-organizationaffiliation-specialty.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/organizationaffiliation-specialty"/>
+         </reference>
+         <name value="Plannet_sp_organizationaffiliation_specialty"/>
+         <description value="Select OrganizationAffiliations associated with the specified specialty"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitioner-family-name.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitioner-family-name"/>
+         </reference>
+         <name value="Plannet_sp_practitioner_family_name"/>
+         <description value="Select Practitioners with the specified family name"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitioner-given-name.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitioner-given-name"/>
+         </reference>
+         <name value="Plannet_sp_practitioner_given_name"/>
+         <description value="Select Practitioners with the specified given name"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitioner-identifier-assigner.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitioner-identifier-assigner"/>
+         </reference>
+         <name value="Plannet_sp_practitioner_identifier_assigner"/>
+         <description value="Select Practitioners with an identifier issued by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitioner-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitioner-identifier"/>
+         </reference>
+         <name value="Plannet_sp_practitioner_identifier"/>
+         <description value="Select Practitioners with the specified identifier"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitioner-name.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitioner-name"/>
+         </reference>
+         <name value="Plannet_sp_practitioner_name"/>
+         <description value="Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitioner-phonetic.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitioner-phonetic"/>
+         </reference>
+         <name value="Plannet_sp_practitioner_phonetic"/>
+         <description value="Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitioner-qualification-code.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitioner-qualification-code"/>
+         </reference>
+         <name value="Plannet_sp_practitioner_qualification_code"/>
+         <description value="Select Practitioners with a type of qualification matching the specified code"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitioner-qualification-issuer.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitioner-qualification-issuer"/>
+         </reference>
+         <name value="Plannet_sp_practitioner_qualification_issuer"/>
+         <description value="Select Practitioners with a qualification issued by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitioner-qualification-wherevalid-code.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitioner-qualification-wherevalid-code"/>
+         </reference>
+         <name value="Plannet_sp_practitioner_qualification_wherevalid_code"/>
+         <description value="Select Practitioners with a qualification that is valid at the location indicated by the specified code"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitioner-qualification-wherevalid-location.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitioner-qualification-wherevalid-location"/>
+         </reference>
+         <name value="Plannet_sp_practitioner_qualification_wherevalid_location"/>
+         <description value="Select Practitioners with a qualification that is valid at the specified location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-endpoint.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-endpoint"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_endpoint"/>
+         <description value="Select PractitionerRoles with the specified endpoint"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-identifier-assigner.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-identifier-assigner"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_identifier_assigner"/>
+         <description value="Select PractitionerRoles with an identifier issued by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-identifier"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_identifier"/>
+         <description value="Select PractitionerRoles with the specified identifier"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-location.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-location"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_location"/>
+         <description value="Select PractitionerRoles available at the specified location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-network.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-network"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_network"/>
+         <description value="Select roles where the practitioner is a member of the specified health insurance provider network"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-new-patient-network.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-new-patient-network"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_new_patient_network"/>
+         <description value="Select PractitionerRoles that are part of the specified network and are/are not accepting new patients"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-new-patient.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-new-patient"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_new_patient"/>
+         <description value="Select PractitionerRoles that are/are not accepting new patients"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-organization.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-organization"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_organization"/>
+         <description value="Select PractitionerRoles available at the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-practitioner.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-practitioner"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_practitioner"/>
+         <description value="Select roles filled by the specified practitioner"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-qualification-code.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-qualification-code"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_qualification_code"/>
+         <description value="Select PractitionerRoles with a type of qualification matching the specified code"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-qualification-issuer.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-qualification-issuer"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_qualification_issuer"/>
+         <description value="Select PractitionerRoles with a qualification issued by the specified organization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-qualification-wherevalid-code.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-qualification-wherevalid-code"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_qualification_wherevalid_code"/>
+         <description value="Select PractitionerRoles with a qualification that is valid at the location indicated by the specified code"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-qualification-wherevalid-location.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-qualification-wherevalid-location"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_qualification_wherevalid_location"/>
+         <description value="Select PractitionerRoles with a qualification that is valid at the specified location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-role.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-role"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_role"/>
+         <description value="Select PractitionerRoles with the specified role"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-service.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-service"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_service"/>
+         <description value="Select PractitionerRoles providing the specified service"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-practitionerrole-specialty.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/practitionerrole-specialty"/>
+         </reference>
+         <name value="Plannet_sp_practitionerrole_specialty"/>
+         <description value="Select PractitionerRoles associated with the specified specialty"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_other"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Endpoint"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Endpoint-direct321.html"/>
+         </extension>
+         <reference>
+            <reference value="Endpoint/direct321"/>
+         </reference>
+         <name value="direct321"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="HealthcareService"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="HealthcareService-ffcardiology.html"/>
+         </extension>
+         <reference>
+            <reference value="HealthcareService/ffcardiology"/>
+         </reference>
+         <name value="ffcardiology"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="HealthcareService"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="HealthcareService-hcs-ws.html"/>
+         </extension>
+         <reference>
+            <reference value="HealthcareService/hcs-ws"/>
+         </reference>
+         <name value="hcs-ws"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="HealthcareService"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="HealthcareService-independencerehab1.html"/>
+         </extension>
+         <reference>
+            <reference value="HealthcareService/independencerehab1"/>
+         </reference>
+         <name value="independencerehab1"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="HealthcareService"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="HealthcareService-independencerehab2.html"/>
+         </extension>
+         <reference>
+            <reference value="HealthcareService/independencerehab2"/>
+         </reference>
+         <name value="independencerehab2"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="InsurancePlan"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="InsurancePlan-insuranceplan1.html"/>
+         </extension>
+         <reference>
+            <reference value="InsurancePlan/insuranceplan1"/>
+         </reference>
+         <name value="insuranceplan1"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-loc-ffmh-hvi.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/loc-ffmh-hvi"/>
+         </reference>
+         <name value="loc-ffmh-hvi"/>
+         <description value="Heart and Vascular Institute Specialty Wing"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-loc-ffmh.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/loc-ffmh"/>
+         </reference>
+         <name value="loc-ffmh"/>
+         <description value="Main campus of Founding Fathers Memorial Hospital"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-loc-ws.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/loc-ws"/>
+         </reference>
+         <name value="loc-ws"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-wash-dc-metro.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/wash-dc-metro"/>
+         </reference>
+         <name value="wash-dc-metro"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-patriotppo.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/patriotppo"/>
+         </reference>
+         <name value="patriotppo"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-foundingfathers.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/foundingfathers"/>
+         </reference>
+         <name value="foundingfathers"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-homeland.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/homeland"/>
+         </reference>
+         <name value="homeland"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-independencerehab.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/independencerehab"/>
+         </reference>
+         <name value="independencerehab"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-monumentHIE.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/monumentHIE"/>
+         </reference>
+         <name value="monumentHIE"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-mtvernon.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/mtvernon"/>
+         </reference>
+         <name value="mtvernon"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-patriotdental.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/patriotdental"/>
+         </reference>
+         <name value="patriotdental"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="OrganizationAffiliation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="OrganizationAffiliation-orgrole1.html"/>
+         </extension>
+         <reference>
+            <reference value="OrganizationAffiliation/orgrole1"/>
+         </reference>
+         <name value="orgrole1"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="OrganizationAffiliation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="OrganizationAffiliation-orgrole2.html"/>
+         </extension>
+         <reference>
+            <reference value="OrganizationAffiliation/orgrole2"/>
+         </reference>
+         <name value="orgrole2"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Practitioner"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Practitioner-practitioner1.html"/>
+         </extension>
+         <reference>
+            <reference value="Practitioner/practitioner1"/>
+         </reference>
+         <name value="practitioner1"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="PractitionerRole"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="PractitionerRole-practitionerrole1.html"/>
+         </extension>
+         <reference>
+            <reference value="PractitionerRole/practitionerrole1"/>
+         </reference>
+         <name value="practitionerrole1"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-location1WSAddress.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/location1WSAddress"/>
+         </reference>
+         <name value="location1WSAddress"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="HealthcareService"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="HealthcareService-nutrition-healthcareservice-1238863986.html"/>
+         </extension>
+         <reference>
+            <reference value="HealthcareService/nutrition-healthcareservice-1238863986"/>
+         </reference>
+         <name value="nutrition-healthcareservice-1238863986"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="InsurancePlan"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="InsurancePlan-plannet-insuranceplan-HPID400000.html"/>
+         </extension>
+         <reference>
+            <reference value="InsurancePlan/plannet-insuranceplan-HPID400000"/>
+         </reference>
+         <name value="plannet-insuranceplan-HPID400000"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-plannet-location-1230085657.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/plannet-location-1230085657"/>
+         </reference>
+         <name value="plannet-location-1230085657"/>
+         <description value="Main campus of BAYSIDE ENDOSCOPY, LLC"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-plannet-location-1230188327.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/plannet-location-1230188327"/>
+         </reference>
+         <name value="plannet-location-1230188327"/>
+         <description value="Main campus of SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-plannet-location-PCY-0002302.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/plannet-location-PCY-0002302"/>
+         </reference>
+         <name value="plannet-location-PCY-0002302"/>
+         <description value="Main campus of BRASSCITY PHARMACY INC"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-plannet-network-HPID040000.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/plannet-network-HPID040000"/>
+         </reference>
+         <name value="plannet-network-HPID040000"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Endpoint"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Endpoint-plannet-organization-1230085657-direct.html"/>
+         </extension>
+         <reference>
+            <reference value="Endpoint/plannet-organization-1230085657-direct"/>
+         </reference>
+         <name value="plannet-organization-1230085657-direct"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-plannet-organization-1230085657.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/plannet-organization-1230085657"/>
+         </reference>
+         <name value="plannet-organization-1230085657"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-plannet-organization-1239774646.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/plannet-organization-1239774646"/>
+         </reference>
+         <name value="plannet-organization-1239774646"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-plannet-organization-3b4358447f58795888ada0a39.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/plannet-organization-3b4358447f58795888ada0a39"/>
+         </reference>
+         <name value="plannet-organization-3b4358447f58795888ada0a39"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Practitioner"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Practitioner-plannet-practitioner-1232506780.html"/>
+         </extension>
+         <reference>
+            <reference value="Practitioner/plannet-practitioner-1232506780"/>
+         </reference>
+         <name value="plannet-practitioner-1232506780"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="PractitionerRole"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="PractitionerRole-plannet-practitionerrole-1232506780.html"/>
+         </extension>
+         <reference>
+            <reference value="PractitionerRole/plannet-practitionerrole-1232506780"/>
+         </reference>
+         <name value="plannet-practitionerrole-1232506780"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="PractitionerRole"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="PractitionerRole-plannet-practitionerrole-1236743399.html"/>
+         </extension>
+         <reference>
+            <reference value="PractitionerRole/plannet-practitionerrole-1236743399"/>
+         </reference>
+         <name value="plannet-practitionerrole-1236743399"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <page>
+         <nameUrl value="toc.html"/>
+         <title value="Table of Contents"/>
+         <generation value="html"/>
+         <page>
+            <nameUrl value="index.html"/>
+            <title value="Home"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="artifacts.html"/>
+            <title value="Artifacts Summary"/>
+            <generation value="html"/>
+            <page>
+               <nameUrl value="CapabilityStatement-plannet-server.html"/>
+               <title value="PDEX Payer Network Server Capability Statement"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-plannet-Endpoint.html"/>
+               <title value="Plan-net Endpoint"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-plannet-HealthcareService.html"/>
+               <title value="Plan-net HealthcareService"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-plannet-InsurancePlan.html"/>
+               <title value="Plan-net InsurancePlan"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-plannet-Location.html"/>
+               <title value="Plan-net Location"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-plannet-Network.html"/>
+               <title value="Plan-net Network"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-plannet-Organization.html"/>
+               <title value="Plan-net Organization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-plannet-OrganizationAffiliation.html"/>
+               <title value="Plan-net OrganizationAffiliation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-plannet-Practitioner.html"/>
+               <title value="Plan-net Practitioner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-plannet-PractitionerRole.html"/>
+               <title value="Plan-net PractitionerRole"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-endpoint-usecase.html"/>
+               <title value="Endpoint Usecase"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-location-reference.html"/>
+               <title value="Location Reference"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-network-reference.html"/>
+               <title value="Network Reference"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-newpatients.html"/>
+               <title value="New Patients"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-via-intermediary.html"/>
+               <title value="Via Intermediary"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Endpoint-direct321.html"/>
+               <title value="direct321"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="HealthcareService-ffcardiology.html"/>
+               <title value="ffcardiology"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="HealthcareService-hcs-ws.html"/>
+               <title value="hcs-ws"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="HealthcareService-independencerehab1.html"/>
+               <title value="independencerehab1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="HealthcareService-independencerehab2.html"/>
+               <title value="independencerehab2"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="InsurancePlan-insuranceplan1.html"/>
+               <title value="insuranceplan1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-loc-ffmh-hvi.html"/>
+               <title value="loc-ffmh-hvi"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-loc-ffmh.html"/>
+               <title value="loc-ffmh"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-loc-ws.html"/>
+               <title value="loc-ws"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-wash-dc-metro.html"/>
+               <title value="wash-dc-metro"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-patriotppo.html"/>
+               <title value="patriotppo"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-foundingfathers.html"/>
+               <title value="foundingfathers"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-homeland.html"/>
+               <title value="homeland"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-independencerehab.html"/>
+               <title value="independencerehab"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-monumentHIE.html"/>
+               <title value="monumentHIE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-mtvernon.html"/>
+               <title value="mtvernon"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-patriotdental.html"/>
+               <title value="patriotdental"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="OrganizationAffiliation-orgrole1.html"/>
+               <title value="orgrole1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="OrganizationAffiliation-orgrole2.html"/>
+               <title value="orgrole2"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Practitioner-practitioner1.html"/>
+               <title value="practitioner1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="PractitionerRole-practitionerrole1.html"/>
+               <title value="practitionerrole1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-location1WSAddress.html"/>
+               <title value="location1WSAddress"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="HealthcareService-nutrition-healthcareservice-1238863986.html"/>
+               <title value="nutrition-healthcareservice-1238863986"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="InsurancePlan-plannet-insuranceplan-HPID400000.html"/>
+               <title value="plannet-insuranceplan-HPID400000"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-plannet-location-1230085657.html"/>
+               <title value="plannet-location-1230085657"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-plannet-location-1230188327.html"/>
+               <title value="plannet-location-1230188327"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-plannet-location-PCY-0002302.html"/>
+               <title value="plannet-location-PCY-0002302"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-plannet-network-HPID040000.html"/>
+               <title value="plannet-network-HPID040000"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Endpoint-plannet-organization-1230085657-direct.html"/>
+               <title value="plannet-organization-1230085657-direct"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-plannet-organization-1230085657.html"/>
+               <title value="plannet-organization-1230085657"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-plannet-organization-1239774646.html"/>
+               <title value="plannet-organization-1239774646"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-plannet-organization-3b4358447f58795888ada0a39.html"/>
+               <title value="plannet-organization-3b4358447f58795888ada0a39"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Practitioner-plannet-practitioner-1232506780.html"/>
+               <title value="plannet-practitioner-1232506780"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="PractitionerRole-plannet-practitionerrole-1232506780.html"/>
+               <title value="plannet-practitionerrole-1232506780"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="PractitionerRole-plannet-practitionerrole-1236743399.html"/>
+               <title value="plannet-practitionerrole-1236743399"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-plannet-available-days.html"/>
+               <title value="Plannet_sp_available_days"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-plannet-available-end-time.html"/>
+               <title value="Plannet_sp_available_end_time"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-plannet-available-start-time.html"/>
+               <title value="Plannet_sp_available_days"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-endpoint-connection-type.html"/>
+               <title value="Plannet_sp_endpoint_connection_type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-endpoint-identifier-assigner.html"/>
+               <title value="Plannet_sp_endpoint_identifier_assigner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-endpoint-identifier.html"/>
+               <title value="Plannet_sp_endpoint_identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-endpoint-mime-type.html"/>
+               <title value="Plannet_sp_endpoint_mime_type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-endpoint-organization.html"/>
+               <title value="Plannet_sp_endpoint_organization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-endpoint-payload-type.html"/>
+               <title value="Plannet_sp_endpoint_payload_type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-endpoint-usecase-standard.html"/>
+               <title value="Plannet_sp_endpoint_usecase_standard"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-endpoint-usecase-type.html"/>
+               <title value="Plannet_sp_endpoint_usecase_type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-characteristic.html"/>
+               <title value="Plannet_sp_healthcareservice_characteristic"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-coverage-area.html"/>
+               <title value="Plannet_sp_healthcareservice_coverage_area"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-endpoint.html"/>
+               <title value="Plannet_sp_healthcareservice_endpoint"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-identifier-assigner.html"/>
+               <title value="Plannet_sp_healthcareservice_identifier_assigner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-identifier.html"/>
+               <title value="Plannet_sp_healthcareservice_identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-location.html"/>
+               <title value="Plannet_sp_healthcareservice_location"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-name.html"/>
+               <title value="Plannet_sp_healthcareservice_name"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-new-patient-network.html"/>
+               <title value="Plannet_sp_healthcareservice_new_patient_network"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-new-patient.html"/>
+               <title value="Plannet_sp_healthcareservice_new_patient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-organization.html"/>
+               <title value="Plannet_sp_healthcareservice_organization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-service-category.html"/>
+               <title value="Plannet_sp_healthcareservice_category"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-service-type.html"/>
+               <title value="Plannet_sp_healthcareservice_type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-healthcareservice-specialty.html"/>
+               <title value="Plannet_sp_healthcareservice_specialty"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-administered-by.html"/>
+               <title value="Plannet_sp_insuranceplan_administered_by"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-coverage-area.html"/>
+               <title value="Plannet_sp_insuranceplan_coverage_area"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-coverage-benefit-type.html"/>
+               <title value="Plannet_sp_insuranceplan_coverage_benefit_type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-coverage-network.html"/>
+               <title value="Plannet_sp_insuranceplan_coverage_network"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-coverage-type.html"/>
+               <title value="Plannet_sp_insuranceplan_coverage_type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-identifier.html"/>
+               <title value="Plannet_sp_insuranceplan_identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-name.html"/>
+               <title value="Plannet_sp_insuranceplan_name"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-network.html"/>
+               <title value="Plannet_sp_insuranceplan_network"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-owned-by.html"/>
+               <title value="Plannet_sp_insuranceplan_owned_by"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-plan-coverage-area.html"/>
+               <title value="Plannet_sp_insuranceplan_plan_coverage_area"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-plan-identifier.html"/>
+               <title value="Plannet_sp_insuranceplan_plan_identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-plan-network.html"/>
+               <title value="Plannet_sp_insuranceplan_plan_network"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-plan-type.html"/>
+               <title value="Plannet_sp_insuranceplan_plan_type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-insuranceplan-type.html"/>
+               <title value="Plannet_sp_insuranceplan_type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-location-accessibility.html"/>
+               <title value="Plannet_sp_location_accessibility"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-location-address.html"/>
+               <title value="Plannet_sp_location_address"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-location-contains.html"/>
+               <title value="Plannet_sp_location_contains"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-location-identifier-assigner.html"/>
+               <title value="Plannet_sp_location_identifier_assigner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-location-identifier.html"/>
+               <title value="Plannet_sp_location_identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-location-new-patient-network.html"/>
+               <title value="Plannet_sp_location_new_patient_network"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-location-new-patient.html"/>
+               <title value="Plannet_sp_location_new_patient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-location-organization.html"/>
+               <title value="Plannet_sp_location_organization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-location-partof.html"/>
+               <title value="Plannet_sp_location_partof"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-location-type.html"/>
+               <title value="Plannet_sp_location_type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-address-city.html"/>
+               <title value="Plannet_sp_organization_address_city"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-address-country.html"/>
+               <title value="Plannet_sp_organization_address_country"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-address-postalcode.html"/>
+               <title value="Plannet_sp_organization_address_postalcode"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-address-state.html"/>
+               <title value="Plannet_sp_organization_address_state"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-address.html"/>
+               <title value="Plannet_sp_organization_address"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-coverage-area.html"/>
+               <title value="Plannet_sp_network_coverage_area"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-endpoint.html"/>
+               <title value="Plannet_sp_organization_endpoint"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-identifier-assigner.html"/>
+               <title value="Plannet_sp_organization_identifier_assigner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-identifier.html"/>
+               <title value="Plannet_sp_organization_identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-name.html"/>
+               <title value="Plannet_sp_organization_name"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-partof.html"/>
+               <title value="Plannet_sp_organization_partof"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-qualification-code.html"/>
+               <title value="Plannet_sp_organization_qualification_code"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-qualification-issuer.html"/>
+               <title value="Plannet_sp_organization_qualification_issuer"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-qualification-wherevalid-code.html"/>
+               <title value="Plannet_sp_organization_qualification_wherevalid_code"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-qualification-wherevalid-location.html"/>
+               <title value="Plannet_sp_organization_qualification_wherevalid_location"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organization-type.html"/>
+               <title value="Plannet_sp_organization_type"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organizationaffiliation-identifier-assigner.html"/>
+               <title value="Plannet_sp_organizationaffiliation_identifier_assigner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organizationaffiliation-identifier.html"/>
+               <title value="Plannet_sp_organizationaffiliation_identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organizationaffiliation-location.html"/>
+               <title value="Plannet_sp_organizationaffiliation_location"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organizationaffiliation-network.html"/>
+               <title value="Plannet_sp_organizationaffiliation_network"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organizationaffiliation-participating-organization.html"/>
+               <title value="Plannet_sp_organizationaffiliation_participating_organization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organizationaffiliation-primary-organization.html"/>
+               <title value="Plannet_sp_organizationaffiliation_primary_organization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organizationaffiliation-role.html"/>
+               <title value="Plannet_sp_organizationaffiliation_role"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organizationaffiliation-service.html"/>
+               <title value="Plannet_sp_organizationaffiliation_service"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-organizationaffiliation-specialty.html"/>
+               <title value="Plannet_sp_organizationaffiliation_specialty"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitioner-family-name.html"/>
+               <title value="Plannet_sp_practitioner_family_name"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitioner-given-name.html"/>
+               <title value="Plannet_sp_practitioner_given_name"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitioner-identifier-assigner.html"/>
+               <title value="Plannet_sp_practitioner_identifier_assigner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitioner-identifier.html"/>
+               <title value="Plannet_sp_practitioner_identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitioner-name.html"/>
+               <title value="Plannet_sp_practitioner_name"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitioner-phonetic.html"/>
+               <title value="Plannet_sp_practitioner_phonetic"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitioner-qualification-code.html"/>
+               <title value="Plannet_sp_practitioner_qualification_code"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitioner-qualification-issuer.html"/>
+               <title value="Plannet_sp_practitioner_qualification_issuer"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitioner-qualification-wherevalid-code.html"/>
+               <title value="Plannet_sp_practitioner_qualification_wherevalid_code"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitioner-qualification-wherevalid-location.html"/>
+               <title value="Plannet_sp_practitioner_qualification_wherevalid_location"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-endpoint.html"/>
+               <title value="Plannet_sp_practitionerrole_endpoint"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-identifier-assigner.html"/>
+               <title value="Plannet_sp_practitionerrole_identifier_assigner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-identifier.html"/>
+               <title value="Plannet_sp_practitionerrole_identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-location.html"/>
+               <title value="Plannet_sp_practitionerrole_location"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-network.html"/>
+               <title value="Plannet_sp_practitionerrole_network"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-new-patient-network.html"/>
+               <title value="Plannet_sp_practitionerrole_new_patient_network"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-new-patient.html"/>
+               <title value="Plannet_sp_practitionerrole_new_patient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-organization.html"/>
+               <title value="Plannet_sp_practitionerrole_organization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-practitioner.html"/>
+               <title value="Plannet_sp_practitionerrole_practitioner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-qualification-code.html"/>
+               <title value="Plannet_sp_practitionerrole_qualification_code"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-qualification-issuer.html"/>
+               <title value="Plannet_sp_practitionerrole_qualification_issuer"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-qualification-wherevalid-code.html"/>
+               <title value="Plannet_sp_practitionerrole_qualification_wherevalid_code"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-qualification-wherevalid-location.html"/>
+               <title value="Plannet_sp_practitionerrole_qualification_wherevalid_location"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-role.html"/>
+               <title value="Plannet_sp_practitionerrole_role"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-service.html"/>
+               <title value="Plannet_sp_practitionerrole_service"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-practitionerrole-specialty.html"/>
+               <title value="Plannet_sp_practitionerrole_specialty"/>
+               <generation value="generated"/>
+            </page>
+         </page>
+      </page>
+      <parameter>
+         <code value="copyrightyear"/>
+         <value value="2020+"/>
+      </parameter>
+      <parameter>
+         <code value="releaselabel"/>
+         <value value="CI Build"/>
+      </parameter>
+      <parameter>
+         <code value="show-inherited-invariants"/>
+         <value value="false"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/capabilities"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/examples"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/extensions"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/models"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/operations"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/profiles"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/vocabulary"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="template/config"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="input/images"/>
+      </parameter>
+      <parameter>
+         <code value="path-qa"/>
+         <value value="temp/qa"/>
+      </parameter>
+      <parameter>
+         <code value="path-temp"/>
+         <value value="temp/pages"/>
+      </parameter>
+      <parameter>
+         <code value="path-output"/>
+         <value value="output"/>
+      </parameter>
+      <parameter>
+         <code value="path-tx-cache"/>
+         <value value="input-cache/txcache"/>
+      </parameter>
+      <parameter>
+         <code value="path-suppressed-warnings"/>
+         <value value="input/ignoreWarnings.txt"/>
+      </parameter>
+      <parameter>
+         <code value="template-html"/>
+         <value value="template-page.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-md"/>
+         <value value="template-page-md.html"/>
+      </parameter>
+      <parameter>
+         <code value="apply-contact"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-context"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-copyright"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-jurisdiction"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-license"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-publisher"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-version"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="active-tables"/>
+         <value value="true"/>
+      </parameter>
+   </definition>
+</ImplementationGuide>

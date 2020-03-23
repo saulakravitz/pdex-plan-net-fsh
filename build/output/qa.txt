@@ -1,0 +1,1048 @@
+﻿DaVinciPDEXPlanNet : Validation Results
+=========================================
+
+err = 44, warn = 6, info = 12
+IG Publisher Version: v1.0.72-SNAPSHOT
+Generated Mon Mar 23 19:30:24 EDT 2020. FHIR version 4.0.1 for hl7.fhir.us.davinci-pdex-plan-net#0.1.0 (canonical = http://hl7.org/fhir/us/davinci-pdex-plan-net)
+
+ Build Errors : 677 / 30
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/ImplementationGuide-hl7.fhir.us.davinci-pdex-plan-net : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/endpoint-direct321 : 0 / 2
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/endpoint-plannet-organization-1230085657-direct : 0 / 1
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/healthcareservice-ffcardiology : 0 / 1
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/healthcareservice-hcs-ws : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/healthcareservice-independencerehab1 : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/healthcareservice-independencerehab2 : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/healthcareservice-nutrition-healthcareservice-1238863986 : 3 / 1
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/insuranceplan-insuranceplan1 : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/insuranceplan-plannet-insuranceplan-HPID400000 : 3 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/location-loc-ffmh : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/location-loc-ffmh-hvi : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/location-loc-ws : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/location-location1WSAddress : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/location-plannet-location-1230085657 : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/location-plannet-location-1230188327 : 2 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/location-plannet-location-PCY-0002302 : 2 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/location-wash-dc-metro : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-foundingfathers : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-homeland : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-independencerehab : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-monumentHIE : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-mtvernon : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-patriotdental : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-patriotppo : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-plannet-network-HPID040000 : 1 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-plannet-organization-1230085657 : 0 / 1
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-plannet-organization-1239774646 : 0 / 1
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-plannet-organization-3b4358447f58795888ada0a39 : 0 / 1
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organizationaffiliation-orgrole1 : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organizationaffiliation-orgrole2 : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitioner-plannet-practitioner-1232506780 : 0 / 1
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitioner-practitioner1 : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitionerrole-plannet-practitionerrole-1232506780 : 4 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitionerrole-plannet-practitionerrole-1236743399 : 5 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitionerrole-practitionerrole1 : 2 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/structuredefinition-endpoint-usecase : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/structuredefinition-location-reference : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/structuredefinition-network-reference : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/structuredefinition-newpatients : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/structuredefinition-via-intermediary : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/structuredefinition-plannet-Endpoint : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/structuredefinition-plannet-HealthcareService : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/structuredefinition-plannet-InsurancePlan : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/structuredefinition-plannet-Location : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/structuredefinition-plannet-Network : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/structuredefinition-plannet-Organization : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/structuredefinition-plannet-OrganizationAffiliation : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/structuredefinition-plannet-Practitioner : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/structuredefinition-plannet-PractitionerRole : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/capabilitystatement-plannet-server : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-endpoint-connection-type : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-endpoint-identifier : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-endpoint-identifier-assigner : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-endpoint-mime-type : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-endpoint-organization : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-endpoint-payload-type : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-endpoint-usecase-standard : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-endpoint-usecase-type : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-characteristic : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-coverage-area : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-endpoint : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-identifier : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-identifier-assigner : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-location : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-name : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-new-patient : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-new-patient-network : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-organization : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-service-category : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-service-type : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-healthcareservice-specialty : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-administered-by : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-coverage-area : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-coverage-benefit-type : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-coverage-network : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-coverage-type : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-identifier : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-name : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-network : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-owned-by : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-plan-coverage-area : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-plan-identifier : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-plan-network : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-plan-type : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-insuranceplan-type : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-location-accessibility : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-location-address : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-location-contains : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-location-identifier : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-location-identifier-assigner : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-location-new-patient : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-location-new-patient-network : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-location-organization : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-location-partof : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-location-type : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-address : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-address-city : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-address-country : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-address-postalcode : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-address-state : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-coverage-area : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-endpoint : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-identifier : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-identifier-assigner : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-name : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-partof : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-qualification-code : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-qualification-issuer : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-qualification-wherevalid-code : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-qualification-wherevalid-location : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organization-type : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organizationaffiliation-identifier : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organizationaffiliation-identifier-assigner : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organizationaffiliation-location : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organizationaffiliation-network : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organizationaffiliation-participating-organization : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organizationaffiliation-primary-organization : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organizationaffiliation-role : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organizationaffiliation-service : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-organizationaffiliation-specialty : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-plannet-available-days : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-plannet-available-end-time : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-plannet-available-start-time : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitioner-family-name : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitioner-given-name : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitioner-identifier : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitioner-identifier-assigner : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitioner-name : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitioner-phonetic : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitioner-qualification-code : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitioner-qualification-issuer : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitioner-qualification-wherevalid-code : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitioner-qualification-wherevalid-location : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-endpoint : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-identifier : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-identifier-assigner : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-location : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-network : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-new-patient : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-new-patient-network : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-organization : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-practitioner : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-qualification-code : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-qualification-issuer : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-qualification-wherevalid-code : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-qualification-wherevalid-location : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-role : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-service : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/searchparameter-practitionerrole-specialty : 0 / 0
+</table>
+== n/a ==
+WARNING: Unable to find description for the resource Endpoint/direct321.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource HealthcareService/ffcardiology.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource HealthcareService/hcs-ws.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource HealthcareService/independencerehab1.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource HealthcareService/independencerehab2.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource InsurancePlan/insuranceplan1.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Location/loc-ws.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Location/wash-dc-metro.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Organization/patriotppo.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Organization/foundingfathers.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Organization/homeland.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Organization/independencerehab.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Organization/monumentHIE.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Organization/mtvernon.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Organization/patriotdental.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource OrganizationAffiliation/orgrole1.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource OrganizationAffiliation/orgrole2.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Practitioner/practitioner1.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource PractitionerRole/practitionerrole1.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Location/location1WSAddress.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource HealthcareService/nutrition-healthcareservice-1238863986.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource InsurancePlan/plannet-insuranceplan-HPID400000.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Organization/plannet-network-HPID040000.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Endpoint/plannet-organization-1230085657-direct.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Organization/plannet-organization-1230085657.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Organization/plannet-organization-1239774646.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Organization/plannet-organization-3b4358447f58795888ada0a39.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource Practitioner/plannet-practitioner-1232506780.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource PractitionerRole/plannet-practitionerrole-1232506780.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+WARNING: Unable to find description for the resource PractitionerRole/plannet-practitionerrole-1236743399.  Descriptions are strongly encouraged to allow proper population of the artifact list.
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/CapabilityStatement-plannet-server.html#/html/body/div/div/div/p/a at Line 151, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/CapabilityStatement-plannet-server.json.html#/html/body/div/div/div/p/a at Line 3296, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/CapabilityStatement-plannet-server.ttl.html#/html/body/div/div/div/p/a at Line 2547, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/CapabilityStatement-plannet-server.xml.html#/html/body/div/div/div/p/a at Line 2610, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Endpoint-direct321.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Endpoint-direct321.json.html#/html/body/div/div/div/p/a at Line 206, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Endpoint-direct321.ttl.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Endpoint-direct321.xml.html#/html/body/div/div/div/p/a at Line 192, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Endpoint-plannet-organization-1230085657-direct.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Endpoint-plannet-organization-1230085657-direct.json.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Endpoint-plannet-organization-1230085657-direct.ttl.html#/html/body/div/div/div/p/a at Line 207, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Endpoint-plannet-organization-1230085657-direct.xml.html#/html/body/div/div/div/p/a at Line 187, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-ffcardiology.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-ffcardiology.json.html#/html/body/div/div/div/p/a at Line 298, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-ffcardiology.ttl.html#/html/body/div/div/div/p/a at Line 285, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-ffcardiology.xml.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-hcs-ws.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-hcs-ws.json.html#/html/body/div/div/div/p/a at Line 185, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-hcs-ws.ttl.html#/html/body/div/div/div/p/a at Line 192, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-hcs-ws.xml.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-independencerehab1.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-independencerehab1.json.html#/html/body/div/div/div/p/a at Line 223, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-independencerehab1.ttl.html#/html/body/div/div/div/p/a at Line 222, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-independencerehab1.xml.html#/html/body/div/div/div/p/a at Line 200, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-independencerehab2.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-independencerehab2.json.html#/html/body/div/div/div/p/a at Line 206, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-independencerehab2.ttl.html#/html/body/div/div/div/p/a at Line 209, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-independencerehab2.xml.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-nutrition-healthcareservice-1238863986.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 302: The link 'Organization/plannet-organization-1238863986' for "CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-nutrition-healthcareservice-1238863986.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 859: The link 'Location/plannet-location-1238863986' for "CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-nutrition-healthcareservice-1238863986.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-nutrition-healthcareservice-1238863986.json.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-nutrition-healthcareservice-1238863986.ttl.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/HealthcareService-nutrition-healthcareservice-1238863986.xml.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/InsurancePlan-insuranceplan1.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/InsurancePlan-insuranceplan1.json.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/InsurancePlan-insuranceplan1.ttl.html#/html/body/div/div/div/p/a at Line 240, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/InsurancePlan-insuranceplan1.xml.html#/html/body/div/div/div/p/a at Line 219, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/InsurancePlan-plannet-insuranceplan-HPID400000.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 573: The link 'Organization/plannet-organization-1230220000' for "Green Circle" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/InsurancePlan-plannet-insuranceplan-HPID400000.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 674: The link 'Organization/plannet-organization-1230220000' for "Green Circle" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/InsurancePlan-plannet-insuranceplan-HPID400000.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 768: The link 'Organization/plannet-network-HPID050000' for "Green Circle of Connecticut HMO" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/InsurancePlan-plannet-insuranceplan-HPID400000.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/InsurancePlan-plannet-insuranceplan-HPID400000.json.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/InsurancePlan-plannet-insuranceplan-HPID400000.ttl.html#/html/body/div/div/div/p/a at Line 210, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/InsurancePlan-plannet-insuranceplan-HPID400000.xml.html#/html/body/div/div/div/p/a at Line 190, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ffmh-hvi.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ffmh-hvi.json.html#/html/body/div/div/div/p/a at Line 259, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ffmh-hvi.ttl.html#/html/body/div/div/div/p/a at Line 259, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ffmh-hvi.xml.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ffmh.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ffmh.json.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ffmh.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ffmh.xml.html#/html/body/div/div/div/p/a at Line 237, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ws.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ws.json.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ws.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-loc-ws.xml.html#/html/body/div/div/div/p/a at Line 163, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-location1WSAddress.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-location1WSAddress.json.html#/html/body/div/div/div/p/a at Line 158, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-location1WSAddress.ttl.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-location1WSAddress.xml.html#/html/body/div/div/div/p/a at Line 155, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-1230085657.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-1230085657.json.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-1230085657.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-1230085657.xml.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-1230188327.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 709: The link 'Organization/plannet-organization-1230188327' for "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-1230188327.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-1230188327.json.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-1230188327.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-1230188327.xml.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-PCY-0002302.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 898: The link 'Organization/plannet-organization-72e977cb09c1ce74879379507' for "BRASSCITY" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-PCY-0002302.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-PCY-0002302.json.html#/html/body/div/div/div/p/a at Line 247, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-PCY-0002302.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-plannet-location-PCY-0002302.xml.html#/html/body/div/div/div/p/a at Line 222, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-wash-dc-metro.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-wash-dc-metro.json.html#/html/body/div/div/div/p/a at Line 158, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-wash-dc-metro.ttl.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Location-wash-dc-metro.xml.html#/html/body/div/div/div/p/a at Line 156, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-foundingfathers.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-foundingfathers.json.html#/html/body/div/div/div/p/a at Line 365, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-foundingfathers.ttl.html#/html/body/div/div/div/p/a at Line 324, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-foundingfathers.xml.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-homeland.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-homeland.json.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-homeland.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-homeland.xml.html#/html/body/div/div/div/p/a at Line 223, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-independencerehab.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-independencerehab.json.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-independencerehab.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-independencerehab.xml.html#/html/body/div/div/div/p/a at Line 223, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-monumentHIE.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-monumentHIE.json.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-monumentHIE.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-monumentHIE.xml.html#/html/body/div/div/div/p/a at Line 223, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-mtvernon.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-mtvernon.json.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-mtvernon.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-mtvernon.xml.html#/html/body/div/div/div/p/a at Line 223, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-patriotdental.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-patriotdental.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-patriotdental.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-patriotdental.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-patriotppo.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-patriotppo.json.html#/html/body/div/div/div/p/a at Line 297, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-patriotppo.ttl.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-patriotppo.xml.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-network-HPID040000.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 635: The link 'Organization/plannet-organization-1230210000' for "Acme Insurance Co" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-network-HPID040000.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-network-HPID040000.json.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-network-HPID040000.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-network-HPID040000.xml.html#/html/body/div/div/div/p/a at Line 241, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-1230085657.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-1230085657.json.html#/html/body/div/div/div/p/a at Line 298, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-1230085657.ttl.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-1230085657.xml.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-1239774646.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-1239774646.json.html#/html/body/div/div/div/p/a at Line 298, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-1239774646.ttl.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-1239774646.xml.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-3b4358447f58795888ada0a39.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-3b4358447f58795888ada0a39.json.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-3b4358447f58795888ada0a39.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Organization-plannet-organization-3b4358447f58795888ada0a39.xml.html#/html/body/div/div/div/p/a at Line 241, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/OrganizationAffiliation-orgrole1.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/OrganizationAffiliation-orgrole1.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/OrganizationAffiliation-orgrole1.ttl.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/OrganizationAffiliation-orgrole1.xml.html#/html/body/div/div/div/p/a at Line 230, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/OrganizationAffiliation-orgrole2.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/OrganizationAffiliation-orgrole2.json.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/OrganizationAffiliation-orgrole2.ttl.html#/html/body/div/div/div/p/a at Line 201, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/OrganizationAffiliation-orgrole2.xml.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Practitioner-plannet-practitioner-1232506780.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Practitioner-plannet-practitioner-1232506780.json.html#/html/body/div/div/div/p/a at Line 326, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Practitioner-plannet-practitioner-1232506780.ttl.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Practitioner-plannet-practitioner-1232506780.xml.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Practitioner-practitioner1.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Practitioner-practitioner1.json.html#/html/body/div/div/div/p/a at Line 478, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Practitioner-practitioner1.ttl.html#/html/body/div/div/div/p/a at Line 406, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/Practitioner-practitioner1.xml.html#/html/body/div/div/div/p/a at Line 400, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1232506780.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 664: The link 'Organization/plannet-organization-1232006923' for "LIFEBRIDGE COMMUNITY SERVICES, INC." cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1232506780.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 1199: The link 'Location/plannet-location-1232006923' for "LIFEBRIDGE COMMUNITY SERVICES, INC." cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1232506780.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1232506780.json.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1232506780.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1232506780.xml.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1236743399.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 281: The link 'Practitioner/plannet-practitioner-1236743399' for "Wiley Kiehn" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1236743399.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 379: The link 'Organization/plannet-organization-1230789741' for "EYE ASSOCIATES PC" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1236743399.html#/html/body/div/div/div/div/div/div/p/a at Line 135, column 842: The link 'Location/plannet-location-1230789741' for "EYE ASSOCIATES PC" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1236743399.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1236743399.json.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1236743399.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-plannet-practitionerrole-1236743399.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-practitionerrole1.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-practitionerrole1.json.html#/html/body/div/div/div/p/a at Line 285, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-practitionerrole1.ttl.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/PractitionerRole-practitionerrole1.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-connection-type.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-connection-type.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-connection-type.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-connection-type.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-identifier-assigner.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-identifier-assigner.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-identifier-assigner.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-identifier-assigner.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-identifier.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-identifier.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-identifier.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-identifier.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-mime-type.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-mime-type.json.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-mime-type.ttl.html#/html/body/div/div/div/p/a at Line 180, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-mime-type.xml.html#/html/body/div/div/div/p/a at Line 163, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-organization.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-organization.json.html#/html/body/div/div/div/p/a at Line 183, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-organization.ttl.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-organization.xml.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-payload-type.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-payload-type.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-payload-type.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-payload-type.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-usecase-standard.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-usecase-standard.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-usecase-standard.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-usecase-standard.xml.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-usecase-type.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-usecase-type.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-usecase-type.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-endpoint-usecase-type.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-characteristic.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-characteristic.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-characteristic.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-characteristic.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-coverage-area.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-coverage-area.json.html#/html/body/div/div/div/p/a at Line 176, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-coverage-area.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-coverage-area.xml.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-endpoint.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-endpoint.json.html#/html/body/div/div/div/p/a at Line 177, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-endpoint.ttl.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-endpoint.xml.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-identifier-assigner.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-identifier-assigner.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-identifier-assigner.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-identifier-assigner.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-identifier.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-identifier.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-identifier.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-identifier.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-location.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-location.json.html#/html/body/div/div/div/p/a at Line 182, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-location.ttl.html#/html/body/div/div/div/p/a at Line 208, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-location.xml.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-name.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-name.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-name.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-name.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-new-patient-network.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-new-patient-network.json.html#/html/body/div/div/div/p/a at Line 176, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-new-patient-network.ttl.html#/html/body/div/div/div/p/a at Line 194, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-new-patient-network.xml.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-new-patient.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-new-patient.json.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-new-patient.ttl.html#/html/body/div/div/div/p/a at Line 179, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-new-patient.xml.html#/html/body/div/div/div/p/a at Line 164, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-organization.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-organization.json.html#/html/body/div/div/div/p/a at Line 183, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-organization.ttl.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-organization.xml.html#/html/body/div/div/div/p/a at Line 174, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-service-category.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-service-category.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-service-category.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-service-category.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-service-type.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-service-type.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-service-type.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-service-type.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-specialty.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-specialty.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-specialty.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-healthcareservice-specialty.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-administered-by.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-administered-by.json.html#/html/body/div/div/div/p/a at Line 181, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-administered-by.ttl.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-administered-by.xml.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-area.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-area.json.html#/html/body/div/div/div/p/a at Line 175, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-area.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-area.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-benefit-type.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-benefit-type.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-benefit-type.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-benefit-type.xml.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-network.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-network.json.html#/html/body/div/div/div/p/a at Line 176, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-network.ttl.html#/html/body/div/div/div/p/a at Line 194, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-network.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-type.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-type.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-type.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-coverage-type.xml.html#/html/body/div/div/div/p/a at Line 164, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-identifier.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-identifier.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-identifier.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-identifier.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-name.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-name.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-name.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-name.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-network.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-network.json.html#/html/body/div/div/div/p/a at Line 176, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-network.ttl.html#/html/body/div/div/div/p/a at Line 194, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-network.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-owned-by.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-owned-by.json.html#/html/body/div/div/div/p/a at Line 181, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-owned-by.ttl.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-owned-by.xml.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-coverage-area.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-coverage-area.json.html#/html/body/div/div/div/p/a at Line 175, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-coverage-area.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-coverage-area.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-identifier.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-identifier.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-identifier.ttl.html#/html/body/div/div/div/p/a at Line 187, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-identifier.xml.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-network.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-network.json.html#/html/body/div/div/div/p/a at Line 176, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-network.ttl.html#/html/body/div/div/div/p/a at Line 194, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-network.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-type.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-type.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-type.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-plan-type.xml.html#/html/body/div/div/div/p/a at Line 164, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-type.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-type.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-type.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-insuranceplan-type.xml.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-accessibility.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-accessibility.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-accessibility.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-accessibility.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-address.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-address.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-address.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-address.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-contains.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-contains.json.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-contains.ttl.html#/html/body/div/div/div/p/a at Line 180, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-contains.xml.html#/html/body/div/div/div/p/a at Line 164, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-identifier-assigner.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-identifier-assigner.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-identifier-assigner.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-identifier-assigner.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-identifier.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-identifier.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-identifier.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-identifier.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-new-patient-network.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-new-patient-network.json.html#/html/body/div/div/div/p/a at Line 176, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-new-patient-network.ttl.html#/html/body/div/div/div/p/a at Line 194, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-new-patient-network.xml.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-new-patient.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-new-patient.json.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-new-patient.ttl.html#/html/body/div/div/div/p/a at Line 179, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-new-patient.xml.html#/html/body/div/div/div/p/a at Line 163, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-organization.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-organization.json.html#/html/body/div/div/div/p/a at Line 183, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-organization.ttl.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-organization.xml.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-partof.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-partof.json.html#/html/body/div/div/div/p/a at Line 182, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-partof.ttl.html#/html/body/div/div/div/p/a at Line 208, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-partof.xml.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-type.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-type.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-type.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-location-type.xml.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-city.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-city.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-city.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-city.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-country.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-country.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-country.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-country.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-postalcode.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-postalcode.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-postalcode.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-postalcode.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-state.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-state.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-state.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address-state.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-address.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-coverage-area.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-coverage-area.json.html#/html/body/div/div/div/p/a at Line 175, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-coverage-area.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-coverage-area.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-endpoint.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-endpoint.json.html#/html/body/div/div/div/p/a at Line 177, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-endpoint.ttl.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-endpoint.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-identifier-assigner.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-identifier-assigner.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-identifier-assigner.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-identifier-assigner.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-identifier.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-identifier.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-identifier.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-identifier.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-name.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-name.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-name.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-name.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-partof.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-partof.json.html#/html/body/div/div/div/p/a at Line 182, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-partof.ttl.html#/html/body/div/div/div/p/a at Line 208, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-partof.xml.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-code.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-code.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-code.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-code.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-issuer.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-issuer.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-issuer.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-issuer.xml.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-wherevalid-code.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-wherevalid-code.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-wherevalid-code.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-wherevalid-code.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-wherevalid-location.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-wherevalid-location.json.html#/html/body/div/div/div/p/a at Line 179, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-wherevalid-location.ttl.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-qualification-wherevalid-location.xml.html#/html/body/div/div/div/p/a at Line 170, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-type.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-type.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-type.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organization-type.xml.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-identifier-assigner.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-identifier-assigner.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-identifier-assigner.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-identifier-assigner.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-identifier.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-identifier.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-identifier.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-identifier.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-location.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-location.json.html#/html/body/div/div/div/p/a at Line 182, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-location.ttl.html#/html/body/div/div/div/p/a at Line 208, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-location.xml.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-network.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-network.json.html#/html/body/div/div/div/p/a at Line 177, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-network.ttl.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-network.xml.html#/html/body/div/div/div/p/a at Line 170, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-participating-organization.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-participating-organization.json.html#/html/body/div/div/div/p/a at Line 183, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-participating-organization.ttl.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-participating-organization.xml.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-primary-organization.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-primary-organization.json.html#/html/body/div/div/div/p/a at Line 183, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-primary-organization.ttl.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-primary-organization.xml.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-role.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-role.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-role.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-role.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-service.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-service.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-service.ttl.html#/html/body/div/div/div/p/a at Line 201, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-service.xml.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-specialty.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-specialty.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-specialty.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-organizationaffiliation-specialty.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-days.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-days.json.html#/html/body/div/div/div/p/a at Line 175, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-days.ttl.html#/html/body/div/div/div/p/a at Line 196, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-days.xml.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-end-time.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-end-time.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-end-time.ttl.html#/html/body/div/div/div/p/a at Line 190, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-end-time.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-start-time.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-start-time.json.html#/html/body/div/div/div/p/a at Line 175, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-start-time.ttl.html#/html/body/div/div/div/p/a at Line 196, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-plannet-available-start-time.xml.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-family-name.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-family-name.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-family-name.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-family-name.xml.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-given-name.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-given-name.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-given-name.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-given-name.xml.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-identifier-assigner.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-identifier-assigner.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-identifier-assigner.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-identifier-assigner.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-identifier.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-identifier.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-identifier.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-identifier.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-name.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-name.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-name.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-name.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-phonetic.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-phonetic.json.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-phonetic.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-phonetic.xml.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-code.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-code.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-code.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-code.xml.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-issuer.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-issuer.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-issuer.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-issuer.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-wherevalid-code.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-wherevalid-code.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-wherevalid-code.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-wherevalid-code.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-wherevalid-location.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-wherevalid-location.json.html#/html/body/div/div/div/p/a at Line 180, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-wherevalid-location.ttl.html#/html/body/div/div/div/p/a at Line 201, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitioner-qualification-wherevalid-location.xml.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-endpoint.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-endpoint.json.html#/html/body/div/div/div/p/a at Line 177, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-endpoint.ttl.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-endpoint.xml.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-identifier-assigner.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-identifier-assigner.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-identifier-assigner.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-identifier-assigner.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-identifier.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-identifier.json.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-identifier.ttl.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-identifier.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-location.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-location.json.html#/html/body/div/div/div/p/a at Line 182, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-location.ttl.html#/html/body/div/div/div/p/a at Line 208, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-location.xml.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-network.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-network.json.html#/html/body/div/div/div/p/a at Line 182, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-network.ttl.html#/html/body/div/div/div/p/a at Line 207, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-network.xml.html#/html/body/div/div/div/p/a at Line 173, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-new-patient-network.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-new-patient-network.json.html#/html/body/div/div/div/p/a at Line 176, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-new-patient-network.ttl.html#/html/body/div/div/div/p/a at Line 194, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-new-patient-network.xml.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-new-patient.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-new-patient.json.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-new-patient.ttl.html#/html/body/div/div/div/p/a at Line 179, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-new-patient.xml.html#/html/body/div/div/div/p/a at Line 164, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-organization.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-organization.json.html#/html/body/div/div/div/p/a at Line 183, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-organization.ttl.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-organization.xml.html#/html/body/div/div/div/p/a at Line 174, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-practitioner.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-practitioner.json.html#/html/body/div/div/div/p/a at Line 176, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-practitioner.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-practitioner.xml.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-code.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-code.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-code.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-code.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-issuer.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-issuer.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-issuer.ttl.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-issuer.xml.html#/html/body/div/div/div/p/a at Line 169, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-wherevalid-code.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-wherevalid-code.json.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-wherevalid-code.ttl.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-wherevalid-code.xml.html#/html/body/div/div/div/p/a at Line 166, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-wherevalid-location.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-wherevalid-location.json.html#/html/body/div/div/div/p/a at Line 180, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-wherevalid-location.ttl.html#/html/body/div/div/div/p/a at Line 201, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-qualification-wherevalid-location.xml.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-role.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-role.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-role.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-role.xml.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-service.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-service.json.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-service.ttl.html#/html/body/div/div/div/p/a at Line 201, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-service.xml.html#/html/body/div/div/div/p/a at Line 170, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-specialty.html#/html/body/div/div/div/p/a at Line 150, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-specialty.json.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-specialty.ttl.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/SearchParameter-practitionerrole-specialty.xml.html#/html/body/div/div/div/p/a at Line 167, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-endpoint-usecase-definitions.html#/html/body/div/div/div/p/a at Line 307, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-endpoint-usecase-mappings.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-endpoint-usecase.html#/html/body/div/div/div/p/a at Line 489, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-endpoint-usecase.profile.json.html#/html/body/div/div/div/p/a at Line 1107, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-endpoint-usecase.profile.ttl.html#/html/body/div/div/div/p/a at Line 950, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-endpoint-usecase.profile.xml.html#/html/body/div/div/div/p/a at Line 996, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-location-reference-definitions.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-location-reference-mappings.html#/html/body/div/div/div/p/a at Line 187, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-location-reference.html#/html/body/div/div/div/p/a at Line 454, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-location-reference.profile.json.html#/html/body/div/div/div/p/a at Line 522, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-location-reference.profile.ttl.html#/html/body/div/div/div/p/a at Line 484, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-location-reference.profile.xml.html#/html/body/div/div/div/p/a at Line 467, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-network-reference-definitions.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-network-reference-mappings.html#/html/body/div/div/div/p/a at Line 187, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-network-reference.html#/html/body/div/div/div/p/a at Line 454, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-network-reference.profile.json.html#/html/body/div/div/div/p/a at Line 522, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-network-reference.profile.ttl.html#/html/body/div/div/div/p/a at Line 484, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-network-reference.profile.xml.html#/html/body/div/div/div/p/a at Line 467, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-newpatients-definitions.html#/html/body/div/div/div/p/a at Line 296, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-newpatients-mappings.html#/html/body/div/div/div/p/a at Line 194, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-newpatients.html#/html/body/div/div/div/p/a at Line 480, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-newpatients.profile.json.html#/html/body/div/div/div/p/a at Line 1042, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-newpatients.profile.ttl.html#/html/body/div/div/div/p/a at Line 898, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-newpatients.profile.xml.html#/html/body/div/div/div/p/a at Line 935, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Endpoint-definitions.html#/html/body/div/div/div/p/a at Line 562, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Endpoint-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 204, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Endpoint-mappings.html#/html/body/div/div/div/p/a at Line 226, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Endpoint.html#/html/body/div/div/div/p/a at Line 653, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Endpoint.json.html#/html/body/div/div/div/p/a at Line 2121, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Endpoint.profile.json.html#/html/body/div/div/div/p/a at Line 2170, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Endpoint.profile.ttl.html#/html/body/div/div/div/p/a at Line 1906, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Endpoint.profile.xml.html#/html/body/div/div/div/p/a at Line 1953, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Endpoint.ttl.html#/html/body/div/div/div/p/a at Line 1856, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Endpoint.xml.html#/html/body/div/div/div/p/a at Line 1900, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-HealthcareService-definitions.html#/html/body/div/div/div/p/a at Line 833, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-HealthcareService-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 222, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-HealthcareService-mappings.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-HealthcareService.html#/html/body/div/div/div/p/a at Line 833, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-HealthcareService.json.html#/html/body/div/div/div/p/a at Line 3520, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-HealthcareService.profile.json.html#/html/body/div/div/div/p/a at Line 3569, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-HealthcareService.profile.ttl.html#/html/body/div/div/div/p/a at Line 3104, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-HealthcareService.profile.xml.html#/html/body/div/div/div/p/a at Line 3162, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-HealthcareService.ttl.html#/html/body/div/div/div/p/a at Line 3054, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-HealthcareService.xml.html#/html/body/div/div/div/p/a at Line 3109, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-InsurancePlan-definitions.html#/html/body/div/div/div/p/a at Line 1154, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-InsurancePlan-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 204, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-InsurancePlan-mappings.html#/html/body/div/div/div/p/a at Line 271, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-InsurancePlan.html#/html/body/div/div/div/p/a at Line 978, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-InsurancePlan.json.html#/html/body/div/div/div/p/a at Line 4838, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-InsurancePlan.profile.json.html#/html/body/div/div/div/p/a at Line 4887, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-InsurancePlan.profile.ttl.html#/html/body/div/div/div/p/a at Line 4284, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-InsurancePlan.profile.xml.html#/html/body/div/div/div/p/a at Line 4311, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-InsurancePlan.ttl.html#/html/body/div/div/div/p/a at Line 4234, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-InsurancePlan.xml.html#/html/body/div/div/div/p/a at Line 4258, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Location-definitions.html#/html/body/div/div/div/p/a at Line 885, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Location-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 240, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Location-mappings.html#/html/body/div/div/div/p/a at Line 279, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Location.html#/html/body/div/div/div/p/a at Line 835, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Location.json.html#/html/body/div/div/div/p/a at Line 3783, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Location.profile.json.html#/html/body/div/div/div/p/a at Line 3832, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Location.profile.ttl.html#/html/body/div/div/div/p/a at Line 3312, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Location.profile.xml.html#/html/body/div/div/div/p/a at Line 3380, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Location.ttl.html#/html/body/div/div/div/p/a at Line 3262, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Location.xml.html#/html/body/div/div/div/p/a at Line 3327, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Network-definitions.html#/html/body/div/div/div/p/a at Line 729, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Network-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 204, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Network-mappings.html#/html/body/div/div/div/p/a at Line 296, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Network.html#/html/body/div/div/div/p/a at Line 764, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Network.json.html#/html/body/div/div/div/p/a at Line 3001, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Network.profile.json.html#/html/body/div/div/div/p/a at Line 3050, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Network.profile.ttl.html#/html/body/div/div/div/p/a at Line 2648, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Network.profile.xml.html#/html/body/div/div/div/p/a at Line 2745, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Network.ttl.html#/html/body/div/div/div/p/a at Line 2598, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Network.xml.html#/html/body/div/div/div/p/a at Line 2692, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Organization-definitions.html#/html/body/div/div/div/p/a at Line 908, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Organization-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 246, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Organization-mappings.html#/html/body/div/div/div/p/a at Line 330, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Organization.html#/html/body/div/div/div/p/a at Line 857, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Organization.json.html#/html/body/div/div/div/p/a at Line 3893, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Organization.profile.json.html#/html/body/div/div/div/p/a at Line 3942, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Organization.profile.ttl.html#/html/body/div/div/div/p/a at Line 3406, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Organization.profile.xml.html#/html/body/div/div/div/p/a at Line 3501, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Organization.ttl.html#/html/body/div/div/div/p/a at Line 3356, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Organization.xml.html#/html/body/div/div/div/p/a at Line 3448, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-OrganizationAffiliation-definitions.html#/html/body/div/div/div/p/a at Line 530, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-OrganizationAffiliation-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 204, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-OrganizationAffiliation-mappings.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-OrganizationAffiliation.html#/html/body/div/div/div/p/a at Line 609, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-OrganizationAffiliation.json.html#/html/body/div/div/div/p/a at Line 1979, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-OrganizationAffiliation.profile.json.html#/html/body/div/div/div/p/a at Line 2028, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-OrganizationAffiliation.profile.ttl.html#/html/body/div/div/div/p/a at Line 1780, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-OrganizationAffiliation.profile.xml.html#/html/body/div/div/div/p/a at Line 1817, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-OrganizationAffiliation.ttl.html#/html/body/div/div/div/p/a at Line 1730, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-OrganizationAffiliation.xml.html#/html/body/div/div/div/p/a at Line 1764, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Practitioner-definitions.html#/html/body/div/div/div/p/a at Line 994, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Practitioner-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 204, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Practitioner-mappings.html#/html/body/div/div/div/p/a at Line 347, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Practitioner.html#/html/body/div/div/div/p/a at Line 897, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Practitioner.json.html#/html/body/div/div/div/p/a at Line 4319, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Practitioner.profile.json.html#/html/body/div/div/div/p/a at Line 4368, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Practitioner.profile.ttl.html#/html/body/div/div/div/p/a at Line 3745, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Practitioner.profile.xml.html#/html/body/div/div/div/p/a at Line 3890, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Practitioner.ttl.html#/html/body/div/div/div/p/a at Line 3695, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-Practitioner.xml.html#/html/body/div/div/div/p/a at Line 3837, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-PractitionerRole-definitions.html#/html/body/div/div/div/p/a at Line 721, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-PractitionerRole-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 210, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-PractitionerRole-mappings.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-PractitionerRole.html#/html/body/div/div/div/p/a at Line 791, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-PractitionerRole.json.html#/html/body/div/div/div/p/a at Line 3068, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-PractitionerRole.profile.json.html#/html/body/div/div/div/p/a at Line 3117, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-PractitionerRole.profile.ttl.html#/html/body/div/div/div/p/a at Line 2734, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-PractitionerRole.profile.xml.html#/html/body/div/div/div/p/a at Line 2781, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-PractitionerRole.ttl.html#/html/body/div/div/div/p/a at Line 2684, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-plannet-PractitionerRole.xml.html#/html/body/div/div/div/p/a at Line 2728, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-via-intermediary-definitions.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-via-intermediary-mappings.html#/html/body/div/div/div/p/a at Line 187, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-via-intermediary.html#/html/body/div/div/div/p/a at Line 454, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-via-intermediary.profile.json.html#/html/body/div/div/div/p/a at Line 528, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-via-intermediary.profile.ttl.html#/html/body/div/div/div/p/a at Line 502, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/StructureDefinition-via-intermediary.profile.xml.html#/html/body/div/div/div/p/a at Line 479, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/artifacts.html#/html/body/div/div/div/p/a at Line 1246, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/index.html#/html/body/div/div/div/div/div/p/a at Line 139, column 79: The link 'http://hl7.org/fhir/uv/vhdir/2018Sep/index.html' for "Validated Healthcare Directory Implementation Guide (VHDir IG)" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/index.html#/html/body/div/div/div/p/a at Line 296, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+ERROR: /Users/skravitz/git/pdex-plan-net-fsh/build/output/toc.html#/html/body/div/div/div/p/a at Line 124, column 28: The link 'saul@mitre.org' for "Saul Kravitz" cannot be resolved
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/ImplementationGuide-hl7.fhir.us.davinci-pdex-plan-net.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Endpoint-direct321.json ==
+WARNING: Endpoint/direct321: Endpoint.extension[0].extension[0].value.ofType(CodeableConcept): ValueSet http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase not found by validator
+INFORMATION: Endpoint/direct321: Endpoint.payloadType[0].coding[0]: Code System URI "urn:oid:1.3.6.1.4.1.19376.1.2.3" is unknown so the code cannot be validated
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Endpoint-plannet-organization-1230085657-direct.json ==
+INFORMATION: Endpoint/plannet-organization-1230085657-direct: Endpoint.payloadType[0].coding[0]: Code System URI "urn:oid:1.3.6.1.4.1.19376.1.2.3" is unknown so the code cannot be validated
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/HealthcareService-ffcardiology.json ==
+INFORMATION: HealthcareService/ffcardiology: HealthcareService.identifier[0].type.coding[0]: Code System URI "http://example.org/identifiers" is unknown so the code cannot be validated
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/HealthcareService-hcs-ws.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/HealthcareService-independencerehab1.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/HealthcareService-independencerehab2.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/HealthcareService-nutrition-healthcareservice-1238863986.json ==
+ERROR: HealthcareService/nutrition-healthcareservice-1238863986: HealthcareService.identifier[0].assigner: Unable to resolve resource "Organization/plannet-organization-1238863986"
+ERROR: HealthcareService/nutrition-healthcareservice-1238863986: HealthcareService.providedBy: Unable to resolve resource "Organization/plannet-organization-1238863986"
+INFORMATION: HealthcareService/nutrition-healthcareservice-1238863986: HealthcareService.type[0].coding[0]: Code System URI "http://cambridge-health-alliance-elder-service-plan/service-types" is unknown so the code cannot be validated
+ERROR: HealthcareService/nutrition-healthcareservice-1238863986: HealthcareService.location[0]: Unable to resolve resource "Location/plannet-location-1238863986"
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/InsurancePlan-insuranceplan1.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/InsurancePlan-plannet-insuranceplan-HPID400000.json ==
+ERROR: InsurancePlan/plannet-insuranceplan-HPID400000: InsurancePlan.ownedBy: Unable to resolve resource "Organization/plannet-organization-1230220000"
+ERROR: InsurancePlan/plannet-insuranceplan-HPID400000: InsurancePlan.administeredBy: Unable to resolve resource "Organization/plannet-organization-1230220000"
+ERROR: InsurancePlan/plannet-insuranceplan-HPID400000: InsurancePlan.network[0]: Unable to resolve resource "Organization/plannet-network-HPID050000"
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Location-loc-ffmh.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Location-loc-ffmh-hvi.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Location-loc-ws.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Location-location1WSAddress.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Location-plannet-location-1230085657.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Location-plannet-location-1230188327.json ==
+ERROR: Location/plannet-location-1230188327: Location.identifier[0].assigner: Unable to resolve resource "Organization/plannet-organization-1230188327"
+ERROR: Location/plannet-location-1230188327: Location.managingOrganization: Unable to resolve resource "Organization/plannet-organization-1230188327"
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Location-plannet-location-PCY-0002302.json ==
+ERROR: Location/plannet-location-PCY-0002302: Location.identifier[0].assigner: Unable to resolve resource "Organization/plannet-organization-72e977cb09c1ce74879379507"
+ERROR: Location/plannet-location-PCY-0002302: Location.managingOrganization: Unable to resolve resource "Organization/plannet-organization-72e977cb09c1ce74879379507"
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Location-wash-dc-metro.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Organization-foundingfathers.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Organization-homeland.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Organization-independencerehab.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Organization-monumentHIE.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Organization-mtvernon.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Organization-patriotdental.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Organization-patriotppo.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Organization-plannet-network-HPID040000.json ==
+ERROR: Organization/plannet-network-HPID040000: Organization.partOf: Unable to resolve resource "Organization/plannet-organization-1230210000"
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Organization-plannet-organization-1230085657.json ==
+WARNING: Organization/plannet-organization-1230085657: Organization.identifier[0].type.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0203#NPI should be one of 'National provider identifier, Nationale zorgaanbieder/zorgverlener identificatie' instead of 'Provider number'
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Organization-plannet-organization-1239774646.json ==
+WARNING: Organization/plannet-organization-1239774646: Organization.identifier[0].type.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0203#NPI should be one of 'National provider identifier, Nationale zorgaanbieder/zorgverlener identificatie' instead of 'Provider number'
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Organization-plannet-organization-3b4358447f58795888ada0a39.json ==
+INFORMATION: Organization/plannet-organization-3b4358447f58795888ada0a39: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/OrganizationAffiliation-orgrole1.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/OrganizationAffiliation-orgrole2.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Practitioner-plannet-practitioner-1232506780.json ==
+INFORMATION: Practitioner/plannet-practitioner-1232506780: Practitioner.qualification[0].extension[0].extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI "https://www.usps.com" is unknown so the code cannot be validated
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Practitioner-practitioner1.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/PractitionerRole-plannet-practitionerrole-1232506780.json ==
+ERROR: PractitionerRole/plannet-practitionerrole-1232506780: PractitionerRole.extension[0].value.ofType(Reference): Unable to resolve resource "Organization/plannet-network-HPID130000"
+ERROR: PractitionerRole/plannet-practitionerrole-1232506780: PractitionerRole.organization: Unable to resolve resource "Organization/plannet-organization-1232006923"
+ERROR: PractitionerRole/plannet-practitionerrole-1232506780: PractitionerRole.code[0]: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role (http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role, and a code from this value set is required) (codes = http://nucc.org/provider-taxonomy#1223G0001X)
+ERROR: PractitionerRole/plannet-practitionerrole-1232506780: PractitionerRole.location[0]: Unable to resolve resource "Location/plannet-location-1232006923"
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/PractitionerRole-plannet-practitionerrole-1236743399.json ==
+ERROR: PractitionerRole/plannet-practitionerrole-1236743399: PractitionerRole.extension[0].value.ofType(Reference): Unable to resolve resource "Organization/plannet-network-HPID020000"
+ERROR: PractitionerRole/plannet-practitionerrole-1236743399: PractitionerRole.extension[1].value.ofType(Reference): Unable to resolve resource "Organization/plannet-network-HPID010000"
+ERROR: PractitionerRole/plannet-practitionerrole-1236743399: PractitionerRole.practitioner: Unable to resolve resource "Practitioner/plannet-practitioner-1236743399"
+ERROR: PractitionerRole/plannet-practitionerrole-1236743399: PractitionerRole.organization: Unable to resolve resource "Organization/plannet-organization-1230789741"
+ERROR: PractitionerRole/plannet-practitionerrole-1236743399: PractitionerRole.location[0]: Unable to resolve resource "Location/plannet-location-1230789741"
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/PractitionerRole-practitionerrole1.json ==
+ERROR: PractitionerRole/practitionerrole1: PractitionerRole.code[0]: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role (http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role, and a code from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor)
+ERROR: PractitionerRole/practitionerrole1: PractitionerRole.specialty[0]: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty (http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty, and a code from this value set is required) (codes = http://snomed.info/sct#394579002)
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/StructureDefinition-endpoint-usecase.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/StructureDefinition-location-reference.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/StructureDefinition-network-reference.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/StructureDefinition-newpatients.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/StructureDefinition-via-intermediary.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/StructureDefinition-plannet-Endpoint.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/StructureDefinition-plannet-HealthcareService.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/StructureDefinition-plannet-InsurancePlan.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/StructureDefinition-plannet-Location.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/StructureDefinition-plannet-Network.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/StructureDefinition-plannet-Organization.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/StructureDefinition-plannet-OrganizationAffiliation.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/StructureDefinition-plannet-Practitioner.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/StructureDefinition-plannet-PractitionerRole.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/CapabilityStatement-plannet-server.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-endpoint-connection-type.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-endpoint-identifier.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-endpoint-identifier-assigner.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-endpoint-mime-type.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-endpoint-organization.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-endpoint-payload-type.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-endpoint-usecase-standard.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-endpoint-usecase-type.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-characteristic.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-coverage-area.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-endpoint.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-identifier.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-identifier-assigner.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-location.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-name.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-new-patient.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-new-patient-network.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-organization.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-service-category.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-service-type.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-healthcareservice-specialty.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-administered-by.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-coverage-area.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-coverage-benefit-type.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-coverage-network.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-coverage-type.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-identifier.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-name.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-network.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-owned-by.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-plan-coverage-area.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-plan-identifier.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-plan-network.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-plan-type.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-insuranceplan-type.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-location-accessibility.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-location-address.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-location-contains.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-location-identifier.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-location-identifier-assigner.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-location-new-patient.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-location-new-patient-network.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-location-organization.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-location-partof.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-location-type.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-address.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-address-city.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-address-country.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-address-postalcode.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-address-state.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-coverage-area.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-endpoint.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-identifier.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-identifier-assigner.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-name.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-partof.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-qualification-code.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-qualification-issuer.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-qualification-wherevalid-code.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-qualification-wherevalid-location.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organization-type.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organizationaffiliation-identifier.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organizationaffiliation-identifier-assigner.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organizationaffiliation-location.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organizationaffiliation-network.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organizationaffiliation-participating-organization.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organizationaffiliation-primary-organization.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organizationaffiliation-role.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organizationaffiliation-service.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-organizationaffiliation-specialty.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-plannet-available-days.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-plannet-available-end-time.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-plannet-available-start-time.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitioner-family-name.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitioner-given-name.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitioner-identifier.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitioner-identifier-assigner.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitioner-name.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitioner-phonetic.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitioner-qualification-code.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitioner-qualification-issuer.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitioner-qualification-wherevalid-code.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitioner-qualification-wherevalid-location.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-endpoint.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-identifier.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-identifier-assigner.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-location.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-network.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-new-patient.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-new-patient-network.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-organization.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-practitioner.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-qualification-code.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-qualification-issuer.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-qualification-wherevalid-code.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-qualification-wherevalid-location.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-role.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-service.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/resources/SearchParameter-practitionerrole-specialty.json ==

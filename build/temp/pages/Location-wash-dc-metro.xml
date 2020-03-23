@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="wash-dc-metro"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: wash-dc-metro</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>name</b>: Washington, DC metro area</p><p><b>physicalType</b>: Area <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/location-physical-type code 'area' = 'Area', given as 'Area'})</span></p></div>
+  </text>
+  <status value="active"/>
+  <name value="Washington, DC metro area"/>
+  <physicalType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+      <code value="area"/>
+      <display value="Area"/>
+    </coding>
+  </physicalType>
+</Location>

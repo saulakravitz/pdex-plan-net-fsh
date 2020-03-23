@@ -1,0 +1,171 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/plannet-organization-1230085657> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "plannet-organization-1230085657"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: plannet-organization-1230085657</p><p><b>meta</b>: </p><p><b>identifier</b>: NPI = 1230085657 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: BAYSIDE ENDOSCOPY, LLC</p><p><b>telecom</b>: ph: 735-380-1096 x267(WORK), fax: 1-265-938-5709 x280(WORK)</p><p><b>address</b>: 33 STANIFORD ST, PROVIDENCE, RI 029053105(WORK)</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Purpose</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td>Administrative <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/contactentity-type code 'ADMIN' = 'Administrative', given as 'Administrative'})</span></td><td>Shane Goyette(OFFICIAL)</td><td>ph: 735-380-1096 x267(WORK)</td><td>33 STANIFORD ST, PROVIDENCE, RI 029053105(WORK)</td></tr></table></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "NPI" ];
+         fhir:Coding.display [ fhir:value "Provider number" ];
+         fhir:Coding.userSelected [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "NPI" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-npi" ];
+     fhir:Identifier.value [ fhir:value "1230085657" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Centers for Medicare and Medicaid Services" ]
+     ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/organization-type" ];
+       fhir:Coding.code [ fhir:value "prov" ];
+       fhir:Coding.display [ fhir:value "Healthcare Provider" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Healthcare Provider" ]
+  ];
+  fhir:Organization.name [ fhir:value "BAYSIDE ENDOSCOPY, LLC"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "735-380-1096 x267" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "fax" ];
+     fhir:ContactPoint.value [ fhir:value "1-265-938-5709 x280" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "latitude" ];
+         fhir:Extension.valueDecimal [ fhir:value "41.809006"^^xsd:decimal ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "longitude" ];
+         fhir:Extension.valueDecimal [ fhir:value "-71.41177"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/geolocation" ]
+     ];
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.text [ fhir:value "33 STANIFORD ST, PROVIDENCE, RI 029053105" ];
+     fhir:Address.line [
+       fhir:value "33 STANIFORD ST";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "PROVIDENCE" ];
+     fhir:Address.state [ fhir:value "RI" ];
+     fhir:Address.postalCode [ fhir:value "029053105" ];
+     fhir:Address.country [ fhir:value "USA" ]
+  ];
+  fhir:Organization.contact [
+     fhir:index 0;
+     fhir:Organization.contact.purpose [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/contactentity-type" ];
+         fhir:Coding.code [ fhir:value "ADMIN" ];
+         fhir:Coding.display [ fhir:value "Administrative" ]
+       ]
+     ];
+     fhir:Organization.contact.name [
+       fhir:HumanName.use [ fhir:value "official" ];
+       fhir:HumanName.text [ fhir:value "Shane Goyette" ];
+       fhir:HumanName.family [ fhir:value "Goyette" ];
+       fhir:HumanName.given [
+         fhir:value "Shane";
+         fhir:index 0
+       ]
+     ];
+     fhir:Organization.contact.telecom [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "daysOfWeek" ];
+           fhir:Extension.valueCode [ fhir:value "mon" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "daysOfWeek" ];
+           fhir:Extension.valueCode [ fhir:value "tue" ]
+         ], [
+           fhir:index 2;
+           fhir:Extension.url [ fhir:value "daysOfWeek" ];
+           fhir:Extension.valueCode [ fhir:value "wed" ]
+         ], [
+           fhir:index 3;
+           fhir:Extension.url [ fhir:value "daysOfWeek" ];
+           fhir:Extension.valueCode [ fhir:value "thu" ]
+         ], [
+           fhir:index 4;
+           fhir:Extension.url [ fhir:value "daysOfWeek" ];
+           fhir:Extension.valueCode [ fhir:value "fri" ]
+         ], [
+           fhir:index 5;
+           fhir:Extension.url [ fhir:value "availableStartTime" ];
+           fhir:Extension.valueTime [ fhir:value "07:00:00"^^xsd:time ]
+         ], [
+           fhir:index 6;
+           fhir:Extension.url [ fhir:value "availableEndTime" ];
+           fhir:Extension.valueTime [ fhir:value "18:00:00"^^xsd:time ]
+         ];
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime" ]
+       ];
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "735-380-1096 x267" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ];
+     fhir:Organization.contact.address [
+       fhir:Address.use [ fhir:value "work" ];
+       fhir:Address.type [ fhir:value "both" ];
+       fhir:Address.text [ fhir:value "33 STANIFORD ST, PROVIDENCE, RI 029053105" ];
+       fhir:Address.line [
+         fhir:value "33 STANIFORD ST";
+         fhir:index 0
+       ];
+       fhir:Address.city [ fhir:value "PROVIDENCE" ];
+       fhir:Address.state [ fhir:value "RI" ];
+       fhir:Address.postalCode [ fhir:value "029053105" ];
+       fhir:Address.country [ fhir:value "USA" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Organization/plannet-organization-1230085657.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/davinci-pdex-plan-net/Organization/plannet-organization-1230085657.ttl> .
+
+# -------------------------------------------------------------------------------------
+

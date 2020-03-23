@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="plannet-practitionerrole-1236743399"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: plannet-practitionerrole-1236743399</p><p><b>meta</b>: </p><p><b>identifier</b>: Hospital ID = 206272de83ed12 (SECONDARY)</p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner/plannet-practitioner-1236743399">Wiley Kiehn</a></p><p><b>organization</b>: <a href="Organization/plannet-organization-1230789741">EYE ASSOCIATES PC</a></p><p><b>code</b>: Urology <span style="background: LightGoldenRodYellow">(Details : {http://nucc.org/provider-taxonomy code '208800000X' = 'Urology', given as 'Urology'})</span></p><p><b>specialty</b>: Urology <span style="background: LightGoldenRodYellow">(Details : {http://nucc.org/provider-taxonomy code '208800000X' = 'Urology', given as 'Urology'})</span></p><p><b>location</b>: <a href="Location/plannet-location-1230789741">EYE ASSOCIATES PC</a></p><p><b>telecom</b>: ph: 407.611.2585 x223(WORK), fax: 303-063-8898 x72161(WORK)</p><h3>AvailableTimes</h3><table class="grid"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AvailableStartTime</b></td><td><b>AvailableEndTime</b></td></tr><tr><td>*</td><td>mon</td><td/><td/></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference">
+    <valueReference>
+      <reference value="Organization/plannet-network-HPID020000"/>
+      <display value="Green Circle of Massachusetts HMO"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference">
+    <valueReference>
+      <reference value="Organization/plannet-network-HPID010000"/>
+      <display value="Acme of Massachusetts Preferred Provider Network"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+      <valueCode value="active"/>
+    </extension>
+    <use value="secondary"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PRN"/>
+        <display value="Provider Number"/>
+      </coding>
+      <text value="Hospital ID"/>
+    </type>
+    <system value="https://eye-associates-pc.com"/>
+    <value value="206272de83ed12"/>
+  </identifier>
+  <active value="true"/>
+  <practitioner>
+    <reference value="Practitioner/plannet-practitioner-1236743399"/>
+    <display value="Wiley Kiehn"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/plannet-organization-1230789741"/>
+    <display value="EYE ASSOCIATES PC"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="http://nucc.org/provider-taxonomy"/>
+      <code value="208800000X"/>
+      <display value="Urology"/>
+    </coding>
+    <text value="Urology"/>
+  </code>
+  <specialty>
+    <coding>
+      <system value="http://nucc.org/provider-taxonomy"/>
+      <code value="208800000X"/>
+      <display value="Urology"/>
+    </coding>
+    <text value="Urology"/>
+  </specialty>
+  <location>
+    <reference value="Location/plannet-location-1230789741"/>
+    <display value="EYE ASSOCIATES PC"/>
+  </location>
+  <telecom>
+    <system value="phone"/>
+    <value value="407.611.2585 x223"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="303-063-8898 x72161"/>
+    <use value="work"/>
+  </telecom>
+  <availableTime>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <availableStartTime value="09:00:00"/>
+    <availableEndTime value="12:00:00"/>
+  </availableTime>
+</PractitionerRole>

@@ -1,0 +1,347 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "plannet-PractitionerRole",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole",
+  "version": "0.1.0",
+  "name": "PlannetPractitionerRole",
+  "title": "Plan-net PractitionerRole",
+  "status": "active",
+  "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also be a relationship to an organization. \nPractitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.   Plannet-PractitionerRole could not be based on USCore because USCore-PractitionerRole Profile \nrequires an associated practitioner and an associated organization which does not take into account that not all providers are people, i.e. the provider could be a \ngroup of people or a facility, nor does it take into account that not all practitioners are affiliated with an organization, i.e. they have a solo practice.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.extension",
+        "path": "PractitionerRole.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PractitionerRole.extension:newpatients",
+        "path": "PractitionerRole.extension",
+        "sliceName": "newpatients",
+        "short": "New Patients",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.extension:newpatientprofile",
+        "path": "PractitionerRole.extension",
+        "sliceName": "newpatientprofile",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.extension:network-reference",
+        "path": "PractitionerRole.extension",
+        "sliceName": "network-reference",
+        "short": "NetworkReference",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.extension:qualification",
+        "path": "PractitionerRole.extension",
+        "sliceName": "qualification",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.id",
+        "path": "PractitionerRole.identifier.id",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.use",
+        "path": "PractitionerRole.identifier.use",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.type",
+        "path": "PractitionerRole.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.system",
+        "path": "PractitionerRole.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.value",
+        "path": "PractitionerRole.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.period",
+        "path": "PractitionerRole.identifier.period",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.assigner",
+        "path": "PractitionerRole.identifier.assigner",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.active",
+        "path": "PractitionerRole.active",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.period",
+        "path": "PractitionerRole.period",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty"
+        }
+      },
+      {
+        "id": "PractitionerRole.location",
+        "path": "PractitionerRole.location",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.healthcareService",
+        "path": "PractitionerRole.healthcareService",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.telecom",
+        "path": "PractitionerRole.telecom",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.telecom.extension:contactpoint-availabletime",
+        "path": "PractitionerRole.telecom.extension",
+        "sliceName": "contactpoint-availabletime",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.telecom.extension:via-intermediary",
+        "path": "PractitionerRole.telecom.extension",
+        "sliceName": "via-intermediary",
+        "short": "Via Intermediary",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/via-intermediary"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.telecom.system",
+        "path": "PractitionerRole.telecom.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.telecom.value",
+        "path": "PractitionerRole.telecom.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.telecom.use",
+        "path": "PractitionerRole.telecom.use",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.telecom.rank",
+        "path": "PractitionerRole.telecom.rank",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.telecom.period",
+        "path": "PractitionerRole.telecom.period",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.availableTime",
+        "path": "PractitionerRole.availableTime",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.availableTime.daysOfWeek",
+        "path": "PractitionerRole.availableTime.daysOfWeek",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.availableTime.allDay",
+        "path": "PractitionerRole.availableTime.allDay",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.availableTime.availableStartTime",
+        "path": "PractitionerRole.availableTime.availableStartTime",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.availableTime.availableEndTime",
+        "path": "PractitionerRole.availableTime.availableEndTime",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.notAvailable",
+        "path": "PractitionerRole.notAvailable",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.notAvailable.description",
+        "path": "PractitionerRole.notAvailable.description",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.notAvailable.during",
+        "path": "PractitionerRole.notAvailable.during",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.endpoint",
+        "path": "PractitionerRole.endpoint",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

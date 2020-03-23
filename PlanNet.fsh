@@ -47,7 +47,6 @@ Description:    "The HealthCareService  resource typically describes services of
 * extension contains
     NewPatients named newpatients 1..1 MS
 * extension[newpatients] ^short = "New Patients"
-* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -102,12 +101,11 @@ Description:    "The HealthCareService  resource typically describes services of
 
 Profile:        PlannetInsurancePlan
 Parent:         InsurancePlan
-Id:             plannet-Insuranceplan
+Id:             plannet-InsurancePlan
 Title:          "Plan-net InsurancePlan"
 Description:    "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).
 
 InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."
-* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -157,7 +155,6 @@ Description:    "A Location is the physical place where healthcare services are 
     $AccessibilityExtension named accessibility 0..* MS and 
     $NewPatientProfileExtension named newpatientprofile 0..* MS
 * extension[newpatients] ^short = "New Patients"
-* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -182,9 +179,9 @@ Description:    "A Location is the physical place where healthcare services are 
 * telecom.period MS
 * physicalType MS
 * position MS
-* managingOrganization 1..1 MS
+* managingOrganization 0..1 MS
 * managingOrganization only Reference(PlannetOrganization)
-* partOf 1..1 MS
+* partOf 0..1 MS
 * partOf only Reference(PlannetLocation)
 * hoursOfOperation MS
 * hoursOfOperation.daysOfWeek MS
@@ -209,7 +206,6 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * extension contains
     LocationReference named location-reference 0..* MS
 * extension[location-reference] ^short = "Location Reference"
-* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -258,7 +254,6 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * extension contains
    $QualificationExtension named qualification 0..* MS and
    $OrgDescriptionExtension named org-description 0..1 MS
-* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -308,7 +303,6 @@ Parent:         OrganizationAffiliation
 Id:             plannet-OrganizationAffiliation
 Title:          "Plan-net OrganizationAffiliation"
 Description:    "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
-* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -344,7 +338,6 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * extension contains
    $AccessibilityExtension named accessibility 0..1 MS and
    $CommunicationProficiencyExtension named communication-proficiency 0..1 MS
-* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -406,7 +399,10 @@ Profile:        PlannetPractitionerRole
 Parent:         PractitionerRole
 Id:             plannet-PractitionerRole
 Title:          "Plan-net PractitionerRole"
-Description:    "PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information."
+Description:    "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also be a relationship to an organization. 
+Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.   Plannet-PractitionerRole could not be based on USCore because USCore-PractitionerRole Profile 
+requires an associated practitioner and an associated organization which does not take into account that not all providers are people, i.e. the provider could be a 
+group of people or a facility, nor does it take into account that not all practitioners are affiliated with an organization, i.e. they have a solo practice."
 * extension contains
    NewPatients named newpatients 0..* MS and
    $NewPatientProfileExtension named newpatientprofile 0..* MS and
@@ -414,7 +410,6 @@ Description:    "PractitionerRole describes the role a practitioner plays at an 
    $QualificationExtension named qualification 0..* MS
 * extension[newpatients] ^short = "New Patients"
 * extension[network-reference] ^short = "NetworkReference"
-* identifier.extension contains $IdentifierStatusExtension named identifier-status  1..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -456,30 +451,7 @@ Description:    "PractitionerRole describes the role a practitioner plays at an 
 * endpoint only Reference(PlannetEndpoint) 
 * endpoint 0..* MS
 
-Extension: EndpointUsecase
-Id: endpoint-usecase
-Title: "Endpoint Usecase"
-Description: "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"
-* value[x] 0..0
-* extension contains
-   Type named Type 1..1 MS and
-   Standard named Standard 0..1 MS 
 
-Extension: Type
-Id: type
-Title: "Endpoint Usecase Type"
-Description: "An indication of the type of services supported by the endpoint"
-* value[x] only  CodeableConcept 
-* valueCodeableConcept MS
-* valueCodeableConcept from http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase (extensible)
-
-
-Extension: Standard
-Id: standard
-Title: "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
-Description: "standard"
-* value[x] only uri 
-* valueUri MS
 
 
 Extension: ViaIntermediary
@@ -513,20 +485,22 @@ Title: "New Patients"
 Description: "New Patients indicates whether the practitioner is accepting new patients in their role"
 * value[x] 0..0
 * extension contains
-   AcceptingPatients named AcceptingPatients 1..1 MS and
-   FromNetwork named FromNetwork 0..1 MS 
+   acceptingPatients  1..1 MS and
+   fromNetwork 0..1 MS 
+* extension[acceptingPatients].value[x] only boolean
+* extension[fromNetwork].value[x] only Reference(PlannetNetwork)
 
-Extension: AcceptingPatients
-Id:  acceptingPatients
-Title: "Accepting Patients"
-Description: "Boolean indicating whether accepting patients in associated network"
-* value[x] only boolean
-* valueBoolean MS 
+Extension: EndpointUsecase
+Id: endpoint-usecase
+Title: "Endpoint Usecase"
+Description: "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"
+* value[x] 0..0
+* extension contains
+   Type 1..1 MS and
+   Standard 0..1 MS 
+* extension[Type] ^short = "An indication of the type of services supported by the endpoint"
+* extension[Type].value[x] only  CodeableConcept 
+* extension[Type].valueCodeableConcept from http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase (extensible)
+* extension[Standard] ^short = "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
+* extension[Standard].value[x] only uri 
 
-Extension: FromNetwork
-Id: fromNetwork
-Title: "From Network"
-Description: "A reference to a healthcare provider insurance networks (plannet-Network) associated with a new patient"
-* value[x] only Reference
-* valueReference MS
-* valueReference only Reference(PlannetNetwork) 

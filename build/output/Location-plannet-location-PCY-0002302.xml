@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="plannet-location-PCY-0002302"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: plannet-location-PCY-0002302</p><p><b>meta</b>: </p><p><b>identifier</b>: main campus (SECONDARY)</p><p><b>status</b>: active</p><p><b>name</b>: BRASSCITY PHARMACY INC</p><p><b>description</b>: Main campus of BRASSCITY PHARMACY INC</p><p><b>type</b>: Outpatient pharmacy <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v3-RoleCode code 'OUTPHARM' = 'outpatient pharmacy)</span></p><p><b>telecom</b>: ph: 1-409-961-4425 x9021(WORK), fax: 1-599-198-8841 x779(WORK)</p><p><b>address</b>: 558 CHASE AVE STE 2B, WATERBURY, CT 06704-1947(WORK)</p><h3>Positions</h3><table class="grid"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-73.040245</td><td>41.584408</td></tr></table><p><b>managingOrganization</b>: <a href="Organization/plannet-organization-72e977cb09c1ce74879379507">BRASSCITY</a></p><h3>HoursOfOperations</h3><table class="grid"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>mon</td><td>true</td></tr></table><p><b>availabilityExceptions</b>: visiting hours from 6:00 am - 10:00 pm</p></div>
+  </text>
+  <identifier>
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status">
+      <valueCode value="active"/>
+    </extension>
+    <use value="secondary"/>
+    <system value="https://brasscity-pharmacy-inc.com"/>
+    <value value="main campus"/>
+    <assigner>
+      <reference value="Organization/plannet-organization-72e977cb09c1ce74879379507"/>
+      <display value="BRASSCITY"/>
+    </assigner>
+  </identifier>
+  <status value="active"/>
+  <name value="BRASSCITY PHARMACY INC"/>
+  <description value="Main campus of BRASSCITY PHARMACY INC"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="OUTPHARM"/>
+    </coding>
+    <text value="Outpatient pharmacy"/>
+  </type>
+  <telecom>
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+      <extension url="allDay">
+        <valueBoolean value="true"/>
+      </extension>
+    </extension>
+    <system value="phone"/>
+    <value value="1-409-961-4425 x9021"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <extension url="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime">
+      <extension url="allDay">
+        <valueBoolean value="true"/>
+      </extension>
+    </extension>
+    <system value="fax"/>
+    <value value="1-599-198-8841 x779"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="both"/>
+    <text value="558 CHASE AVE STE 2B, WATERBURY, CT 06704-1947"/>
+    <line value="558 CHASE AVE STE 2B"/>
+    <city value="WATERBURY"/>
+    <state value="CT"/>
+    <postalCode value="06704-1947"/>
+    <country value="USA"/>
+  </address>
+  <position>
+    <longitude value="-73.040245"/>
+    <latitude value="41.584408"/>
+  </position>
+  <managingOrganization>
+    <reference value="Organization/plannet-organization-72e977cb09c1ce74879379507"/>
+    <display value="BRASSCITY"/>
+  </managingOrganization>
+  <hoursOfOperation>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+    <daysOfWeek value="sat"/>
+    <daysOfWeek value="sun"/>
+    <allDay value="true"/>
+  </hoursOfOperation>
+  <availabilityExceptions value="visiting hours from 6:00 am - 10:00 pm"/>
+</Location>

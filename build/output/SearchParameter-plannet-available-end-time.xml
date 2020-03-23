@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="plannet-available-end-time"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: plannet-available-end-time</p><p><b>url</b>: <a href="http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/plannet-available-end-time">http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/plannet-available-end-time</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: Plannet_sp_available_end_time</p><p><b>status</b>: active</p><p><b>date</b>: May 22, 2018 8:00:00 PM</p><p><b>publisher</b>: Saul Kravitz</p><p><b>contact</b>: </p><p><b>description</b>: Available end time</p><p><b>code</b>: available-end-time</p><p><b>base</b>: HealthcareService, PractitionerRole, Location</p><p><b>type</b>: token</p><p><b>expression</b>: PractitionerRole.availableTime.availableEndTime | HealthcareService.availableTime.availableEndTime |  Location.hoursOfOperation.availableEndTime</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: text</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/plannet-available-end-time"/>
+  <version value="0.1.0"/>
+  <name value="Plannet_sp_available_end_time"/>
+  <status value="active"/>
+  <date value="2018-05-22T20:00:00-04:00"/>
+  <publisher value="Saul Kravitz"/>
+  <contact>
+    <name value="Saul Kravitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="saul@mitre.org"/>
+    </telecom>
+  </contact>
+  <description value="Available end time"/>
+  <code value="available-end-time"/>
+  <base value="HealthcareService"/>
+  <base value="PractitionerRole"/>
+  <base value="Location"/>
+  <type value="token"/>
+  <expression value="PractitionerRole.availableTime.availableEndTime | HealthcareService.availableTime.availableEndTime |  Location.hoursOfOperation.availableEndTime"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <modifier value="text"/>
+</SearchParameter>

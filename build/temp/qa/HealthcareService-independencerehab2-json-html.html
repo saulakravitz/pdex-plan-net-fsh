@@ -1,0 +1,81 @@
+﻿<html>
+<head>
+  <title>HealthcareService-independencerehab2-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService">resourceType</a>" : "HealthcareService",
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.id">id</a>" : "independencerehab2",
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: independencerehab2&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;providedBy&lt;/b&gt;: &lt;a href=\&quot;Organization-independencerehab.html\&quot;&gt;Independence Rehabilitation Services, Inc.. Generated Summary: id: independencerehab; active; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\&quot;&gt;Rehabilitation services provider&lt;/span&gt;; name: Independence Rehabilitation Services, Inc.&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Specialist Medical &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/service-category code '27' = 'Specialist Medical', given as 'Specialist Medical'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Rehabilitation &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/service-type code '576' = 'Rehabilitation', given as 'Rehabilitation'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specialty&lt;/b&gt;: Rehabilitation &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '394602003' = 'Rehabilitation - specialty (qualifier value)', given as 'Rehabilitation'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Independence Rehab - Outpatient rehabilitation services&lt;/p&gt;&lt;p&gt;&lt;b&gt;comment&lt;/b&gt;: Provides outpatient medical and vocational rehabilitation services to improve independence and employability of clients&lt;/p&gt;&lt;p&gt;&lt;b&gt;appointmentRequired&lt;/b&gt;: true&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "acceptingPatients",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : true
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "fromNetwork",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/patriotppo",
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Patriot Preferred Provider Network"
+          }
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.active">active</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.providedBy">providedBy</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/independencerehab",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Independence Rehabilitation Services, Inc."
+  },
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.category">category</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/service-category",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "27",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Specialist Medical"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.type">type</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/service-type",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "576",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rehabilitation"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.specialty">specialty</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "394602003",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rehabilitation"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.name">name</a>" : "Independence Rehab - Outpatient rehabilitation services",
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.comment">comment</a>" : "Provides outpatient medical and vocational rehabilitation services to improve independence and employability of clients",
+  "<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.appointmentRequired">appointmentRequired</a>" : true
+}</pre>
+</body>
+</html>
