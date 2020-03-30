@@ -19,6 +19,8 @@ Alias: $PractitionerQualificationExtension = http://hl7.org/fhir/uv/vhdir/Struct
 Alias: $QualificationExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification
 
 // Other Aliases
-Alias:   $ORGTYPE = http://terminology.hl7.org/CodeSystem/organization-type
+Alias:   $OrgType = http://terminology.hl7.org/CodeSystem/organization-type
+Alias:   $EndpointStatus = http://hl7.org/fhir/ValueSet/endpoint-status
+Alias:   $PublicationStatus = http://hl7.org/fhir/ValueSet/publication-status
 
 

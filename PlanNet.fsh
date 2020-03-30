@@ -16,6 +16,7 @@ Description:    "The technical details of an endpoint that can be used for elect
 * identifier.period MS
 * identifier.assigner MS
 * status MS
+* status = $EndpointStatus#active exactly
 * connectionType MS
 * name MS
 * managingOrganization only Reference(PlannetOrganization)
@@ -55,6 +56,7 @@ Description:    "The HealthCareService  resource typically describes services of
 * identifier.period MS
 * identifier.assigner MS
 * active MS
+* active = true 
 * providedBy only Reference(PlannetOrganization)
 * providedBy MS
 * category MS
@@ -114,6 +116,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * identifier.period MS
 * identifier.assigner MS
 * status 1..1 MS
+* status = $PublicationStatus#active exactly 
 * type 0..1 MS
 * name MS
 * alias MS
@@ -214,8 +217,9 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * identifier.period MS
 * identifier.assigner MS
 * active 1..1 MS
+* active = true 
 * type MS
-* type = $ORGTYPE#pay "payer"
+* type = $OrgType#pay "payer"
 * name MS
 * alias MS
 * telecom 0..0
@@ -262,6 +266,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * identifier.period MS
 * identifier.assigner MS
 * active MS
+* active = true 
 * name MS
 * alias MS
 * partOf MS  
@@ -311,6 +316,7 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * identifier.period MS
 * identifier.assigner MS
 * active MS
+* active = true 
 * period MS
 * organization only Reference (PlannetOrganization)
 * participatingOrganization only Reference (PlannetOrganization)
@@ -346,6 +352,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * identifier.period MS
 * identifier.assigner MS
 * active MS
+* active = true 
 * name MS
 * name.use MS
 * name.text MS
@@ -418,6 +425,7 @@ group of people or a facility, nor does it take into account that not all practi
 * identifier.period MS
 * identifier.assigner MS
 * active 1..1 MS
+* active = true 
 * period MS 
 * practitioner only Reference(PlannetPractitioner)   // 1..1 from USCore
 * organization only Reference(PlannetOrganization)         // 1..1 from USCore
