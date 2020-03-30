@@ -18,14 +18,18 @@
   fhir:CapabilityStatement.title [ fhir:value "PDEX Payer Network Server Capability Statement"];
   fhir:CapabilityStatement.status [ fhir:value "draft"];
   fhir:CapabilityStatement.date [ fhir:value "2019-12-30T19:00:00-05:00"^^xsd:dateTime];
-  fhir:CapabilityStatement.publisher [ fhir:value "Saul Kravitz"];
+  fhir:CapabilityStatement.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Saul Kravitz" ];
+     fhir:ContactDetail.name [ fhir:value "HL7 Financial Management Working Group" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/fm/index.cfm" ]
+     ], [
+       fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "saul@mitre.org" ]
+       fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
   fhir:CapabilityStatement.description [ fhir:value "This Capability Statement defines the expected capabilities of a PDEX Payer Network FHIR server conforming to the PDEX Payer Network Implementation Guide."];

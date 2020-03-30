@@ -12,12 +12,16 @@
   <title value="PDEX Payer Network Server Capability Statement"/>
   <status value="draft"/>
   <date value="2019-12-30T19:00:00-05:00"/>
-  <publisher value="Saul Kravitz"/>
+  <publisher value="HL7 Financial Management Working Group"/>
   <contact>
-    <name value="Saul Kravitz"/>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
     <telecom>
       <system value="email"/>
-      <value value="saul@mitre.org"/>
+      <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
   <description value="This Capability Statement defines the expected capabilities of a PDEX Payer Network FHIR server conforming to the PDEX Payer Network Implementation Guide."/>

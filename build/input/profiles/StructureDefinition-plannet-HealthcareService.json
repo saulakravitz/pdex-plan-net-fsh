@@ -97,6 +97,7 @@
       {
         "id": "HealthcareService.active",
         "path": "HealthcareService.active",
+        "patternBoolean": true,
         "mustSupport": true
       },
       {

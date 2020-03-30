@@ -6,14 +6,18 @@
   "name": "DaVinciPDEXPlanNet",
   "title": "DaVinci PDEX Plan Net",
   "status": "active",
-  "publisher": "Saul Kravitz",
+  "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
-      "name": "Saul Kravitz",
+      "name": "HL7 Financial Management Working Group",
       "telecom": [
         {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
           "system": "email",
-          "value": "saul@mitre.org"
+          "value": "fm@lists.HL7.org"
         }
       ]
     }
@@ -1210,6 +1214,46 @@
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "implementation.html",
+          "title": "Implementation",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "change_log.html",
+          "title": "Change Log",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "versions.html",
+          "title": "Versions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "searchParameters.html",
+          "title": "Search Parameters",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
         }
       ]
     },
@@ -1220,11 +1264,15 @@
       },
       {
         "code": "releaselabel",
-        "value": "CI Build"
+        "value": "STU1"
       },
       {
         "code": "show-inherited-invariants",
         "value": "false"
+      },
+      {
+        "code": "path-history",
+        "value": "http://hl7.org/fhir/us/davinci-pdex-plan-net/history.html"
       }
     ]
   }

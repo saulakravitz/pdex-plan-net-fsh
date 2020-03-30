@@ -9,8 +9,9 @@
     },
     "version": "0.1.0",
     "contact": {
-      "name": "Saul Kravitz",
-      "email": "saul@mitre.org"
+      "name": "HL7 Financial Management Working Group",
+      "email": "fm@lists.HL7.org",
+      "url": "http://www.hl7.org/Special/committees/fm/index.cfm"
     }
   },
   "externalDocs": {

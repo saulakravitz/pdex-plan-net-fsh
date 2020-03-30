@@ -10,21 +10,25 @@
   fhir:Resource.id [ fhir:value "endpoint-usecase-standard"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: endpoint-usecase-standard</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-standard\">http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-standard</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: Plannet_sp_endpoint_usecase_standard</p><p><b>status</b>: active</p><p><b>date</b>: May 22, 2018 8:00:00 PM</p><p><b>publisher</b>: Saul Kravitz</p><p><b>contact</b>: </p><p><b>description</b>: Select endpoints that support the specified standard</p><p><b>code</b>: usecase-standard</p><p><b>base</b>: Endpoint</p><p><b>type</b>: uri</p><p><b>expression</b>: Endpoint.extension.where(url='http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase').extension.where(url='standard')</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: below</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: endpoint-usecase-standard</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-standard\">http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-standard</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: Plannet_sp_endpoint_usecase_standard</p><p><b>status</b>: active</p><p><b>date</b>: May 22, 2018 8:00:00 PM</p><p><b>publisher</b>: HL7 Financial Management Working Group</p><p><b>contact</b>: </p><p><b>description</b>: Select endpoints that support the specified standard</p><p><b>code</b>: usecase-standard</p><p><b>base</b>: Endpoint</p><p><b>type</b>: uri</p><p><b>expression</b>: Endpoint.extension.where(url='http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase').extension.where(url='standard')</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: below</p></div>"
   ];
   fhir:SearchParameter.url [ fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-standard"];
   fhir:SearchParameter.version [ fhir:value "0.1.0"];
   fhir:SearchParameter.name [ fhir:value "Plannet_sp_endpoint_usecase_standard"];
   fhir:SearchParameter.status [ fhir:value "active"];
   fhir:SearchParameter.date [ fhir:value "2018-05-22T20:00:00-04:00"^^xsd:dateTime];
-  fhir:SearchParameter.publisher [ fhir:value "Saul Kravitz"];
+  fhir:SearchParameter.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:SearchParameter.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Saul Kravitz" ];
+     fhir:ContactDetail.name [ fhir:value "HL7 Financial Management Working Group" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/fm/index.cfm" ]
+     ], [
+       fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "saul@mitre.org" ]
+       fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
   fhir:SearchParameter.description [ fhir:value "Select endpoints that support the specified standard"];

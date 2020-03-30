@@ -148,6 +148,7 @@
         "id": "PractitionerRole.active",
         "path": "PractitionerRole.active",
         "min": 1,
+        "patternBoolean": true,
         "mustSupport": true
       },
       {

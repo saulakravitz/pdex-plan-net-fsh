@@ -65,6 +65,7 @@
       {
         "id": "OrganizationAffiliation.active",
         "path": "OrganizationAffiliation.active",
+        "patternBoolean": true,
         "mustSupport": true
       },
       {

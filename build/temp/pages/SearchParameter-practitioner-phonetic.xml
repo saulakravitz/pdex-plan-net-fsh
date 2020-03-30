@@ -3,7 +3,7 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="practitioner-phonetic"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: practitioner-phonetic</p><p><b>url</b>: <a href="http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-phonetic">http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-phonetic</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: Plannet_sp_practitioner_phonetic</p><p><b>derivedFrom</b>: <a href="http://hl7.org/fhir/SearchParameter/individual-phonetic">http://hl7.org/fhir/SearchParameter/individual-phonetic</a></p><p><b>status</b>: active</p><p><b>date</b>: May 22, 2018 8:00:00 PM</p><p><b>publisher</b>: Saul Kravitz</p><p><b>contact</b>: </p><p><b>description</b>: Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)</p><p><b>code</b>: phonetic</p><p><b>base</b>: Practitioner</p><p><b>type</b>: string</p><p><b>expression</b>: Practitioner.name</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: practitioner-phonetic</p><p><b>url</b>: <a href="http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-phonetic">http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-phonetic</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: Plannet_sp_practitioner_phonetic</p><p><b>derivedFrom</b>: <a href="http://hl7.org/fhir/SearchParameter/individual-phonetic">http://hl7.org/fhir/SearchParameter/individual-phonetic</a></p><p><b>status</b>: active</p><p><b>date</b>: May 22, 2018 8:00:00 PM</p><p><b>publisher</b>: HL7 Financial Management Working Group</p><p><b>contact</b>: </p><p><b>description</b>: Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)</p><p><b>code</b>: phonetic</p><p><b>base</b>: Practitioner</p><p><b>type</b>: string</p><p><b>expression</b>: Practitioner.name</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div>
   </text>
   <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-phonetic"/>
   <version value="0.1.0"/>
@@ -11,12 +11,16 @@
   <derivedFrom value="http://hl7.org/fhir/SearchParameter/individual-phonetic"/>
   <status value="active"/>
   <date value="2018-05-22T20:00:00-04:00"/>
-  <publisher value="Saul Kravitz"/>
+  <publisher value="HL7 Financial Management Working Group"/>
   <contact>
-    <name value="Saul Kravitz"/>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
     <telecom>
       <system value="email"/>
-      <value value="saul@mitre.org"/>
+      <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
   <description value="Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)"/>

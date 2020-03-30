@@ -59,16 +59,16 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
 "InsurancePlan.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
-","draft | active | retired | unknown","The current state of the health insurance product.","","Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI.","","Default interpretation is active.","","","","","",,"required","The lifecycle status of an artifact.","http://hl7.org/fhir/ValueSet/publication-status|4.0.1","",,,,"InsurancePlan.status",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","draft | active | retired | unknown","The current state of the health insurance product.","","Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI.","","Default interpretation is active.","","<valueCode xmlns=""http://hl7.org/fhir"" value=""active""/>","","","",,"required","The lifecycle status of an artifact.","http://hl7.org/fhir/ValueSet/publication-status|4.0.1","",,,,"InsurancePlan.status",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.status",".status"
-"InsurancePlan.type","","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
+"InsurancePlan.type","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Kind of product","The kind of health insurance product.","","","","","","","","","",,"example","Used to categorize the product/plan.","http://hl7.org/fhir/ValueSet/insuranceplan-type","",,,,"InsurancePlan.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.class",".code"
-"InsurancePlan.name","","","",0,1,"Y","","Y","string {[]} {[]}
+"InsurancePlan.name","","","",0,1,"","","Y","string {[]} {[]}
 ","Official name","Official name of the health insurance product as designated by the owner.","If the name of the product/plan changes, consider putting the old name in the alias column so that it can still be located through searches.","","","","","","","","",,,,,"",,,,"InsurancePlan.name",0,1,"ipn-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".name"
-"InsurancePlan.alias","","","",0,*,"Y","","","string {[]} {[]}
+"InsurancePlan.alias","","","",0,*,"","","","string {[]} {[]}
 ","Alternate names","A list of alternate names that the product is known as, or was known as in the past.","There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the product/plan.","Over time products/plans go through many changes and can be known by different names.
 
 For searching knowing previous names that the product/plan was known by can be very useful.","","","","","","","",,,,,"",,,,"InsurancePlan.alias",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -77,16 +77,16 @@ For searching knowing previous names that the product/plan was known by can be v
 ","When the product is available","The period of time that the health insurance product is available.","","","","","","","","","",,,,,"",,,,"InsurancePlan.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "InsurancePlan.ownedBy","","Payer
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization]]}
+","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Plan issuer","The entity that is providing  the health insurance product and underwriting the risk.  This is typically an insurance carriers, other third-party payers, or health plan sponsors comonly referred to as 'payers'.","","","","","","","","","",,,,,"",,,,"InsurancePlan.ownedBy",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"InsurancePlan.administeredBy","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization]]}
+"InsurancePlan.administeredBy","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Product administrator","An organization which administer other services such as underwriting, customer service and/or claims processing on behalf of the health insurance product owner.","","","","","","","","","",,,,,"",,,,"InsurancePlan.administeredBy",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"InsurancePlan.coverageArea","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location]]}
+"InsurancePlan.coverageArea","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","Where product applies","The geographic region in which a health insurance product's benefits apply.","","","","","","","","","",,,,,"",,,,"InsurancePlan.coverageArea",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"InsurancePlan.contact","","","",0,*,"Y","","","BackboneElement {[]} {[]}
+"InsurancePlan.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Contact for the product","The contact for the health insurance product for a certain purpose.","Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use.","Need to keep track of assigned contact points within bigger organization.","","","","","","","",,,,,"",,,,"InsurancePlan.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".contactParty"
 "InsurancePlan.contact.id","","","",0,1,"","","","string {[]} {[]}
@@ -104,78 +104,19 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "InsurancePlan.contact.purpose","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","The type of contact","Indicates a purpose for which the contact can be reached.","","Need to distinguish between multiple contact persons.","","","","","","","",,"extensible","The purpose for which you would contact a contact party.","http://hl7.org/fhir/ValueSet/contactentity-type","",,,,"InsurancePlan.contact.purpose",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./type"
-"InsurancePlan.contact.name","","","",0,1,"Y","","","HumanName {[]} {[]}
+"InsurancePlan.contact.name","","","",0,1,"","","","HumanName {[]} {[]}
 ","A name associated with the contact","A name associated with the contact.","","Need to be able to track the person by name.","","","","","","","",,,,,"",,,,"InsurancePlan.contact.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./name"
-"InsurancePlan.contact.name.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"InsurancePlan.contact.name.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"InsurancePlan.contact.name.use","","","",0,1,"Y","Y","Y","code {[]} {[]}
-","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","","","","",,"required","The use of a human name.","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","unique(./use)"
-"InsurancePlan.contact.name.text","","","",0,1,"Y","","Y","string {[]} {[]}
-","Text representation of the full name","Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","","","",,,,,"",,,,"HumanName.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./formatted"
-"InsurancePlan.contact.name.family","","surname
-","",0,1,"Y","","Y","string {[]} {[]}
-","Family name (often called 'Surname')","The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.","Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).","","","","","","","","",,,,,"",,,,"HumanName.family",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./part[partType = FAM]"
-"InsurancePlan.contact.name.given","","first name
-middle name","",0,*,"Y","","Y","string {[]} {[]}
-","Given names (not always 'first'). Includes middle names","Given name.","If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called ""first name"" since given names do not always come first.","","","","","","","","",,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./part[partType = GIV]"
-"InsurancePlan.contact.name.prefix","","","",0,*,"Y","","Y","string {[]} {[]}
-","Parts that come before the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.","","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./part[partType = PFX]"
-"InsurancePlan.contact.name.suffix","","","",0,*,"Y","","Y","string {[]} {[]}
-","Parts that come after the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.","","","","","","","","","",,,,,"",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./part[partType = SFX]"
-"InsurancePlan.contact.name.period","","","",0,1,"Y","","Y","Period {[]} {[]}
-","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./usablePeriod[type=""IVL<TS>""]"
-"InsurancePlan.contact.telecom","","","",0,*,"Y","","","ContactPoint {[]} {[]}
+"InsurancePlan.contact.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
 ","Contact details (telephone, email, etc.)  for a contact","A contact detail (e.g. a telephone number or an email address) by which the party may be contacted.","","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"InsurancePlan.contact.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./telecom"
-"InsurancePlan.contact.telecom.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"InsurancePlan.contact.telecom.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"InsurancePlan.contact.telecom.extension","contactpoint-availabletime","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime]]} {[]}
-","Available time","Time period when the contact point is to be used","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"InsurancePlan.contact.telecom.extension","via-intermediary","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/via-intermediary]]} {[]}
-","Via Intermediary","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"InsurancePlan.contact.telecom.system","","","",0,1,"Y","","Y","code {[]} {[]}
-","phone | fax | email | pager | url | sms | other","Telecommunications form for contact point - what communications system is required to make use of the contact.","","","","","","","","","",,"required","Telecommunications form for contact point.","http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1","",,,,"ContactPoint.system",0,1,"cpt-2
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./scheme"
-"InsurancePlan.contact.telecom.value","","","",0,1,"Y","","Y","string {[]} {[]}
-","The actual contact point details","The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).","Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.","Need to support legacy numbers that are not in a tightly controlled format.","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./url"
-"InsurancePlan.contact.telecom.use","","","",0,1,"Y","Y","Y","code {[]} {[]}
-","home | work | temp | old | mobile - purpose of this contact point","Identifies the purpose for the contact point.","Applications can assume that a contact is current unless it explicitly says that it is temporary or old.","Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.","","","","","","","",,"required","Use of contact point.","http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1","",,,,"ContactPoint.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","unique(./use)"
-"InsurancePlan.contact.telecom.rank","","","",0,1,"","","Y","positiveInt {[]} {[]}
-","Specify preferred order of use (1 = highest)","Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.","Note that rank does not necessarily follow the order in which the contacts are represented in the instance.","","","","","","","","",,,,,"",,,,"ContactPoint.rank",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","n/a"
-"InsurancePlan.contact.telecom.period","","","",0,1,"Y","","Y","Period {[]} {[]}
-","Time period when the contact point was/is in use","Time period when the contact point was/is in use.","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./usablePeriod[type=""IVL<TS>""]"
 "InsurancePlan.contact.address","","","",0,1,"","","","Address {[]} {[]}
 ","Visiting or postal addresses for the contact","Visiting or postal addresses for the contact.","","May need to keep track of a contact party's address for contacting, billing or reporting requirements.","","","","","","","",,,,,"",,,,"InsurancePlan.contact.address",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./addr"
-"InsurancePlan.endpoint","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint]]}
+"InsurancePlan.endpoint","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Endpoint]]}
 ","Technical endpoint","The technical endpoints providing access to services operated for the health insurance product.","","Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"InsurancePlan.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"InsurancePlan.network","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network]]}
+"InsurancePlan.network","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","What networks are Included","Reference to the network included in the health insurance product.","Networks are represented as a hierarchy of organization resources.","","","","","","","","",,,,,"",,,,"InsurancePlan.network",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "InsurancePlan.coverage","","","",0,*,"","","","BackboneElement {[]} {[]}

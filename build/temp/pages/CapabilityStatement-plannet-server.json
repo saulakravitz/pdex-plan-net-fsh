@@ -11,14 +11,18 @@
   "title": "PDEX Payer Network Server Capability Statement",
   "status": "draft",
   "date": "2019-12-30T19:00:00-05:00",
-  "publisher": "Saul Kravitz",
+  "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
-      "name": "Saul Kravitz",
+      "name": "HL7 Financial Management Working Group",
       "telecom": [
         {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
           "system": "email",
-          "value": "saul@mitre.org"
+          "value": "fm@lists.HL7.org"
         }
       ]
     }

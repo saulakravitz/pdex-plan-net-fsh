@@ -105,6 +105,7 @@
         "id": "Organization.active",
         "path": "Organization.active",
         "min": 1,
+        "patternBoolean": true,
         "mustSupport": true
       },
       {
@@ -114,7 +115,8 @@
           "coding": [
             {
               "code": "pay",
-              "system": "http://terminology.hl7.org/CodeSystem/organization-type"
+              "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+              "display": "payer"
             }
           ]
         },

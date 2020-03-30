@@ -10,15 +10,19 @@
   "name": "DaVinciPDEXPlanNet",
   "title": "DaVinci PDEX Plan Net",
   "status": "active",
-  "date": "2020-03-23T19:24:37-04:00",
-  "publisher": "Saul Kravitz",
+  "date": "2020-03-30T17:26:21-04:00",
+  "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
-      "name": "Saul Kravitz",
+      "name": "HL7 Financial Management Working Group",
       "telecom": [
         {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
           "system": "email",
-          "value": "saul@mitre.org"
+          "value": "fm@lists.HL7.org"
         }
       ]
     }
@@ -64,7 +68,7 @@
           },
           {
             "url": "value",
-            "valueString": "CI Build"
+            "valueString": "STU1"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -78,6 +82,19 @@
           {
             "url": "value",
             "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/us/davinci-pdex-plan-net/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -2928,6 +2945,46 @@
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "implementation.html",
+          "title": "Implementation",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "change_log.html",
+          "title": "Change Log",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "versions.html",
+          "title": "Versions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "searchParameters.html",
+          "title": "Search Parameters",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
         }
       ]
     },
@@ -2963,6 +3020,10 @@
       {
         "code": "path-resource",
         "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
       },
       {
         "code": "path-pages",

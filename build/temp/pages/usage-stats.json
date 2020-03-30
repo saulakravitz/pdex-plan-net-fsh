@@ -260,9 +260,7 @@
       "PractitionerRole"
     ],
     "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/via-intermediary": [
-      "Endpoint.contact",
       "HealthcareService.telecom",
-      "InsurancePlan.contact.telecom",
       "Location.telecom",
       "Organization.contact.telecom",
       "Organization.telecom",
@@ -278,9 +276,7 @@
       "Practitioner.communication"
     ],
     "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime": [
-      "Endpoint.contact",
       "HealthcareService.telecom",
-      "InsurancePlan.contact.telecom",
       "Location.telecom",
       "Organization.contact.telecom",
       "Organization.telecom",

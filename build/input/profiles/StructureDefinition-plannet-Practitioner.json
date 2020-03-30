@@ -109,6 +109,7 @@
       {
         "id": "Practitioner.active",
         "path": "Practitioner.active",
+        "patternBoolean": true,
         "mustSupport": true
       },
       {

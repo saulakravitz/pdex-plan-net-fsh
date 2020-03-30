@@ -5,7 +5,7 @@
   "igName": "DaVinciPDEXPlanNet",
   "packageId": "hl7.fhir.us.davinci-pdex-plan-net",
   "igVer": "0.1.0",
-  "errorCount": 22,
+  "errorCount": 24,
   "version": "4.0.1",
   "revision": "a53ec6ee1b",
   "versionFull": "4.0.1-a53ec6ee1b",
@@ -13,9 +13,9 @@
   "toolingRevision": "3",
   "toolingVersionFull": "4.2.0 (3)",
   "totalFiles": 150,
-  "processedFiles": 171,
-  "genDate": "Mon, Mar 23, 2020 19:24-0400",
-  "genDay": "23/03/2020",
+  "processedFiles": 180,
+  "genDate": "Mon, Mar 30, 2020 17:26-0400",
+  "genDay": "30/03/2020",
   "ig": {
     "id": "hl7.fhir.us.davinci-pdex-plan-net",
     "name": "DaVinciPDEXPlanNet",
@@ -24,20 +24,21 @@
     "version": "0.1.0",
     "status": "active",
     "experimental": false,
-    "publisher": "Saul Kravitz",
+    "publisher": "HL7 Financial Management Working Group",
     "gitstatus": "",
     "contact": [
       {
-        "name": "Saul Kravitz",
+        "name": "HL7 Financial Management Working Group",
         "telecom": [
-          "saul@mitre.org"
+          "http://www.hl7.org/Special/committees/fm/index.cfm",
+          "fm@lists.HL7.org"
         ]
       }
     ],
-    "date": "2020-03-23T19:24:37-04:00",
+    "date": "2020-03-30T17:26:21-04:00",
     "description": "Davinci PDEX Plan Net -- FSH version",
     "fhirVersion": "4.0.1"
   },
-  "u17aa3512d5884b49872a8fb39bd4c80d": "http://hl7.org/fhir/us/core",
-  "u698c9b0400454e7a9ef87ed968d39d2b": "http://hl7.org/fhir/uv/vhdir"
+  "ubaeb62037b0344ddb5d7829376044483": "http://hl7.org/fhir/us/core",
+  "u4139b5b50726449f823c245ad1b31cbb": "http://hl7.org/fhir/uv/vhdir"
 }

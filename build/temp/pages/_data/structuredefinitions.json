@@ -10,8 +10,8 @@
     "basename": "Endpoint",
     "basepath": "http://hl7.org/fhir/R4/endpoint.html",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information."
   },
   "plannet-HealthcareService": {
@@ -25,8 +25,8 @@
     "basename": "HealthcareService",
     "basepath": "http://hl7.org/fhir/R4/healthcareservice.html",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "The HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
   },
   "plannet-InsurancePlan": {
@@ -40,8 +40,8 @@
     "basename": "InsurancePlan",
     "basepath": "http://hl7.org/fhir/R4/insuranceplan.html",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."
   },
   "plannet-Location": {
@@ -55,8 +55,8 @@
     "basename": "USCoreLocation",
     "basepath": "http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-location.html",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."
   },
   "plannet-Network": {
@@ -70,8 +70,8 @@
     "basename": "Organization",
     "basepath": "http://hl7.org/fhir/R4/organization.html",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.\n\n\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.nae.text"
   },
   "plannet-Organization": {
@@ -85,8 +85,8 @@
     "basename": "USCoreOrganizationProfile",
     "basepath": "http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-organization.html",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
   },
   "plannet-OrganizationAffiliation": {
@@ -100,8 +100,8 @@
     "basename": "OrganizationAffiliation",
     "basepath": "http://hl7.org/fhir/R4/organizationaffiliation.html",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
   },
   "plannet-Practitioner": {
@@ -115,8 +115,8 @@
     "basename": "USCorePractitionerProfile",
     "basepath": "http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-practitioner.html",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
   },
   "plannet-PractitionerRole": {
@@ -130,8 +130,8 @@
     "basename": "PractitionerRole",
     "basepath": "http://hl7.org/fhir/R4/practitionerrole.html",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also be a relationship to an organization. \nPractitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.   Plannet-PractitionerRole could not be based on USCore because USCore-PractitionerRole Profile \nrequires an associated practitioner and an associated organization which does not take into account that not all providers are people, i.e. the provider could be a \ngroup of people or a facility, nor does it take into account that not all practitioners are affiliated with an organization, i.e. they have a solo practice."
   },
   "endpoint-usecase": {
@@ -145,8 +145,8 @@
     "basename": "Extension",
     "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
     "contexts": [
       {
@@ -165,8 +165,8 @@
     "basename": "Extension",
     "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "A reference to a Location resource (plannet-Location) defining the coverage area of a health insurance provider network",
     "contexts": [
       {
@@ -185,8 +185,8 @@
     "basename": "Extension",
     "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role",
     "contexts": [
       {
@@ -205,8 +205,8 @@
     "basename": "Extension",
     "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "New Patients indicates whether the practitioner is accepting new patients in their role",
     "contexts": [
       {
@@ -225,8 +225,8 @@
     "basename": "Extension",
     "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
     "status": "active",
-    "date": "Mon Mar 23 19:24:37 EDT 2020",
-    "publisher": "Saul Kravitz",
+    "date": "Mon Mar 30 17:26:21 EDT 2020",
+    "publisher": "HL7 Financial Management Working Group",
     "description": "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization",
     "contexts": [
       {

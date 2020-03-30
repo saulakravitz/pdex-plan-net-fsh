@@ -17,13 +17,17 @@
    <name value="DaVinciPDEXPlanNet"/>
    <title value="DaVinci PDEX Plan Net"/>
    <status value="active"/>
-   <date value="2020-03-23T19:24:37-04:00"/>
-   <publisher value="Saul Kravitz"/>
+   <date value="2020-03-30T17:26:21-04:00"/>
+   <publisher value="HL7 Financial Management Working Group"/>
    <contact>
-      <name value="Saul Kravitz"/>
+      <name value="HL7 Financial Management Working Group"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+      </telecom>
       <telecom>
          <system value="email"/>
-         <value value="saul@mitre.org"/>
+         <value value="fm@lists.HL7.org"/>
       </telecom>
    </contact>
    <description value="Davinci PDEX Plan Net -- FSH version"/>
@@ -2289,6 +2293,46 @@
             <generation value="markdown"/>
          </page>
          <page>
+            <nameUrl value="implementation.html"/>
+            <title value="Implementation"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="examples.html"/>
+            <title value="Examples"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="change_log.html"/>
+            <title value="Change Log"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="downloads.html"/>
+            <title value="Downloads"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="versions.html"/>
+            <title value="Versions"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="searchParameters.html"/>
+            <title value="Search Parameters"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="profiles.html"/>
+            <title value="Profiles"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="extensions.html"/>
+            <title value="Extensions"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
             <nameUrl value="artifacts.html"/>
             <title value="Artifacts Summary"/>
             <generation value="html"/>
@@ -3045,11 +3089,15 @@
       </parameter>
       <parameter>
          <code value="releaselabel"/>
-         <value value="CI Build"/>
+         <value value="STU1"/>
       </parameter>
       <parameter>
          <code value="show-inherited-invariants"/>
          <value value="false"/>
+      </parameter>
+      <parameter>
+         <code value="path-history"/>
+         <value value="http://hl7.org/fhir/us/davinci-pdex-plan-net/history.html"/>
       </parameter>
       <parameter>
          <code value="path-resource"/>
@@ -3082,6 +3130,10 @@
       <parameter>
          <code value="path-resource"/>
          <value value="input/vocabulary"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/maps"/>
       </parameter>
       <parameter>
          <code value="path-pages"/>
