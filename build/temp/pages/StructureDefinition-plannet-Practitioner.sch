@@ -348,7 +348,7 @@
   <sch:pattern>
     <sch:title>f:Practitioner/f:qualification</sch:title>
     <sch:rule context="f:Practitioner/f:qualification">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

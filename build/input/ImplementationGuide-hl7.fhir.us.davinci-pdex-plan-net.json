@@ -148,6 +148,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/practitioner-qualification"
+        },
+        "name": "Practitioner Qualification",
+        "description": "An extension to add status and whereValie elements to a practitioner’s qualifications.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/via-intermediary"
         },
         "name": "Via Intermediary",

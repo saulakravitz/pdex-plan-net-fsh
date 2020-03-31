@@ -17,7 +17,7 @@
    <name value="DaVinciPDEXPlanNet"/>
    <title value="DaVinci PDEX Plan Net"/>
    <status value="active"/>
-   <date value="2020-03-30T17:26:21-04:00"/>
+   <date value="2020-03-30T19:05:40-04:00"/>
    <publisher value="HL7 Financial Management Working Group"/>
    <contact>
       <name value="HL7 Financial Management Working Group"/>
@@ -270,6 +270,21 @@
          </reference>
          <name value="New Patients"/>
          <description value="New Patients indicates whether the practitioner is accepting new patients in their role"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-practitioner-qualification.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/practitioner-qualification"/>
+         </reference>
+         <name value="Practitioner Qualification"/>
+         <description value="An extension to add status and whereValie elements to a practitioner’s qualifications."/>
          <exampleBoolean value="false"/>
          <groupingId value="_str_extension"/>
       </resource>
@@ -2404,6 +2419,11 @@
             <page>
                <nameUrl value="StructureDefinition-newpatients.html"/>
                <title value="New Patients"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-practitioner-qualification.html"/>
+               <title value="Practitioner Qualification"/>
                <generation value="generated"/>
             </page>
             <page>

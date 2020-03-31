@@ -1,9 +1,9 @@
 ﻿DaVinciPDEXPlanNet : Validation Results
 =========================================
 
-err = 48, warn = 6, info = 12
+err = 48, warn = 8, info = 20
 IG Publisher Version: v1.0.75-SNAPSHOT
-Generated Mon Mar 30 17:28:29 EDT 2020. FHIR version 4.0.1 for hl7.fhir.us.davinci-pdex-plan-net#0.1.0 (canonical = http://hl7.org/fhir/us/davinci-pdex-plan-net)
+Generated Mon Mar 30 19:08:29 EDT 2020. FHIR version 4.0.1 for hl7.fhir.us.davinci-pdex-plan-net#0.1.0 (canonical = http://hl7.org/fhir/us/davinci-pdex-plan-net)
 
  Build Errors : 18 / 31
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/ImplementationGuide-hl7.fhir.us.davinci-pdex-plan-net : 0 / 0
@@ -37,8 +37,8 @@ Generated Mon Mar 30 17:28:29 EDT 2020. FHIR version 4.0.1 for hl7.fhir.us.davin
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organization-plannet-organization-3b4358447f58795888ada0a39 : 0 / 1
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organizationaffiliation-orgrole1 : 0 / 0
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/organizationaffiliation-orgrole2 : 0 / 0
- /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitioner-plannet-practitioner-1232506780 : 0 / 1
- /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitioner-practitioner1 : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitioner-plannet-practitioner-1232506780 : 0 / 2
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitioner-practitioner1 : 0 / 3
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitionerrole-plannet-practitionerrole-1232506780 : 4 / 0
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitionerrole-plannet-practitionerrole-1236743399 : 5 / 0
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/practitionerrole-practitionerrole1 : 2 / 0
@@ -46,6 +46,7 @@ Generated Mon Mar 30 17:28:29 EDT 2020. FHIR version 4.0.1 for hl7.fhir.us.davin
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/structuredefinition-location-reference : 0 / 0
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/structuredefinition-network-reference : 0 / 0
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/structuredefinition-newpatients : 0 / 0
+ /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/structuredefinition-practitioner-qualification : 0 / 1
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/structuredefinition-via-intermediary : 0 / 0
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/structuredefinition-plannet-Endpoint : 0 / 0
  /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/structuredefinition-plannet-HealthcareService : 0 / 0
@@ -260,8 +261,12 @@ INFORMATION: Organization/plannet-organization-3b4358447f58795888ada0a39: Organi
 == /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/OrganizationAffiliation-orgrole1.json ==
 == /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/OrganizationAffiliation-orgrole2.json ==
 == /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Practitioner-plannet-practitioner-1232506780.json ==
+INFORMATION: Practitioner/plannet-practitioner-1232506780: Practitioner.qualification[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner
 INFORMATION: Practitioner/plannet-practitioner-1232506780: Practitioner.qualification[0].extension[0].extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI "https://www.usps.com" is unknown so the code cannot be validated
 == /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/Practitioner-practitioner1.json ==
+INFORMATION: Practitioner/practitioner1: Practitioner.qualification[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner
+INFORMATION: Practitioner/practitioner1: Practitioner.qualification[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner
+INFORMATION: Practitioner/practitioner1: Practitioner.qualification[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner
 == /Users/skravitz/git/pdex-plan-net-fsh/build/input/examples/PractitionerRole-plannet-practitionerrole-1232506780.json ==
 ERROR: PractitionerRole/plannet-practitionerrole-1232506780: PractitionerRole.extension[0].value.ofType(Reference): Unable to resolve resource "Organization/plannet-network-HPID130000"
 ERROR: PractitionerRole/plannet-practitionerrole-1232506780: PractitionerRole.organization: Unable to resolve resource "Organization/plannet-organization-1232006923"
@@ -280,6 +285,8 @@ ERROR: PractitionerRole/practitionerrole1: PractitionerRole.specialty[0]: None o
 == /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/StructureDefinition-location-reference.json ==
 == /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/StructureDefinition-network-reference.json ==
 == /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/StructureDefinition-newpatients.json ==
+== /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/StructureDefinition-practitioner-qualification.json ==
+WARNING: http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification: The Implementation Guide contains no examples for this extension
 == /Users/skravitz/git/pdex-plan-net-fsh/build/input/extensions/StructureDefinition-via-intermediary.json ==
 == /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/StructureDefinition-plannet-Endpoint.json ==
 == /Users/skravitz/git/pdex-plan-net-fsh/build/input/profiles/StructureDefinition-plannet-HealthcareService.json ==

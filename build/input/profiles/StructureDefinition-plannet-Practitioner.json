@@ -308,7 +308,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
             ]
           }
         ],

@@ -163,6 +163,13 @@ group of people or a facility, nor does it take into account that not all practi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-practitioner-qualification.html"
+                     title="StructureDefinition/practitioner-qualification">Practitioner Qualification</a>
+               </td>
+               <td>An extension to add status and whereValie elements to a practitioner’s qualifications.</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-via-intermediary.html"
                      title="StructureDefinition/via-intermediary">Via Intermediary</a>
                </td>

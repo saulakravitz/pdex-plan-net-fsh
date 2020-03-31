@@ -105,7 +105,7 @@
         "id": "Organization.active",
         "path": "Organization.active",
         "min": 1,
-        "patternBoolean": true,
+        "fixedBoolean": true,
         "mustSupport": true
       },
       {

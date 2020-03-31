@@ -16,7 +16,7 @@ Description:    "The technical details of an endpoint that can be used for elect
 * identifier.period MS
 * identifier.assigner MS
 * status MS
-* status = $EndpointStatus#active exactly
+* status = $EndpointStatus#active (exactly) 
 * connectionType MS
 * name MS
 * managingOrganization only Reference(PlannetOrganization)
@@ -116,7 +116,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * identifier.period MS
 * identifier.assigner MS
 * status 1..1 MS
-* status = $PublicationStatus#active exactly 
+* status = $PublicationStatus#active  (exactly) 
 * type 0..1 MS
 * name MS
 * alias MS
@@ -217,9 +217,9 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * identifier.period MS
 * identifier.assigner MS
 * active 1..1 MS
-* active = true 
+* active = true (exactly)
 * type MS
-* type = $OrgType#pay "payer"
+* type = $OrgType#pay 
 * name MS
 * alias MS
 * telecom 0..0
@@ -387,7 +387,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * photo MS
 * qualification MS
 * qualification.extension contains 
-    $PractitionerQualificationExtension named practitioner-qualification 0..1 MS
+    PractitionerQualification named practitioner-qualification 0..1 MS
 * qualification.identifier MS
 * qualification.identifier.use MS
 * qualification.identifier.type MS
@@ -512,3 +512,18 @@ Description: "EndpointUseCase is an enumeration of the specific use cases (servi
 * extension[Standard] ^short = "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
 * extension[Standard].value[x] only uri 
 
+Extension: PractitionerQualification
+Id: practitioner-qualification
+Title: "Practitioner Qualification"
+Description: "An extension to add status and whereValie elements to a practitioner’s qualifications."
+* value[x] 0..0
+* extension contains
+   status 1..1 MS and
+   whereValid 0..1 MS 
+* extension[status] ^short = "Status"
+* extension[status].value[x] only  code 
+* extension[status].valueCode from http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus (example)
+* extension[status].valueCode = http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus#active (exactly)
+* extension[whereValid] ^short = "Where the qualification is valid"
+* extension[whereValid].value[x] only CodeableConcept
+* extension[whereValid].valueCodeableConcept from http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state (extensible)

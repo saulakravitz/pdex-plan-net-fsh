@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "PlannetPractitionerRole"];
   fhir:StructureDefinition.title [ fhir:value "Plan-net PractitionerRole"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-03-30T17:26:21-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-03-30T19:05:40-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
