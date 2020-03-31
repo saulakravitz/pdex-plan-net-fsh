@@ -1,8 +1,0 @@
-﻿<html>
-<head>
-  <title>SearchParameter-practitionerrole-new-patient-html</title>
-  <link rel="stylesheet" href="fhir.css"/>
-</head>
-<body>
-<div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: practitionerrole-new-patient</p><p><b>url</b>: <a href="http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-new-patient">http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-new-patient</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: Plannet_sp_practitionerrole_new_patient</p><p><b>status</b>: active</p><p><b>date</b>: May 22, 2018 8:00:00 PM</p><p><b>publisher</b>: HL7 Financial Management Working Group</p><p><b>contact</b>: </p><p><b>description</b>: Select PractitionerRoles that are/are not accepting new patients</p><p><b>code</b>: new-patient</p><p><b>base</b>: PractitionerRole</p><p><b>type</b>: token</p><p><b>expression</b>: PractitionerRole.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension').extension.where(url='acceptingPatients')</p><p><b>multipleAnd</b>: true</p></div></body>
-</html>
