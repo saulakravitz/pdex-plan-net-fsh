@@ -68,47 +68,6 @@ Note: the following diagrams provide a high-level view of the relationships betw
 
 <img src="Slide9.png" alt = "Key Relationships Among Payer Directory Resources" style="height:auto;float:none;align:middle;"  />
 
-Guidance on the Use of PDEX Payer Network Resources
-===================================================
-
-
-Privacy Considerations
-======================
-
-Access to the plan-net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.
-
-A conformant plan-net service SHALL NOT require a directory mobile application to send consumer identifying information in order to query content.
-
-A directory mobile application SHALL NOT send consumer identifiable information when querying a formulary service.
-Conformance
-===========
-The conformance verbs - SHALL, SHOULD, MAY - used in this guide are defined in [FHIR Conformance Rules](https://trifolia-fhir-dev.lantanagroup.com/http:/hl7.org/fhir/R4/conformance-rules.html).
-
-Must Support
-============
-When querying and reading the Plan-Net Profiles defined in this IG, Must Support on any profile data element **SHALL** be interpreted as follows:
-
-Health Plan API Requirements
-----------------------------
-* Health Plan API actors **SHALL** be capable of populating all data elements as part of the query results.
-* In situations where information on a particular data element is not present and the cardinality is 0.. , the Health Plan API actors **SHALL NOT** include the data elements in the resource instance returned as part of the query results.
-* In situations where information on a particular data element is not present and the cardinality is >0.. **SHALL** send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or use the dataAbsentReason extension.
-
-Application Requirements
-------------------------
-* Application actors **SHALL** be capable of processing resource instances containing the data elements without generating an error or causing the application to fail.
-* Application actors **SHOULD** be capable of displaying the data elements for human use or storing the information for other purposes.
-* When querying Health Plan API actors, Application actors **SHALL** interpret missing data elements within resource instances as data not present in the Health Plan API actors system.
-* Consumer App actors **SHALL** be able to process resource instances containing data elements asserting missing information.
-
-Conformance to US Core Profiles
--------------------------------
-Any actor acting as a Health Plan API actor in this IG **SHALL**:
-* Be able to populate all profile data elements that have a minimum cardinality >= 1 and/or flagged as Must Support as defined by that profiles StructureDefinition.
-* Conform to the US Core Server Capability Statement expectations for that profiles type.
-* Any actor acting a FHIR Client in this IG **SHALL**:
-* Be able to process and retain all profile data elements that have a minimum cardinality >= 1 and/or flagged as Must Support as defined by that profiles StructureDefinition.
-* Conform to the US Core Client Capability Statement expectations for that profiles type.
 
 Credits
 =======
@@ -140,13 +99,4 @@ Authors
   <td>rdieterle@enablecare.us</td>
   </tr>
 </table>
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|----
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=====
-| Foot1   | Foot2   | Foot3
 {: rules="groups"}

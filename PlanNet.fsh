@@ -17,7 +17,10 @@ Description:    "The technical details of an endpoint that can be used for elect
 * identifier.assigner MS
 * status MS
 * status = $EndpointStatus#active (exactly) 
-* connectionType MS
+* connectionType MS 
+* connectionType from EndpointConnectionTypeVS (extensible)
+* connectionType ^binding.extension[1].url = $MinValueSet
+* connectionType ^binding.extension[1].valueCanonical = MinEndpointConnectionTypeVS
 * name MS
 * managingOrganization only Reference(PlannetOrganization)
 * managingOrganization MS
@@ -36,9 +39,6 @@ Description:    "The technical details of an endpoint that can be used for elect
 * payloadMimeType MS
 * address MS
 * header MS
-
-   
-
 
 Profile:        PlannetHealthcareService
 Parent:         HealthcareService
@@ -62,6 +62,7 @@ Description:    "The HealthCareService  resource typically describes services of
 * category MS
 * type MS
 * specialty MS
+// * specialty from $NUCCProviderTaxonomy (required) -- NOT agreed to
 * location only Reference(PlannetLocation)
 * location MS
 * name MS
@@ -80,11 +81,11 @@ Description:    "The HealthCareService  resource typically describes services of
 * telecom.period MS
 * coverageArea only Reference(PlannetLocation)
 * coverageArea MS
-* serviceProvisionCode MS
-* eligibility MS
-* program MS
-* characteristic MS
-* referralMethod MS
+// * serviceProvisionCode MS
+// eligibility  MS
+// program  
+//* characteristic MS
+//* referralMethod MS
 * appointmentRequired MS
 * availableTime MS
 * availableTime.daysOfWeek MS
@@ -117,7 +118,8 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * identifier.assigner MS
 * status 1..1 MS
 * status = $PublicationStatus#active  (exactly) 
-* type 0..1 MS
+* type 0..1 MS 
+* type from PlanTypeVS (extensible)
 * name MS
 * alias MS
 * ownedBy 1..1 MS
@@ -155,7 +157,7 @@ Title:          "Plan-net Location"
 Description:    "A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."
 * extension contains
     NewPatients named newpatients 0..* MS and
-    $AccessibilityExtension named accessibility 0..* MS and 
+    Accessibility named accessibility 0..* MS and 
     $NewPatientProfileExtension named newpatientprofile 0..* MS
 * extension[newpatients] ^short = "New Patients"
 * identifier.id MS
@@ -180,7 +182,7 @@ Description:    "A Location is the physical place where healthcare services are 
 * telecom.rank MS
 * telecom.use MS
 * telecom.period MS
-* physicalType MS
+// * physicalType MS
 * position MS
 * managingOrganization 0..1 MS
 * managingOrganization only Reference(PlannetOrganization)
@@ -301,6 +303,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * telecom.rank MS
 * telecom.use MS
 * telecom.period MS
+* type from OrgTypeVS
 * endpoint MS
 
 Profile:        PlannetOrganizationAffiliation
@@ -323,6 +326,7 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * network only Reference (PlannetNetwork)
 * code MS
 * specialty MS
+* specialty from $NUCCProviderTaxonomy (required)
 * location only Reference (PlannetLocation)
 * healthcareService only Reference (PlannetHealthcareService)
 * telecom MS
@@ -342,8 +346,7 @@ Id:             plannet-Practitioner
 Title:          "Plan-net Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * extension contains
-   $AccessibilityExtension named accessibility 0..1 MS and
-   $CommunicationProficiencyExtension named communication-proficiency 0..1 MS
+   CommunicationProficiency named communication-proficiency 0..1 MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -396,6 +399,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * qualification.identifier.period MS
 * qualification.identifier.assigner MS
 * qualification.code MS
+* qualification.code from $V2table0360v27 (extensible)    // used to be (example)
 * qualification.period MS
 * qualification.issuer MS
 * communication MS
@@ -433,7 +437,7 @@ group of people or a facility, nor does it take into account that not all practi
 * organization 1..1   MS        // 1..1 from USCore
 * code  from  $us-core-provider-role-vs (required) 
 * code 1..1  MS
-* specialty from  $us-core-provider-specialty-vs (required)
+* specialty from $NUCCProviderTaxonomy (required)
 * specialty 0..1 MS
 * location only Reference(PlannetLocation)
 * location MS
@@ -508,7 +512,7 @@ Description: "EndpointUseCase is an enumeration of the specific use cases (servi
    Standard 0..1 MS 
 * extension[Type] ^short = "An indication of the type of services supported by the endpoint"
 * extension[Type].value[x] only  CodeableConcept 
-* extension[Type].valueCodeableConcept from http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase (extensible)
+* extension[Type].valueCodeableConcept from EndpointUsecaseVS (extensible)
 * extension[Standard] ^short = "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
 * extension[Standard].value[x] only uri 
 
@@ -522,8 +526,33 @@ Description: "An extension to add status and whereValie elements to a practition
    whereValid 0..1 MS 
 * extension[status] ^short = "Status"
 * extension[status].value[x] only  code 
-* extension[status].valueCode from http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus (example)
-* extension[status].valueCode = http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus#active (exactly)
+* extension[status].valueCode from $CredentialStatus (example)
+* extension[status].valueCode = $CredentialStatus#active (exactly)
 * extension[whereValid] ^short = "Where the qualification is valid"
-* extension[whereValid].value[x] only CodeableConcept
-* extension[whereValid].valueCodeableConcept from http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state (extensible)
+* extension[whereValid].value[x] only CodeableConcept or Reference(PlannetLocation)
+* extension[whereValid].valueCodeableConcept from $USPSState (required)
+
+
+Extension: Accessibility
+Id: accessibility
+Title: "Accessibility"
+Description: "An extension to describe accessibility options offered by a practitioner or at a location."
+* value[x] 1..1 
+* value[x] only CodeableConcept 
+* valueCodeableConcept from $AccessibilityVS (extensible)
+
+
+Extension: CommunicationProficiency
+Id: communication-proficiency
+Title: "Communication Proficiency"
+Description: "An extension to express a practitioner’s spoken proficiency with the language indicated in practitioner.communication."
+* value[x] 1..1 
+* value[x] only CodeableConcept 
+* valueCodeableConcept from $LanguageProficiency (required)   // was example
+
+//Extension: ConnectionTypeMinValue
+//Parent:  $MinValueSet
+//Id: connection-type-min-value
+//Title: "Minimum Value for ConnectType"
+//* value[x] only canonical 
+//* valueCanonical = MinEndpointConnectionTypeVS
